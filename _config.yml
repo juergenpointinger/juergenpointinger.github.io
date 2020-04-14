@@ -29,8 +29,13 @@ url: "https://juergenpointinger.github.io" # the base hostname & protocol for yo
 twitter_username: pointij
 github_username:  juergenpointinger
 
+permalink: none
+
 # Build settings
-theme: minima
+sass:
+  style: :compressed
+
+theme: jekyll-theme-primer
 plugins:
   - jekyll-feed
   
@@ -42,14 +47,10 @@ plugins:
 # Excluded items can be processed by explicitly listing the directories or
 # their entries' file path in the `include:` list.
 #
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
