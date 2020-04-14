@@ -1,6 +1,7 @@
 ---
 layout: default
 permalink: /blog.html
+title: "My blogs"
 ---
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.
