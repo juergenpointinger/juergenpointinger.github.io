@@ -3,7 +3,8 @@
     const GH_ACCOUNT = "juergenpointinger/juergenpointinger.github.io"
     const GH_URL = "https://github.com/"
     const GH_API_URL = "https://api.github.com/repos/"
-    const GH_ISSUE = `${GH_URL}{{ include.github_account }}/issues/{{page.comment_issue_id}}`
+    const GH_API_COMMENT_URL = `${GH_API_URL}${GH_ACCOUNT}/issues/{{page.comment_issue_id}}/comments?per_page=100`
+    const GH_ISSUE = `${GH_URL}${GH_ACCOUNT}/issues/{{page.comment_issue_id}}`
     
     document.querySelector("{{ include.element }}").innerHTML = document.querySelector("{{ include.element }}").innerHTML + "<div id='comments'></div>";
     document.getElementById("comments").innerHTML = `
@@ -18,11 +19,11 @@
             el.remove();
         });
 
-        $.ajax(`${GH_API_URL}{{ include.github_account }}/issues/{{page.comment_issue_id}}/comments?per_page=100`, {
+        $.ajax(GH_API_COMMENT_URL, {
             headers: {Accept: "application/vnd.github.full+json"},
             dataType: "json",
             success: function(msg){
-                localStorage.setItem('comments_{{ include.github_account }}_{{page.comment_issue_id}}', JSON.stringify(msg));
+                localStorage.setItem(`comments_${GH_ACCOUNT}_{{page.comment_issue_id}}`, JSON.stringify(msg));
                 loadComments(msg);
             },
             error: function() { 
@@ -46,7 +47,7 @@
             </p>`);
         for (var i=0; i<data.length; i++) {
             var cuser = data[i].user.login;
-            var cuserlink = `${GH_URL}` + data[i].user.login;
+            var cuserlink = GH_URL + data[i].user.login;
             var clink = `${GH_ISSUE}#issuecomment-` + data[i].url.substring(data[i].url.lastIndexOf("/")+1);
             var cbody = data[i].body_html;
             var cavatarlink = data[i].user.avatar_url;
@@ -56,7 +57,7 @@
         }
     }
 
-    var data = localStorage.getItem('comments_{{ include.github_account }}_{{page.comment_issue_id}}');
+    var data = localStorage.getItem('comments_${GH_ACCOUNT}_{{page.comment_issue_id}}');
     if(data) {
         loadComments(JSON.parse(data));
     } else {
