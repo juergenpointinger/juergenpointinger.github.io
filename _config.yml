@@ -30,7 +30,7 @@ twitter_username: pointij
 github_username:  juergenpointinger
 
 # Build settings
-theme: jekyll-theme-cayman
+theme: jekyll-theme-minimal
 plugins:
   - jekyll-feed
 
