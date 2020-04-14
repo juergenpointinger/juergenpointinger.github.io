@@ -42,7 +42,7 @@
 }
 .div4 { 
   grid-area: 2 / 2 / 3 / 4; 
-  background-image: url(../assets/images/me-dark-comic.png);
+  background-image: url(../images/me-dark-comic.png);
   background-position: -130px 25%;
   background-size: 1200px;
 

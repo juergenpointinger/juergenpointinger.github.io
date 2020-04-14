@@ -56,7 +56,7 @@ body {
 }
 
 .main {
-  margin-top: 90px;
+  margin-top: 90px !important;
 }
 
 /* Spinner */
@@ -79,5 +79,5 @@ body {
 	width: 100%;
 	height: 100%;
 	z-index: 9999;
-	background: url('../assets/images/spinner.gif') center no-repeat #fff;
+	background: url('../images/spinner.gif') center no-repeat #fff;
 }
