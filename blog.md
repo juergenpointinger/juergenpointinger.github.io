@@ -1,6 +1,6 @@
 ---
 layout: default
-permalink: /blog/
+permalink: /blog.html
 ---
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.
