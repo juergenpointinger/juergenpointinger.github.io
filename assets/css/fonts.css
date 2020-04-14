@@ -34,7 +34,15 @@ h3.white {
 
 a {
   color: #27b9c2;
+  text-decoration: none;
+}
+
+a:hover {
   text-decoration: underline;
+}
+
+a h3 { 
+  color: #fff;
 }
 
 b, strong {

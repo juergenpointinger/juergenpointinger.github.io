@@ -88,12 +88,12 @@
   grid-row: span 2;
 }
 
-@media screen and (max-width: 500px) {
-  .container {
+@media screen and (max-width: 479px) {
+  .grid {
     grid-template-columns: repeat(2, 1fr);
   }
-  .w-1, .w-2, .w-3, .w-4, .w-5, .w-6, .w-7 {
-    grid-column: span 1;
+  .w-3, .w-4, .w-5, .w-6, .w-7 {
+    grid-column: span 2;
   }
 }
 
