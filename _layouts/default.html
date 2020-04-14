@@ -21,7 +21,7 @@
       <a href="/index.html"><span class="arrow-navigation">‹</span></a>
       
       {% if page.title %}
-      <div class="title">{{ page.title }} </div>
+        <div class="title">{{ page.title }} </div>
       {% endif %}
     </div>
 
@@ -29,6 +29,10 @@
       <!-- {% if site.title and site.title != page.title %}
       <h1><a href="{{ '/' | absolute_url }}">{{ site.title }}</a></h1>
       {% endif %} -->
+
+      {% if page.related_image %}
+        <img src="{{ page.related_image }}" alt="">
+      {% endif %}
 
       {{ content }}
 
