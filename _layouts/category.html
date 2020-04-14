@@ -2,8 +2,6 @@
 layout: default
 ---
 
-- <time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date_to_long_string }}</time>
-
 <div class="blog list">
 
   {% for post in site.categories[page.tag] %}
