@@ -13,7 +13,7 @@
 
 .profile {
   grid-area: 1 / 1 / 3 / 3; 
-  background-image: url(../assets/images/me-dark-comic.png);
+  background-image: url(../images/me-dark-comic.png);
   background-position: 25% 25%;
   background-size: 1200px;
 
