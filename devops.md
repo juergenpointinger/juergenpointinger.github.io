@@ -2,5 +2,5 @@
 layout: category
 tag: devops
 title: "#devops"
-permalink: /blog/devops
+permalink: /blog/devops/
 ---
