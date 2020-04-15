@@ -1,6 +1,6 @@
 ---
 layout: category
 tag: coding
-title: "#coding"
+title: Coding
 permalink: /blog/coding/
 ---

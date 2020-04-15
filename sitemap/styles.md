@@ -1,7 +1,7 @@
 ---
 layout: default
-permalink: /blog/
-title: "My blogs"
+permalink: /blog/styles/
+title: Styles
 ---
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.
