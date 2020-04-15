@@ -1,10 +1,24 @@
 ---
 layout: default
 ---
-<div class="text grey">
-  <p>
-    <time datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date_to_long_string }}</time> - by {{ page.author }}
-  </p>
+
+{% if page.title %}
+  <h1>{{ page.title }}</h1>
+{% endif %}
+
+{% include breadcrumbs.html %}
+
+{% if page.image %}
+  <img src="{{ page.image }}" alt="">
+{% endif %}
+
+<div style="display: flex; justify-content: flex-end">
+  <div class="text grey">
+    <p>
+      <time datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: "%B %-d, %Y" }}</time> » by {{ page.author }}
+      {% include share-buttons.html %}
+    </p>
+  </div>
 </div>
 
 {{ content }}
