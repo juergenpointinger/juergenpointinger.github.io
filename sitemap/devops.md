@@ -1,6 +1,6 @@
 ---
 layout: category
 tag: devops
-title: "#devops"
+title: Devops
 permalink: /blog/devops/
 ---

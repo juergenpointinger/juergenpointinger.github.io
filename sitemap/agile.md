@@ -1,6 +1,6 @@
 ---
 layout: category
 tag: agile
-title: "#agile"
+title: Agile
 permalink: /blog/agile/
 ---
