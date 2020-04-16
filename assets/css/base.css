@@ -88,6 +88,7 @@ body {
   height: 100px;
   width: 100px;
   background-image: url(/assets/images/me-comic.png);
+  filter: grayscale(100%);
   background-position: -105px 10%;
   background-size: 500px;
   border-radius: 50%;
