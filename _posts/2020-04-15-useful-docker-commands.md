@@ -1,7 +1,8 @@
 ---
 layout: post
 categories: [blog, coding, snippets]
-title: "Docker basics"
+comment_issue_id: 3
+title: "Useful Docker commands"
 date: 2020-04-15 14:30
 author: J. Pointinger
 ---
