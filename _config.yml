@@ -38,6 +38,7 @@ sass:
 theme: jekyll-theme-primer
 plugins:
   - jekyll-feed
+  - jekyll-spaceship
   
 # Exclude from processing.
 # The following items will not be processed, by default.
