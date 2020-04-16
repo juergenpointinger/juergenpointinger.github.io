@@ -1,0 +1,56 @@
+---
+layout: default
+---
+
+{% include header.html %}
+
+<div class="blog-list">
+    <h2>
+        Categories
+    </h2>
+
+    {% assign categories = site.categories | sort %}
+
+    <ul class="post-list">
+        {% for category in categories %}
+
+            {% assign name = category[0] %}
+            {% assign pages = category[1] %}
+
+            {% if name != "blog" %}
+            <li>
+                <a href="#{{ name | downcase | url_escape | strip | replace: ' ', '-' }}">
+                    {{ name | camelcase }} ({{ pages.size }})
+                </a>
+            </li>
+            {% endif %}
+        {% endfor %}
+    </ul>
+
+    {% for category in categories %}
+
+        {% assign name = category[0] %}
+        {% assign pages = category[1] %}
+
+        {% if name != "blog" %}
+            <h3 id="{{ name | downcase | url_escape | strip | replace: ' ', '-' }}">
+                {{ name | camelcase }}
+            </h3>
+
+            <ul>
+                {% for post in pages %}
+                    {% if post.title != null %}
+                        <li>
+                            <a href="{{ site.url }}{{ post.url }}">
+                                {{ post.title }}
+                            </a>
+                            - <time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">
+                                {{ post.date | date_to_long_string }}
+                            </time>
+                        </li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        {% endif %}
+    {% endfor %}
+</div>
