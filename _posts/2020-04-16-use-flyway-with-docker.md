@@ -16,7 +16,7 @@ The Community Edition comes with a good set of features. For the development in 
 Supported versions: 12, 11, 10, 9.6, 9.5, 9.4 
 The Enterprise Edition would extend support to these versions: 9.3, 9.2, 9.1, 9.0
 
-As soon as you think about [Oracle PL*SQL}(https://flywaydb.org/documentation/database/oracle#sqlplus-commands) and want to use it in your project, there is no way around a Pro or Enterprise Edition.
+As soon as you think about [Oracle PL*SQL](https://flywaydb.org/documentation/database/oracle#sqlplus-commands) and want to use it in your project, there is no way around a Pro or Enterprise Edition.
 
 As soon as you have decided on a version, it is time to prepare your first "migration".
 
