@@ -8,36 +8,36 @@ author: J. Pointinger
 
 ## Login
 
-```sh
+```bash
 $ docker login registry.gitlab.com
 ```
 
 ## Stats for all running containers
 
-```sh
+```bash
 $ docker ps -q | xargs docker stats
 ```
 
 ## Remove dangling (untagged) images
 
-```sh
+```bash
 $ docker rmi $(docker images -f "dangling=true" -q)
 ```
 
 ## Remove "gitlab.com" container
 
-```sh
+```bash
 $ docker rm -f $(docker ps -aq --filter name=registry.gitlab.com*)
 ```
 
 ## Remove "gitlab.com" images
 
-```sh
+```bash
 $ docker rmi $(docker images | grep registry.gitlab.com | awk "{print \$3}")
 ```
 
 ## Remove all stopped containers
 
-```sh
+```bash
 $ docker rm -f $(docker ps -aq --filter status=exited)
 ```
