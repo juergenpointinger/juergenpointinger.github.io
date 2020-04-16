@@ -8,8 +8,6 @@ image: /assets/images/blog/devops.jpg
 author: J. Pointinger
 ---
 
-<!-- https://pixabay.com/de/illustrations/weltall-rakete-weltraum-nacht-3262811/ -->
-
 ## Not the strongest that survives
 
 A long time ago, it was at the beginning of the 18th century, more precisely in 1809, when Charles Darwin made a statement that was formative for that time, a statement that is still valid today and will probably survive for a long time.
@@ -76,3 +74,5 @@ DevOps is a `movement, a culture, a set of practices and tools` that encourage `
 ![DevOps Philosophy](/assets/images/devops-philosophy.png){:height="50%" width="50%"}
 
 What can help us to take the philosophy of DevOps and turn the knowing challenges into opportunities you can read soon in another blog of mine.
+
+<!-- https://pixabay.com/de/illustrations/weltall-rakete-weltraum-nacht-3262811/ -->
