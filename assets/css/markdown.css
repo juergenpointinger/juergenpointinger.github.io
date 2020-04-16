@@ -3,3 +3,12 @@
     left: 50%;
     transform: translateX(-50%);
 }
+
+/* .markdown-body .highlight pre, .markdown-body pre {
+    background-color: #333;
+    color: #fff;
+}
+
+.highlight .nb, .highlight .nt, .highlight .nv {
+    color: #06ace4;
+} */
