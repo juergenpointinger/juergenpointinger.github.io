@@ -1,7 +1,7 @@
 ---
 layout: post
 categories: [blog, coding, snippets]
-title: "Scoped NPM registry"
+title: "How to use scoped NPM registry"
 date: 2020-04-15 14:30
 author: J. Pointinger
 ---
@@ -12,7 +12,7 @@ Sometimes it is not possible or makes no sense to use tools like [JFrog Artifact
 
 In [GitLab](https://docs.gitlab.com/ee/user/packages/npm_registry/), such registries can now be used relatively easily. 
 
-Add the GitLab NPM Registry to your local or global NPM configuration. The `@your-scope` should be replaced by your needs. Replace `@your-scope` with your specific scope name (e.g. your organization name):
+Add the GitLab NPM Registry to your local or global NPM configuration. Replace `@your-scope` with your specific scope name (e.g. your organization name):
 
 ```sh
 $ npm config set @your-scope:registry https://gitlab.com/api/v4/packages/npm/ --global
