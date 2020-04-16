@@ -14,12 +14,43 @@ In [GitLab](https://docs.gitlab.com/ee/user/packages/npm_registry/), such regist
 
 Add the GitLab NPM Registry to your local or global NPM configuration. Replace `@your-scope` with your specific scope name (e.g. your organization name):
 
-```sh
-$ npm config set @your-scope:registry https://gitlab.com/api/v4/packages/npm/ --global
+```bash
+$ npm config set @your-scope:registry https://gitlab.com/api/v4/packages/npm/
+```
+
+Your config output look like this (on Windows):
+
+```text
+; cli configs
+metrics-registry = "https://registry.npmjs.org/"
+...
+
+; userconfig C:\Users\<userprofile>\.npmrc
+@your-scope:registry = "https://gitlab.com/api/v4/packages/npm/"
 ```
 
 Now you just need to authenticate with the newly created scoped registry. Replace `<your_token>` with your personal access token:
 
-```sh
+```bash
+$ npm config set '//gitlab.com/api/v4/packages/npm/:_authToken' "<your_token>"
+```
+
+The commands described above change your NPM userconfig, your user specific .npmrc file. If you want to make the change on a global level, you would have to add "--global" at the end.
+
+```bash
+$ npm config set @your-scope:registry https://gitlab.com/api/v4/packages/npm/ --global
 $ npm config set '//gitlab.com/api/v4/packages/npm/:_authToken' "<your_token>" --global
 ```
+
+The .npmrc in a global context:
+
+```text
+; cli configs
+metrics-registry = "https://registry.npmjs.org/"
+...
+
+; globalconfig C:\Program Files\nodejs\etc\npmrc
+@your-scope:registry = "https://gitlab.com/api/v4/packages/npm/"
+```
+
+
