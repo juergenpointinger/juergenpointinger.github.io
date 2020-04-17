@@ -1,5 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Prompt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prompt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 body {
   font-family: prompt, sans-serif;
@@ -20,6 +21,21 @@ body {
   transform: skewY(-10deg);
   transform-origin: top left;
   z-index: -10;
+}
+
+.logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-family: Roboto, sans-serif;
+  font-size: 25px;
+  font-weight: 500;
+  letter-spacing: -2px;
+  color: #fff;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #fff;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
 }
 
 post-header {
@@ -189,11 +205,15 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 }
 
 .card p {
-  font-family: prompt,sans-serif;
-  font-size: .9rem;
+  font-family: prompt, sans-serif;
+  font-size: 16px;
   letter-spacing: .3px;
   font-weight: 300;
   line-height: 1.7;
+}
+
+article a:hover {
+  text-decoration: none;
 }
 
 /* Share buttons */
