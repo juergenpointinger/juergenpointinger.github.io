@@ -4,14 +4,8 @@ layout: default
 
 {% include header.html %}
 
-<div style="display: flex; justify-content: flex-end">
-  <div class="text grey">
-    <p>
-      <time datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: "%B %-d, %Y" }}</time> » by {{ page.author }}
-      {% include share-buttons.html %}
-    </p>
-  </div>
-  <div class="profile-picture"> </div>
-</div>
+{% include table-of-content.html %}
 
 {{ content }}
+
+{% include comments.html element=".container-lg" %}

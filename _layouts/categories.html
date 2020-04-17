@@ -9,7 +9,13 @@ layout: default
         Categories
     </h2>
 
-    {% assign categories = site.categories | sort %}
+    {% if page.tag != null %}
+        {% assign cat = page.tag | downcase %}
+        {% assign categories = site.categories | where_exp: "categories", "categories contains 'coding'" %}
+        <h1>{{ site.categories }}</h1>
+    {% else %}
+        {% assign categories = site.categories | sort %}
+    {% endif %}
 
     <ul class="post-list">
         {% for category in categories %}
