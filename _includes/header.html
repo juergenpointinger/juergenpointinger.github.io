@@ -1,9 +1,41 @@
-{% if page.title %}
-  <h1>{{ page.title }}</h1>
-{% endif %}
+<!-- {% include breadcrumbs.html %} -->
 
-{% include breadcrumbs.html %}
+<post-header>
+  {% if page.image %}
+    <img class="title-image" src="{{ page.image }}" alt="">
+  {% endif %}
 
-{% if page.image %}
-  <img src="{{ page.image }}" alt="" style="margin-bottom: 10px;">
-{% endif %}
+  {% if page.title %}
+    <div class="title">{{ page.title }}</div>
+  {% endif %}
+
+  <div class="meta">
+    <ul>
+      <li>
+        <i class="far fa-calendar" aria-hidden="true"></i> <time datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: "%B %-d, %Y" }}</time>
+      </li>
+      <li>
+        <i class="fa fa-tags" aria-hidden="true"></i>
+        {% include tags.html %}
+      </li>
+      <li>
+        <div class="profile-picture"></div>
+        {% include share-buttons.html %}
+        <i class="far fa-clock" aria-hidden="true"></i>
+        {% include read-time.html content=content %}        
+      </li>
+    </ul>
+  </div>
+
+  <!-- <div style="display: flex; justify-content: flex-end">
+    <div class="text grey">
+      <p class="meta">
+        <time datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: "%B %-d, %Y" }}</time> » by {{ page.author }}        
+        {% include read-time.html content=content %}
+      {% include share-buttons.html %}
+      </p>
+    </div>
+    <div class="profile-picture"> </div>
+    {% include tags.html %}  
+  </div> -->
+</post-header>

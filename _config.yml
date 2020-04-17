@@ -29,7 +29,7 @@ url: "https://juergenpointinger.github.io" # the base hostname & protocol for yo
 twitter_username: pointij
 github_username:  juergenpointinger
 
-permalink: none
+permalink: /:title/
 
 # Build settings
 sass:
@@ -38,7 +38,7 @@ sass:
 theme: jekyll-theme-primer
 plugins:
   - jekyll-feed
-  - jekyll-spaceship
+  # - jekyll-spaceship
   
 # Exclude from processing.
 # The following items will not be processed, by default.

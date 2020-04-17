@@ -1,6 +1,6 @@
 ---
 layout: post
-categories: [blog, coding, snippets]
+categories: [Coding, Snippets]
 comment_issue_id: 3
 title: "Useful Docker commands"
 date: 2020-04-15 14:30

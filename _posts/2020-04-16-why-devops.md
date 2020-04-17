@@ -1,6 +1,6 @@
 ---
 layout: post
-categories: [blog, devops]
+categories: DevOps
 comment_issue_id: 1
 title: "Why do we need DevOps"
 date: 2020-04-16
@@ -71,7 +71,7 @@ Now that we know some of the challenges in an SDLC, we should take a look at the
 
 DevOps is a `movement, a culture, a set of practices and tools` that encourage `close collaboration` within the complete Software Development Life Cycle (SDLC) to `increase the productivity and quality of the overall system.` The core values are `customer-centric, quality-driven and fast flow` of features into production.
 
-![DevOps Philosophy](/assets/images/devops-philosophy.png){:height="50%" width="50%"}
+![DevOps Philosophy](/assets/images/blog/devops-philosophy.png){:height="50%" width="50%"}
 
 What can help us to take the philosophy of DevOps and turn the knowing challenges into opportunities you can read soon in another blog of mine.
 

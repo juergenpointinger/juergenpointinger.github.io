@@ -79,19 +79,5 @@ body {
 	width: 100%;
 	height: 100%;
 	z-index: 9999;
-	background: url('../images/spinner.gif') center no-repeat #fff;
-}
-
-/* Jekyll include */
-
-.profile-picture {
-  height: 100px;
-  width: 100px;
-  background-image: url(/assets/images/me-comic.png);
-  filter: grayscale(100%);
-  background-position: -105px 10%;
-  background-size: 500px;
-  border-radius: 50%;
-  margin: -10px 10px 0;
-  z-index: 5;
+	background: url('../images/main/spinner.gif') center no-repeat #fff;
 }

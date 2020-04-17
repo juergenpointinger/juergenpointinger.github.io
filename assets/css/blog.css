@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Prompt&display=swap');
+
+body {
+  font-family: prompt, sans-serif;
+  color: #525f7f;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 300px;
+  /* background-image: linear-gradient(#4791ae, #e1f5fc); */
+  background-image: linear-gradient(150deg, #0366d6 15%, #05d5ff 70%, #a5ffcb 94%);
+  transform: skewY(-10deg);
+  transform-origin: top left;
+  z-index: -10;
+}
+
+post-header {
+  display: block;
+  min-width: 100%;
+
+}
+
+post-header > .title-image {
+  width: 600px;
+  margin-bottom: 10px;
+}
+
+post-header > .title {
+  font-size: 4.25rem;
+  font-weight: 900;
+  letter-spacing: -1px;
+  text-align: center !important;
+  line-height: 1.5;
+  margin-bottom: 3rem;
+}
+
+ol, ul, dl {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.meta {
+  border-top: 1px solid #e9ecef;
+  padding: 1rem 0;
+  padding-top: 1rem;
+  padding-right: 0px;
+  padding-bottom: 1rem;
+  padding-left: 0px;
+  color: #adb5bd;
+}
+
+.meta ul {
+  list-style: none;
+  padding: 0;
+  /* color: #9fa3a7; */
+}
+
+.meta ul li:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.meta ul li:last-child {
+  float: right;
+  text-align: center;
+}
+
+.meta ul li {
+  display: inline-block;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+/* .markdown-body .highlight pre, .markdown-body pre {
+  background-color: #333;
+  color: #fff;
+}
+
+.highlight .nb, .highlight .nt, .highlight .nv {
+  color: #06ace4;
+} */
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  margin-bottom: .5rem;
+  font-family: josefin sans,sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #32325d;
+}
+
+.profile-picture {
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+  background-image: url(/assets/images/main/me-comic.png);
+  filter: grayscale(100%);
+  background-position: -105px 10%;
+  background-size: 500px;
+  border-radius: 50%;
+  z-index: 5;
+}
+
+/* Share buttons */
+
+#share-buttons { vertical-align: middle; }
+#share-buttons:after { content: ""; display: block; clear: both; }
+#share-buttons > div {
+    position: relative;
+    text-align: left; 
+    height: 32px; 
+    width: 32px; 
+    float: left; 
+    text-align: center;
+    background-color: #f3f4f4;
+    border-radius: 50%;
+    margin: 0 0 0 5px;
+}
+#share-buttons > div > svg { height: 16px; fill: #fff; vertical-align: middle; }
+#share-buttons > div:hover { cursor: pointer; }
+
+#share-buttons > div.facebook:hover { background-color: #3B5998; }
+#share-buttons > div.twitter:hover { background-color: #55ACEE; }
+#share-buttons > div.linkedin:hover { background-color: #0085ae; }
+#share-buttons > div.pinterest:hover { background-color: #CB2027; }
+#share-buttons > div.mail:hover { background-color: #7D7D7D; }
+#share-buttons > div.instagram:hover { background-color: #C73B92; }
+
+/* Table of content */
+
+div#toc::before {
+    content: "Contents";
+    font-weight: bold;
+} 
+
+div#toc {
+  border: 1px solid #aaa;
+  padding: 1.5em;
+  list-style: decimal;
+  display: inline-block;
+}
+
+#toc ul {
+    list-style: decimal;
+}
+
+/* Comments */
+
+.comment {padding: 5px 0 15px;}
+.comment P:last-child {margin-bottom: 0;}
+.commentgravatar {position: absolute; width: 40px; border: 1px solid #e5e5e5;}
+.commentheader, .commentbody {padding: 5px 10px; margin-left: 55px; border: 1px solid #e5e5e5; background: white;}
+.commentheader {position: relative; background: #f4f4f4; border-bottom: 0;}
+.commentbody {padding: 10px 10px 13px;}
+.commentheader a {color: #777777;}
+.commentheader::before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 9px;
+    height: 9px;
+    background: #f4f4f4;
+    transform: rotate(-45deg);
+    left: 0;
+    margin-left: -4px;
+    margin-top: 4px;
+    box-shadow: -1px -1px 0px 0px rgba(0, 0, 0, 0.15);
+}
+
+/* Fontawesome */
+
+.fa, .far, .fas {
+  color: #9fa3a7;
+}
+
+/* Theme specific */
+
+.markdown-body img {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.markdown-body hr {
+  height: 1px;
+}
+
+.markdown-body ul, .markdown-body ol {
+  padding-left: 1em;
+}
