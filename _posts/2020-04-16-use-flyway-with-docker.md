@@ -1,11 +1,13 @@
 ---
 layout: post
-categories: [blog, devops]
+categories: DevOps
 comment_issue_id: 2
 title: "How to use Flyway with Docker"
 date: 2020-04-16
 author: J. Pointinger
 ---
+
+## Flyway and Docker
 
 If we think about a migration of databases, the analysis will probably not get past [Flyway](https://flywaydb.org/).
 

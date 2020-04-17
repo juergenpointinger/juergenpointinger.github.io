@@ -1,10 +1,12 @@
 ---
 layout: post
-categories: [blog, coding, snippets]
+categories: [Coding, Snippets]
 title: "How to use scoped NPM registry"
 date: 2020-04-15 14:30
 author: J. Pointinger
 ---
+
+## Scoped registry
 
 In most projects it is recommended to use a [scoped](https://docs.npmjs.com/misc/scope) (private) registry to share self-developed modules.
 
