@@ -15,7 +15,8 @@ body {
   width: 100%;
   height: 300px;
   /* background-image: linear-gradient(#4791ae, #e1f5fc); */
-  background-image: linear-gradient(150deg, #0366d6 15%, #05d5ff 70%, #a5ffcb 94%);
+  /* background-image: linear-gradient(150deg, #0366d6 15%, #05d5ff 70%, #a5ffcb 94%); */
+  background-image: linear-gradient(150deg, #a1e3ee 15%, #8ee0ee 60%, #8ee0ee 94%);
   transform: skewY(-10deg);
   transform-origin: top left;
   z-index: -10;
