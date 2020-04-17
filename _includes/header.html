@@ -8,7 +8,7 @@
   {% if page.title %}
     <div class="title">{{ page.title }}</div>
   {% endif %}
-
+  
   <div class="meta">
     <ul>
       <li>
@@ -27,15 +27,4 @@
     </ul>
   </div>
 
-  <!-- <div style="display: flex; justify-content: flex-end">
-    <div class="text grey">
-      <p class="meta">
-        <time datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: "%B %-d, %Y" }}</time> » by {{ page.author }}        
-        {% include read-time.html content=content %}
-      {% include share-buttons.html %}
-      </p>
-    </div>
-    <div class="profile-picture"> </div>
-    {% include tags.html %}  
-  </div> -->
 </post-header>
