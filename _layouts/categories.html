@@ -2,61 +2,29 @@
 layout: default
 ---
 
-{% include header.html %}
+<post-header>
+  {% if page.title %}
+    <div class="title">{{ page.title }}</div>
+  {% endif %}
+</post-header>
 
-<div class="blog-list">
-    <h2>
-        Categories
-    </h2>
+<div id="categories">
+  {% for category in site.categories %}
 
-    {% if page.tag != null %}
-        {% assign cat = page.tag | downcase %}
-        {% assign categories = site.categories | where_exp: "categories", "categories contains 'coding'" %}
-        <h1>{{ site.categories }}</h1>
-    {% else %}
-        {% assign categories = site.categories | sort %}
-    {% endif %}
+    <div class="archive-group">
+      {% capture category_name %}{{ category | first }}{% endcapture %}
+      <div id="#{{ category_name | slugize }}"></div>
+      <p></p>
 
-    <ul class="post-list">
-        {% for category in categories %}
+      <h2 id="{{ category_name }}" class="category-head">{{ category_name }}</h2>
+      <a name="{{ category_name | slugize }}"></a>
+    
+      {% for post in site.categories[category_name] %}
+        <article class="archive-item">
+          <h4><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a></h4>
+        </article>
+      {% endfor %}
+    </div>
 
-            {% assign name = category[0] %}
-            {% assign pages = category[1] %}
-
-            {% if name != "blog" %}
-            <li>
-                <a href="#{{ name | downcase | url_escape | strip | replace: ' ', '-' }}">
-                    {{ name | camelcase }} ({{ pages.size }})
-                </a>
-            </li>
-            {% endif %}
-        {% endfor %}
-    </ul>
-
-    {% for category in categories %}
-
-        {% assign name = category[0] %}
-        {% assign pages = category[1] %}
-
-        {% if name != "blog" %}
-            <h3 id="{{ name | downcase | url_escape | strip | replace: ' ', '-' }}">
-                {{ name | camelcase }}
-            </h3>
-
-            <ul>
-                {% for post in pages %}
-                    {% if post.title != null %}
-                        <li>
-                            <a href="{{ site.url }}{{ post.url }}">
-                                {{ post.title }}
-                            </a>
-                            - <time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">
-                                {{ post.date | date_to_long_string }}
-                            </time>
-                        </li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
-        {% endif %}
-    {% endfor %}
+  {% endfor %}
 </div>
