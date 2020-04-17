@@ -9,21 +9,37 @@ layout: default
 </post-header>
 
 <div id="categories">
-  {% for category in site.categories %}
+  {% assign categories = site.categories | sort %}
+  {% for category in categories %}
 
     <div class="archive-group">
       {% capture category_name %}{{ category | first }}{% endcapture %}
       <div id="#{{ category_name | slugize }}"></div>
       <p></p>
 
-      <h2 id="{{ category_name }}" class="category-head">{{ category_name }}</h2>
+      <h2 id="{{ category_name }}" class="category-title">{{ category_name }}</h2>
       <a name="{{ category_name | slugize }}"></a>
-    
-      {% for post in site.categories[category_name] %}
-        <article class="archive-item">
-          <h4><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a></h4>
-        </article>
-      {% endfor %}
+      
+      <div class="category-grid">
+        {% for post in site.categories[category_name] %}
+          <article>
+            <a href="{{ site.baseurl }}{{ post.url }}">
+              <div class="card">
+                <div class="card-image">
+                  {% if post.image %}
+                    <img src="{{ site.baseurl }}/assets/images/thumbs/{{ post.image }}" alt="{{ post.title }}">
+                  {% endif %}
+                </div>
+                <div class="card-body">
+                  <p>
+                    {{ post.title }}
+                  </p>
+                </div>
+              </div>
+            </a>
+          </article>
+        {% endfor %}
+      </div>
     </div>
 
   {% endfor %}
