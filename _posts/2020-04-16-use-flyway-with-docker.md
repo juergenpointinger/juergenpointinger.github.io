@@ -4,7 +4,7 @@ categories: DevOps
 comment_issue_id: 2
 title: "How to use Flyway with Docker"
 date: 2020-04-16
-image: use-flyway-with-docker.jpg
+image: /assets/images/blog/use-flyway-with-docker.jpg
 author: J. Pointinger
 ---
 
