@@ -5,6 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    {% if page.image %}
+      <meta content="{{ site.url }}{{ site.baseurl }}{{ page.image }}" property="og:image">
+    {% else %}
+      <meta content="{{ site.url }}{{ site.baseurl }}{{ site.author_image }}" property="og:image">
+    {% endif %}
+
+
     {% seo %}
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
