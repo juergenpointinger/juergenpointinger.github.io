@@ -28,6 +28,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://juergenpointinger.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: pointij
 github_username:  juergenpointinger
+author_image: /assets/images/main/author-image.png
 
 permalink: /:title/
 
