@@ -3,6 +3,7 @@ layout: post
 categories: [Coding, Snippets, DevOps]
 title: "How to use scoped NPM registry"
 date: 2020-04-15 14:30
+image: scoped-npm-registry.jpg
 author: J. Pointinger
 ---
 
