@@ -4,7 +4,7 @@ categories: DevOps
 comment_issue_id: 1
 title: "Why do we need DevOps"
 date: 2020-04-16
-image: why-devops.jpg
+image: /assets/images/blog/why-devops.jpg
 author: J. Pointinger
 ---
 
