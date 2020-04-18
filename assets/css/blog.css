@@ -305,3 +305,10 @@ div#toc {
   padding-left: 0.5em;
   padding-right: 0.5em;
 }
+
+.markdown-body blockquote {
+  padding: 1em;
+  font-size: 1.1rem;
+  border-left: 0.25em solid #27b9c2;
+  background-color: #fbfbfb;
+}
