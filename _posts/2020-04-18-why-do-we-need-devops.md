@@ -8,7 +8,7 @@ image: /assets/images/blog/why-do-we-need-devops.jpg
 author: J. Pointinger
 ---
 
-## Not the strongest that survives
+## It's not the strongest that survives
 
 A long time ago, it was at the beginning of the 18th century, more precisely in 1809, when Charles Darwin made a statement that was formative for that time, a statement that is still valid today and will probably survive for a long time.
 
@@ -19,11 +19,13 @@ nor the most intelligent. It is the one most adaptable to change.
 >
 > \- Charles Darwin, 1809
 
-The statement itself has been adapted somewhat over time, but its basic message has not changed.
+The statement itself has been adapted somewhat over time, but its basic message has not changed and in times of COVID-19 became more relevant than ever before.
 
 It lays the foundation for something else, it's part of an area in DevOps that is often simply called a mindset.
 
-Of course, one could now claim that the mindset is not the only thing that is important in an software development life cycle (SDLC). There are principles, practices, it is important to think about harmonizing tools. Nevertheless, without the right mindset, all of this would only be a short-lived solution.
+Of course, one could now claim that the mindset is not the only thing that is important in the software development life cycle (SDLC). There are things that are just as important as mindset like principles, practices and it is also important to think about harmonizing tools. Nevertheless, without the right mindset, all of the above mentioned are only short-lived painkillers.
+
+Nevertheless, let me briefly explain why we need DevOps with all its aspects so desperately. I want to start with a look at anti-patterns, because it is always easier to find things that DON'T work. And don't worry, I will come up with solutions later. 
 
 ## Why IT projects fail
 
@@ -35,7 +37,7 @@ Many problems can be found especially in the latter area "Stakeholder Management
 
 ### Stakeholder Management and Team Issues
 
-If we now look at some points why this area is so problematic, the cry for something else becomes big:
+If we now look at some points why this area is so problematic, the cry for a fix becomes obvious:
 
 - Insufficient attention to stakeholders and their needs
 - Failure to manage expectations
@@ -49,7 +51,7 @@ If we now look at some points why this area is so problematic, the cry for somet
 
 > It is the same old thinking, that leads to the same old result
 
-I don't want to claim that the above statement is mine, but I think that this describes one of the biggest problems in today's SDLC.
+I don't want to claim that the above statement is mine, but I think that this describes one of the biggest problems in today's SDLC – the inability to adapt to change.
 
 What I want to convey is that it is often not the tools or the technology that make a project fail. But there are other challenges in the SDLC that we will now look at.
 
@@ -58,7 +60,7 @@ What I want to convey is that it is often not the tools or the technology that m
 
 ## The Challenges
 
-From day to day I see in many customer situations, different roles in different projects that face similar problems. I would like to share with you some of the challenges I have experienced myself.
+As an IT consultant and DevOps advocate I have seen a lot of different customer scenarios in the past years and even though, I see different roles in different projects, I also see a lot of similarities. I would like to share those similarities with you and maybe you feel familiar with them:
 
 | Topics                   | Challenges                                          |
 |:-------------------------|:----------------------------------------------------|
@@ -71,23 +73,23 @@ From day to day I see in many customer situations, different roles in different 
 | **Environment**          | - Infrastructure provisioning takes weeks<br />- Inconsistency in Continuous Delivery<br />- No centralized user management |
 | **Knowledge Gaps**       | - Documentation missing<br />- Troublesome Onshore – Offshore coordination<br />- Knowledge islands<br />- Information hiding |
 
-Now that we know some of the challenges in an SDLC, we should take a look at the idea of DevOps.
+Now that we know some of the challenges in an SDLC, we should take a look at the idea of DevOps and how it can be a cure to the itch.
 
 ## The Idea
 
-If you search the Internet for an explanation of what DevOps exactly means, you will find many different views. I think there is a relatively good explanation, which I have compiled for you below.
-
-This is a high level explanation, which allows you to quickly get into conversation with the C-level management.
+If you search the Internet for an explanation of what DevOps exactly means, you will find many different views. Tool vendors try to make it a tool problem, consultants try to make it a fluffy mindset thing. I think the solution lies somewhere in the middle and I have therefore come up with my very own explanation, which I have compiled for you below.
 
 > DevOps is a `movement, a culture, a set of practices and tools` that encourage `close collaboration` within the complete Software Development Life Cycle (SDLC) to `increase the productivity and quality of the overall system.` The core values are `customer-centric, quality-driven and fast flow` of features into production.
 
-This summary alone already covers most of the challenges mentioned above, of course on a very abstract level.
+You could say that this is a high-level explanation, but it helped me a lot to quickly get into conversation with the C-level management.
+
+The reason for that is that this summary covers most of the challenges mentioned before, of course on a very abstract level but also in a very compact and meaningful way and that is always a good way to start a conversation. 
 
 ### What's so special about DevOps?
 
-DevOps is based on agility and agile development. But it goes at least one step further than that, it includes the complete business side and operations. Using the principles of automation, for example, it attempts to gradually level out the overheads that have been built up to that point.
+DevOps is based on agility and the agile development. But it goes at least one step further than that, it includes the complete business side and operations. Using the principles of automation, for example, it attempts to gradually level out the overheads that have been built up or turns them into something that adds value.
 
-What DevOps can thus accomplish, or promises is:
+What DevOps can thus accomplish is:
 
 - Higher quality
 - Faster delivery
@@ -98,8 +100,10 @@ What DevOps can thus accomplish, or promises is:
 
 So if DevOps manages to make only half of the above mentioned IT projects a success, then we should definitely invest in DevOps transitions and start sooner rather than later.
 
-However, it should also be clearly mentioned that DevOps of course does not make sense for every project and every organization, but a lot of principles and practices from it are always applicable and bring a quick ROI for almost every project and every organization.
+However, it should also be clearly mentioned that DevOps does not make sense for every project and every organization, but a lot of its principles and practices are always applicable and bring a quick ROI for almost every project and every organization.
 
-What can help us to take the idea of DevOps and turn the knowing challenges into opportunities?
+How can DevOps be applied to real life scenarios and how can we take the idea of DevOps and turn the mentioned challenges into opportunities?
 
-One possibility for integration in an organization, to take the idea of DevOps and turn the knowing challenges into opportunities, is the conceptual framework C.A.L.M.S. Thereby the acronym stands for Culture, Automation, Lean, Measurement and Sharing. You can read about it soon in another blog of mine.
+An approach that I personally found very useful in many situations is the conceptual framework CALMS. Thereby the acronym stands for Culture, Automation, Lean, Measurement and Sharing. You will read about it soon in an upcoming blog of mine.
+
+Until then I am very interested in your thoughts, experiences and feedback. Stay tuned and healthy!
