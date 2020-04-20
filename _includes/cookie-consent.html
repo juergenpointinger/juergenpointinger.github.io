@@ -1,15 +1,15 @@
 {% if site.google_analytics %}
-<div id="cookie-notice">
+<div id="cookie-consent">
   <span>
     We would like to use third party cookies and scripts to improve the functionality of this website.
   </span>
-  <a id="cookie-notice-accept" class="btn btn-primary btn-sm">Approve</a>
-  <a id="cookie-notice-reject" class="btn btn-secondary btn-sm">Reject</a>
+  <a id="cookie-consent-accept" class="btn btn-primary btn-sm">Approve</a>
+  <a id="cookie-consent-reject" class="btn btn-secondary btn-sm">Reject</a>
   <a href="/privacy" class="btn btn-primary btn-sm">More info</a>
 </div>
 
 <script>
-  const cookie_name = "cookie-notice-dismissed";
+  const cookie_name = "cookie-consent-dismissed";
 
   function createCookie(name, value, days) {
     var expires = "";
@@ -37,7 +37,7 @@
   }
 
   function hideBanner(reload) {
-    document.getElementById('cookie-notice').style.display = 'none';
+    document.getElementById('cookie-consent').style.display = 'none';
     if (reload) {
       location.reload();
     }
@@ -46,15 +46,15 @@
   if (readCookie(cookie_name) == 'true') {
     {% include analytics.js %}
   } else {
-    document.getElementById('cookie-notice').style.display = 'block';
+    document.getElementById('cookie-consent').style.display = 'block';
   }
   
-  document.getElementById('cookie-notice-accept').addEventListener("click", function () {
+  document.getElementById('cookie-consent-accept').addEventListener("click", function () {
     createCookie(cookie_name, 'true', 31);
     hideBanner(true);
   });
 
-  document.getElementById('cookie-notice-reject').addEventListener("click", function () {
+  document.getElementById('cookie-consent-reject').addEventListener("click", function () {
     deleteCookie(cookie_name);
     hideBanner();
   });
