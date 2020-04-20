@@ -11,23 +11,25 @@
 <script>
   const cookie_name = "cookie-consent-dismissed";
 
-  function createCookie(name, value, days) {
+  function createCookie(cookieName, cookieValue, daysToExpire) {
     var expires = "";
-    if (days) {
+    if (daysToExpire) {
       var date = new Date();
-      date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+      date.setTime(date.getTime() + (daysToExpire * 24 * 60 * 60 * 1000));
       expires = "; expires=" + date.toUTCString();
     }
-    document.cookie = name + "=" + value + expires + "; path=/";
+    document.cookie = cookieName + "=" + cookieValue + expires + "; path=/";
   }
 
-  function readCookie(name) {
-    var nameEQ = name + "=";
-    var ca = document.cookie.split(';');
-    for (var i = 0; i < ca.length; i++) {
-      var c = ca[i];
-      while (c.charAt(0) == ' ') c = c.substring(1, c.length);
-      if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+  function readCookie(cookieName) {
+    var name = cookieName + "=";
+    var allCookieArray = document.cookie.split(';');
+    for (var i = 0; i < allCookieArray.length; i++) {
+      var cookie = allCookieArray[i];
+      while (cookie.charAt(0) == ' ') cookie = cookie.substring(1, cookie.length);
+      if (cookie.indexOf(name) == 0) {
+        return cookie.substring(name.length, cookie.length);
+      }
     }
     return null;
   }
