@@ -1,10 +1,10 @@
 ---
 layout: post
 categories: [Coding, Snippets, DevOps]
+comment_issue_id: 4
 title: "How to use scoped NPM registry"
 date: 2020-04-15 14:30
 image: /assets/images/blog/scoped-npm-registry.jpg
-author: J. Pointinger
 ---
 
 ## Scoped registry
