@@ -5,7 +5,6 @@ comment_issue_id: 1
 title: "Why do we need DevOps"
 date: 2020-04-18
 image: /assets/images/blog/why-do-we-need-devops.jpg
-author: J. Pointinger
 ---
 
 ## It's not the strongest that survives
