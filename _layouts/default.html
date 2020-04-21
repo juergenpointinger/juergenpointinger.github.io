@@ -1,52 +1,11 @@
-<!DOCTYPE html>
-<html lang="{{ site.lang | default: 'en-US' }}">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+---
+layout: base
+---
 
-    {% if page.image %}
-      <meta content="{{ site.url }}{{ site.baseurl }}{{ page.image }}" property="og:image">
-    {% else %}
-      <meta content="{{ site.url }}{{ site.baseurl }}{{ site.author_image }}" property="og:image">
-    {% endif %}
+<div class="background"> </div>
+<div class="loader-overlay"> </div>
+<a href="/"><div class="logo">juergenpointinger</div></a>
 
-
-    {% seo %}
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
-    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
-    <link rel="stylesheet" href="/assets/css/base.css">
-    <link rel="stylesheet" href="/assets/css/fonts.css">
-    <link rel="stylesheet" href="/assets/css/blog.css">
-
-    <link rel="shortcut icon" type="image/svg+xml" href="/assets/images/main/favicon.svg" sizes="any">
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    <script src="/assets/scripts/loader-overlay.js"></script>    
-  </head>
-  <body>
-    <div class="background"> </div>
-    <div class="loader-overlay"> </div>
-    <a href="/"><div class="logo">juergenpointinger</div></a>
-
-    <!-- <div class="navigation-bar">
-      <a href="javascript:history.back()"><span class="arrow-navigation">‹</span></a>
-      
-      {% if page.title %}
-        <div class="title">{{ page.title }} </div>
-      {% endif %}
-    </div> -->
-
-    <div class="container-lg px-3 my-5 markdown-body main">
-
-      {{ content }}
-      
-    </div>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
-    <script>anchors.add();</script>
-
-    {% include cookie-consent.html %}
-  </body>
-</html>
+<div role="main" class="container-lg px-3 my-5 markdown-body main">
+  {{ content }}
+</div>

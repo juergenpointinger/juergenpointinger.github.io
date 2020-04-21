@@ -1,67 +1,74 @@
 {% if page.comment_issue_id %}
 <script>
-    const GH_ACCOUNT = "juergenpointinger/juergenpointinger.github.io"
-    const GH_URL = "https://github.com/"
-    const GH_API_URL = "https://api.github.com/repos/"
-    const GH_API_COMMENT_URL = `${GH_API_URL}${GH_ACCOUNT}/issues/{{page.comment_issue_id}}/comments?per_page=100`
-    const GH_ISSUE = `${GH_URL}${GH_ACCOUNT}/issues/{{page.comment_issue_id}}`
-    
-    document.querySelector("{{ include.element }}").innerHTML = document.querySelector("{{ include.element }}").innerHTML + "<div id='comments'></div>";
-    document.getElementById("comments").innerHTML = `
+  const GH_ACCOUNT = "juergenpointinger/juergenpointinger.github.io"
+  const GH_URL = "https://github.com/"
+  const GH_API_URL = "https://api.github.com/repos/"
+  const GH_API_COMMENT_URL = `${GH_API_URL}${GH_ACCOUNT}/issues/{{page.comment_issue_id}}/comments?per_page=100`
+  const GH_ISSUE = `${GH_URL}${GH_ACCOUNT}/issues/{{page.comment_issue_id}}`
+
+  document.querySelector("{{ include.element }}").innerHTML = document.querySelector("{{ include.element }}")
+    .innerHTML + "<div id='comments'></div>";
+  document.getElementById("comments").innerHTML = `
         <div class="h3">Comments</div>
         <p>
             You can <a href='${GH_ISSUE}' target='_blank'>view the comments</a> on GitHub.
         </p>`;
 
-    function reloadComments() {
-        var elements = document.querySelectorAll('.comment');
-        Array.prototype.forEach.call(elements, function(el, i){
-            el.remove();
-        });
+  function reloadComments() {
+    var elements = document.querySelectorAll('.comment');
+    Array.prototype.forEach.call(elements, function (el, i) {
+      el.remove();
+    });
 
-        $.ajax(GH_API_COMMENT_URL, {
-            headers: {Accept: "application/vnd.github.full+json"},
-            dataType: "json",
-            success: function(msg){
-                localStorage.setItem(`comments_${GH_ACCOUNT}_{{page.comment_issue_id}}`, JSON.stringify(msg));
-                loadComments(msg);
-            },
-            error: function() { 
-                document.getElementById("comments").innerHTML = `
+    $.ajax(GH_API_COMMENT_URL, {
+      headers: {
+        Accept: "application/vnd.github.full+json"
+      },
+      dataType: "json",
+      success: function (msg) {
+        localStorage.setItem(`comments_${GH_ACCOUNT}_{{page.comment_issue_id}}`, JSON.stringify(msg));
+        loadComments(msg);
+      },
+      error: function () {
+        document.getElementById("comments").innerHTML = `
                 <div class="h3">Comments</div>
                 <p>
                     You can <a href='${GH_ISSUE}' target='_blank'>view the comments</a> on GitHub.
                     The comments cannot be shown inline because we have hit the rate limit of Github.
                 </p>`;
-            }
-        });
+      }
+    });
 
-        return false;
-    }
+    return false;
+  }
 
-    function loadComments(data) {
-        $("#comments").html(`
+  function loadComments(data) {
+    $("#comments").html(`
             <div class="h3">Comments</div>
             <p>
                 You can <a href='${GH_ISSUE}' target='_blank'>leave a comment</a> through GitHub, or <a onclick=' reloadComments();' style='cursor: pointer;'>refresh</a> the comments below.
             </p>`);
-        for (var i=0; i<data.length; i++) {
-            var cuser = data[i].user.login;
-            var cuserlink = GH_URL + data[i].user.login;
-            var clink = `${GH_ISSUE}#issuecomment-` + data[i].url.substring(data[i].url.lastIndexOf("/")+1);
-            var cbody = data[i].body_html;
-            var cavatarlink = data[i].user.avatar_url;
-            var cdate = data[i].created_at;
-            document.getElementById("comments").innerHTML = document.getElementById("comments").innerHTML + "<div class='comment'><div class='commentgravatar'>" + '<img src="' + cavatarlink + '" alt="' + cuser + '">' + "</div><div class='commentheader'><a class='commentuser' href=\""+ cuserlink + "\">" + cuser + "</a> commented on <a class='commentdate' href=\"" + clink + "\">" + cdate.substring(0, 10) + "</a></div><div class='commentbody'>" + cbody + "</div></div>";
-            $('img[data-src]').replaceWith( "[Image blocked] " );
-        }
+    for (var i = 0; i < data.length; i++) {
+      var cuser = data[i].user.login;
+      var cuserlink = GH_URL + data[i].user.login;
+      var clink = `${GH_ISSUE}#issuecomment-` + data[i].url.substring(data[i].url.lastIndexOf("/") + 1);
+      var cbody = data[i].body_html;
+      var cavatarlink = data[i].user.avatar_url;
+      var cdate = data[i].created_at;
+      document.getElementById("comments").innerHTML = document.getElementById("comments").innerHTML +
+        "<div class='comment'><div class='commentgravatar'>" + '<img src="' + cavatarlink + '" alt="' + cuser + '">' +
+        "</div><div class='commentheader'><a class='commentuser' href=\"" + cuserlink + "\">" + cuser +
+        "</a> commented on <a class='commentdate' href=\"" + clink + "\">" + cdate.substring(0, 10) +
+        "</a></div><div class='commentbody'>" + cbody + "</div></div>";
+      $('img[data-src]').replaceWith("[Image blocked] ");
     }
+  }
 
-    var data = localStorage.getItem('comments_${GH_ACCOUNT}_{{page.comment_issue_id}}');
-    if(data) {
-        loadComments(JSON.parse(data));
-    } else {
-        reloadComments();
-    }
+  var data = localStorage.getItem('comments_${GH_ACCOUNT}_{{page.comment_issue_id}}');
+  if (data) {
+    loadComments(JSON.parse(data));
+  } else {
+    reloadComments();
+  }
 </script>
 {% endif %}

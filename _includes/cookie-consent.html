@@ -1,11 +1,11 @@
-{% if site.google_analytics %}
+{% if site.gtag %}
 <div id="cookie-consent">
   <span>
-    We would like to use third party cookies and scripts to improve the functionality of this website.
+    This site uses cookies and scripts to delivery its services and to improve its functionality.
   </span>
-  <a id="cookie-consent-accept" class="btn btn-primary btn-sm">Approve</a>
-  <a id="cookie-consent-reject" class="btn btn-secondary btn-sm">Reject</a>
-  <a href="/privacy" class="btn btn-primary btn-sm">More info</a>
+  <a href="/privacy" class="btn btn-primary btn-sm">More details</a>
+  <a id="cookie-consent-accept" class="btn btn-primary btn-sm">OK</a>
+  <!-- <a id="cookie-consent-reject" class="btn btn-secondary btn-sm">Reject</a> -->
 </div>
 
 <script>
@@ -46,7 +46,9 @@
   }
 
   if (readCookie(cookie_name) == 'true') {
-    {% include analytics.js %}
+    {% if jekyll.environment == "production" %}
+      {% include gtag.html %}
+    {% endif %}
   } else {
     document.getElementById('cookie-consent').style.display = 'block';
   }
@@ -56,9 +58,9 @@
     hideBanner(true);
   });
 
-  document.getElementById('cookie-consent-reject').addEventListener("click", function () {
-    deleteCookie(cookie_name);
-    hideBanner();
-  });
+  // document.getElementById('cookie-consent-reject').addEventListener("click", function () {
+  //   deleteCookie(cookie_name);
+  //   hideBanner();
+  // });
 </script>
 {% endif %}
