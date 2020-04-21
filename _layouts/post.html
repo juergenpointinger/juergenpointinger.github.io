@@ -2,10 +2,20 @@
 layout: default
 ---
 
-{% include header.html %}
+{% include header.html type="post" %}
 
-{% include table-of-content.html %}
+<div id="toc"></div>
 
 {{ content }}
 
+<script>
+  if (typeof jQuery == 'undefined') {
+    document.write('<script src="{{ "/assets/scripts/jquery-2.2.4.min.js" | relative_url }}"></scr' + 'ipt>');
+  }
+</script>
+
 {% include comments.html element=".container-lg" %}
+
+<script>
+  $(document).ready(function() { $('#toc').toc(); });
+</script>
