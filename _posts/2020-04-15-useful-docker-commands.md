@@ -65,7 +65,7 @@ or
 $ docker images purge
 ```
 
-> **__NOTE:__** If you build an image without tagging it, the image will appear on the list of dangling images because it has no association with a tagged image.
+> **NOTE:** If you build an image without tagging it, the image will appear on the list of dangling images because it has no association with a tagged image.
 
 ### Removing specific Images by Pattern
 
@@ -129,12 +129,14 @@ or
 $ docker ps -a | grep "<<pattern>>" | awk '{print $1}' | xargs docker rm
 ```
 
-> **__NOTE:__** In this case `{print $1}` returns the ID of the container.
+> **NOTE:** In this case `{print $1}` returns the ID of the container.
 
 ## Removing all exited Containers
 
-With the knowledge we have just gained, we can now simply delete all the containers that have exited. Note that we again only pass the ID to the Docker CLI using `-q`.
+With the knowledge we have just gained, we can now simply delete all the containers that have exited. 
 
 ```bash
 $ docker rm -f $(docker ps -aq -f status=exited)
 ```
+
+> **NOTE:** We again only pass the ID to the Docker CLI using `-q`.
