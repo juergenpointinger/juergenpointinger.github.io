@@ -7,10 +7,26 @@ date: 2020-04-15 14:30
 image: /assets/images/blog/useful-docker-commands.jpg
 ---
 
+## Cheat Sheet
+
+To make it easier for me, I started some time ago to create a cheat sheet for Docker. Since I don't want to keep this knowledge only for myself, I share some of the most important CLI commands I need in my daily do-ing.
+
 ## Login
+
+When you start to deal with continuous integration tools, you quickly get to the point where you also use a private container registry. 
+
+Docker provides a very simple way to use a registry and log in with your credentials:
 
 ```bash
 $ docker login registry.gitlab.com
+```
+
+To make the docker login command non-interactive, such as required for GitLab CI, you can set the `--password-stdin` flag to provide a password via `STDIN`.
+
+Using `STDIN` prevents the password from ending up in the shell's history or log files.
+
+```bash
+$ echo "${CI_REGISTRY_PASSWORD}" | docker login -u "${CI_REGISTRY_USER}" "${CI_REGISTRY}" --password-stdin
 ```
 
 ## Stats for all running containers
@@ -19,26 +35,106 @@ $ docker login registry.gitlab.com
 $ docker ps -q | xargs docker stats
 ```
 
-## Remove dangling (untagged) images
+## Purging all unused or dangling Images, Containers, Volumes, and Networks
+
+Docker provides a single command that will clean up any resources — images, containers, volumes, and networks — that are dangling (not associated with a container):
+
+```bash
+$ docker system prune
+```
+
+To additionally remove any stopped containers and all unused images (not just dangling images), add the -a flag to the command:
+
+```bash
+$ docker system prune -a
+```
+
+## Removing Docker Images
+
+### Removing dangling (untagged) Images
+
+Docker images consist of multiple layers. Dangling images are layers that have no relationship to any tagged images. They no longer serve a purpose and consume disk space. They can be located by adding the filter flag, `-f` with a value `of dangling=true` to the docker images command. When you’re sure you want to delete them, you can use one of the following commands:
 
 ```bash
 $ docker rmi $(docker images -f "dangling=true" -q)
 ```
 
-## Remove "gitlab.com" container
+or
 
 ```bash
+$ docker images purge
+```
+
+> **__NOTE:__** If you build an image without tagging it, the image will appear on the list of dangling images because it has no association with a tagged image.
+
+### Removing specific Images by Pattern
+
+Sometimes it is necessary to search an image for a certain `<<pattern>>`. A combination of Docker CLI and `grep` can help.
+
+```
+$ docker images -a |  grep "<<pattern>>"
+```
+
+If you are comfortable with the search/filter, you can use 'awk' to pass the IDs to the Docker CLI:
+
+```bash
+$ docker rmi $(docker images -a | grep "<<pattern>>" | awk '{print $3}')
+```
+
+or
+
+```bash
+$ docker images -a | grep "<<pattern>>" | awk '{print $3}' | xargs docker rmi
+```
+
+### Removing all Images
+
+Also the deletion of all images can be solved with the Docker CLI. To do this, you can simply append `-a` to the command. `-q` returns the Image ID, which can be used to pass it on to other commands.
+
+```bash
+$ docker rmi $(docker images -a -q)
+```
+
+## Removing Docker Containers
+
+Similar to the `docker images` command, you can also add the parameter `-a` to the `docker ps` command, which lists the running containers, so that all containers are shown, even those that are no longer running.
+
+The displayed container ID or name can then be reused:
+
+```bash
+$ docker rm <<container_id/name>>
+```
+
+It is also possible to display only the exited containers:
+
+```bash
+$ docker ps -a -f status=exited
+```
+
+## Removing specific Containers by Pattern
+
+<!-- ```bash
 $ docker rm -f $(docker ps -aq --filter name=registry.gitlab.com*)
-```
+``` -->
 
-## Remove "gitlab.com" images
-
-```bash
-$ docker rmi $(docker images | grep registry.gitlab.com | awk "{print \$3}")
-```
-
-## Remove all stopped containers
+And similar to the images it works with the containers.
 
 ```bash
-$ docker rm -f $(docker ps -aq --filter status=exited)
+$ docker rm $(docker ps -a | grep "<<pattern>>" | awk '{print $1}')
+```
+
+or
+
+```bash
+$ docker ps -a | grep "<<pattern>>" | awk '{print $1}' | xargs docker rm
+```
+
+> **__NOTE:__** In this case `{print $1}` returns the ID of the container.
+
+## Removing all exited Containers
+
+With the knowledge we have just gained, we can now simply delete all the containers that have exited. Note that we again only pass the ID to the Docker CLI using `-q`.
+
+```bash
+$ docker rm -f $(docker ps -aq -f status=exited)
 ```
