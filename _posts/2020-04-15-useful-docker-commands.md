@@ -29,12 +29,6 @@ Using `STDIN` prevents the password from ending up in the shell's history or log
 $ echo "${CI_REGISTRY_PASSWORD}" | docker login -u "${CI_REGISTRY_USER}" "${CI_REGISTRY}" --password-stdin
 ```
 
-## Stats for all running containers
-
-```bash
-$ docker ps -q | xargs docker stats
-```
-
 ## Purging all unused or dangling Images, Containers, Volumes, and Networks
 
 Docker provides a single command that will clean up any resources — images, containers, volumes, and networks — that are dangling (not associated with a container):
@@ -140,3 +134,11 @@ $ docker rm -f $(docker ps -aq -f status=exited)
 ```
 
 > **NOTE:** We again only pass the ID to the Docker CLI using `-q`.
+
+## Stats for all running Containers
+
+The `docker states` command is used to display a live stream of container resource usage statistics. This command can be extended to display the statistics of all containers simultaneously.
+
+```bash
+$ docker ps -q | xargs docker stats
+```
