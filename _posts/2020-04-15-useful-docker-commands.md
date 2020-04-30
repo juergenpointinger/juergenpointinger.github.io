@@ -137,7 +137,7 @@ $ docker rm -f $(docker ps -aq -f status=exited)
 
 ## Stats for all running Containers
 
-The `docker states` command is used to display a live stream of container resource usage statistics. This command can be extended to display the statistics of all containers simultaneously.
+The `docker stats` command is used to display a live stream of container resource usage statistics. This command can be extended to display the statistics of all containers simultaneously.
 
 ```bash
 $ docker ps -q | xargs docker stats
