@@ -197,6 +197,8 @@ if issue['fields']['status']['statusCategory']['key'] == "done":
   )
 ```
 
+See [Gist](https://gist.github.com/juergenpointinger/c9f40b5a02e9b376a1fbc67b77c3d87a) for the whole source code.
+
 ## Remove unused GitLab labels
 
 I also created a script to remove unused labels in GitLab. You can find it [here](https://gist.github.com/juergenpointinger/6b34a6def83470a196df7c6beb161858).
