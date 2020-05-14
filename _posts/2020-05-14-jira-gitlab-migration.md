@@ -39,7 +39,9 @@ But what can I do in this situation? Of course, I could hope that the ticket wil
 
 Jira and GitLab each offer good RESTful APIs that don't require much. For more details about the preconditions I refer you directly to the corresponding developer documentation.
 
-Jira: [https://developer.atlassian.com/cloud/jira/software/rest/](https://developer.atlassian.com/cloud/jira/software/rest/)
+Jira: 
+- [https://developer.atlassian.com/cloud/jira/software/rest/](https://developer.atlassian.com/cloud/jira/software/rest/)
+
 GitLab:
 - [https://docs.gitlab.com/ee/api/](https://docs.gitlab.com/ee/api/)
 - [https://docs.gitlab.com/ee/api/api_resources.html](https://docs.gitlab.com/ee/api/api_resources.html)
@@ -95,7 +97,7 @@ $ Import Epic with Jira-Key PRJ-123
 $ Import Epic with Jira-Key PRJ-456
 ```
 
-Now we can start with the transfer of the Jira Epics.  For this we use the GitLab API. We need a few more variables for that. The easiest way is to take over title and description from Jira. But for a more complex variant you could also add labels, start and due date or more. See the [GitLab API](https://docs.gitlab.com/ee/api/epics.html#new-epic).
+Now we can start with the transfer of the Jira Epics. For this we use the GitLab API. We need a few more variables for that. The easiest way is to take over title and description from Jira. But for a more complex variant you could also add labels, start and due date or more. See the [GitLab API](https://docs.gitlab.com/ee/api/epics.html#new-epic).
 
 ```python
 
@@ -133,7 +135,7 @@ for issue in jira_issues['issues']:
 
 ## Issues
 
-If we take the script for the Epics as a basis, we can do the same other ticket types like Stories, Sub-tasks, Tasks, or Spikes. For this I would like to share some code snippets that might be useful for your import.
+If we take the script for the Epics as a basis, we can do the same with other ticket types like Stories, Sub-tasks, Tasks, or Spikes. For this I would like to share some code snippets that might be useful for your import.
 
 ### Jira
 
