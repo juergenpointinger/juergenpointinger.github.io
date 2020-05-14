@@ -133,6 +133,8 @@ for issue in jira_issues['issues']:
 
 > **NOTE** One more point should be mentioned in addition. The Jira API restricts the data sets to a maximum of 100. This has to be solved by pagination if you have more than 100 epics.
 
+You can find the complete source code [here](https://gist.github.com/juergenpointinger/6c6fa147439a2db1608775c2bc37b6b2).
+
 ## Issues
 
 If we take the script for the Epics as a basis, we can do the same with other ticket types like Stories, Sub-tasks, Tasks, or Spikes. For this I would like to share some code snippets that might be useful for your import.
@@ -195,6 +197,11 @@ if issue['fields']['status']['statusCategory']['key'] == "done":
   )
 ```
 
+## Remove unused GitLab labels
+
+I also created a script to remove unused labels in GitLab. You can find it [here](https://gist.github.com/juergenpointinger/6b34a6def83470a196df7c6beb161858).
+
 ## Additional Notes
 
 > **NOTE** With `GitLab.com` you currently do not have the ability to execute SUDO commands. Therefore no user mapping can be done with it. All data is done with the user (private-token) who is also importing the data.
+
