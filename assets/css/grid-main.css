@@ -80,7 +80,7 @@
   padding-right: 4%;
   padding-left: 4%;
 }
-.mgmt30 { 
+.leadership { 
   grid-area: 2 / 4 / 4 / 5; 
   background-color: #8f76bc;
   color: #fff;
@@ -130,7 +130,7 @@
   .improvement-quote {
     grid-area: 5 / 1 / 5 / 3;
   }
-  .mgmt30 {
+  .leadership {
     grid-area: 5 / 3 / 7 / 5;
   }
 }
@@ -156,7 +156,7 @@
   .coding {
     grid-area: 5 / 1 / 5 / 5;
   }
-  .mgmt30 {
+  .leadership {
     grid-area: 7 / 1 / 8 / 5;
   }
   .twitter {
