@@ -13,7 +13,8 @@ body {
   height: 300px;
   /* background-image: linear-gradient(#4791ae, #e1f5fc); */
   /* background-image: linear-gradient(150deg, #0366d6 15%, #05d5ff 70%, #a5ffcb 94%); */
-  background-image: linear-gradient(150deg, #a1e3ee 15%, #8ee0ee 60%, #8ee0ee 94%);
+  /* background-image: linear-gradient(150deg, #a1e3ee 15%, #8ee0ee 60%, #8ee0ee 94%); */
+  background-image: linear-gradient(150deg, #0F6FC6, 10%, #009DD9 40%, #8ee0ee 94%);
   transform: skewY(-10deg);
   transform-origin: top left;
   z-index: -10;
@@ -109,7 +110,7 @@ ol, ul, dl {
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   margin-bottom: .5rem;
-  font-family: josefin sans,sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 400;
   line-height: 1.5;
   color: #32325d;
@@ -326,14 +327,38 @@ div#toc {
   height: 1px;
 }
 
+.markdown-body ul {
+  margin-left: 2em;
+}
+
+.markdown-body ol {
+  margin-left: 0.5em;
+}
+
 .markdown-body ul, .markdown-body ol {
   padding-left: 0.5em;
   padding-right: 0.5em;
 }
 
 .markdown-body blockquote {
-  padding: 1em;
-  font-size: 1.1rem;
-  border-left: 0.25em solid #27b9c2;
-  background-color: #fbfbfb;
+  padding: 1.2em 20px 1.2em 45px;
+  font-family: 'Roboto Mono', 'Courier New', Courier, monospace;  
+  font-size: 0.9em;
+  border-left: 0.25em solid #009DD9;
+  background-color: #f6f8fa;
+  margin: 20px auto;
+  position: relative;
+}
+  
+.markdown-body blockquote::before{
+  content: "\201C";
+  color:#ccc;
+  font-size: 3em;
+  position: absolute;
+  left: 10px;
+  top: 5px;
+}
+  
+.markdown-body blockquote::after{
+  content: '';
 }

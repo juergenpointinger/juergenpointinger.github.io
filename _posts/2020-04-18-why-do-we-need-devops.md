@@ -16,7 +16,7 @@ A long time ago, it was at the beginning of the 18th century, more precisely in 
 > It is not the strongest of the species that survives, 
 nor the most intelligent. It is the one most adaptable to change.
 >
-> \- Charles Darwin, 1809
+> **Charles Darwin**, 1809
 
 The statement itself has been adapted somewhat over time, but its basic message has not changed and in times of COVID-19 became more relevant than ever before.
 
