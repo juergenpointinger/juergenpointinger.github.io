@@ -44,7 +44,7 @@ author:
 # --- Web Statistics Section --- #
 
 # Fill in your Google Analytics gtag.js ID to track your website using gtag
-gtag: "UA-163914938-1"
+# gtag: "UA-163914938-1"
   
 # --- Don't need to touch anything below here (but you can if you want) --- #
 
