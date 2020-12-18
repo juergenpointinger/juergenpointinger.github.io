@@ -314,6 +314,10 @@ div#toc {
 
 /* Theme specific */
 
+.markdown-body {
+  font-family: 'Roboto', sans-serif;
+}
+
 .markdown-body img {
   position: relative;
   left: 50%;
@@ -358,4 +362,8 @@ div#toc {
   
 .markdown-body blockquote::after{
   content: '';
+}
+
+.markdown-body blockquote code, blockquote tt {
+  font-size: 1em;
 }
