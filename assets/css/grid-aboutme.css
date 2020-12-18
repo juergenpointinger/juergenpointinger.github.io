@@ -52,7 +52,7 @@
 
 .qualifications {
   grid-area: 1 / 3 / 5 / 5;
-  color: #9fa3a7;
+  color:rgba(0,0,0,0.8);
 
   display: flex;
   flex-direction: column;
@@ -62,7 +62,7 @@
 .projects {
   grid-area: 1 / 5 / 5 / 7;
   background-color: #f7f8f9;
-  color: #9fa3a7;
+  color: rgba(0,0,0,0.8);
   
   display: flex;
   flex-direction: column;

@@ -101,7 +101,7 @@ b, strong {
 
 .caps {
   font-family: Montserrat, sans-serif;
-  color: #9fa3a7;
+  color: rgba(0,0,0,0.8);
   font-size: 12px;
   line-height: 20px;
   font-weight: 500;
@@ -115,6 +115,10 @@ b, strong {
 
 .caps.white {
   color: #fff;
+}
+
+.caps.grey {
+  color: #9fa3a7;
 }
 
 .text.white {
