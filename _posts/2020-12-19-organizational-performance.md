@@ -53,7 +53,7 @@ Combined, commercial and non-commercial goals include:
 
 ## Capabilities and practices
 
-The [DevOps Research and Assessment (DORA)](https://www.devops-research.com/research.html) team, has identified and validated a set of capabilities and practices that drive higher software delivery and business performance. The DORA's State of DevOps research program includes data from over 31,000 professionals worldwide and has now been conducted regularly every year since 2014.
+The [DevOps Research and Assessment (DORA)](https://www.devops-research.com/research.html) team, has identified and validated a set of capabilities and practices that drive higher software delivery and organizational performance. The DORA's State of DevOps research program includes data from over 31,000 professionals worldwide and has now been conducted regularly every year since 2014.
 
 It is the longest-running, academically rigorous research survey of its kind and provides an independent look at the practices and capabilities that drive high performance in technology delivery and ultimately organizational outcomes. This research uses behavioral science to identify the most effective and efficient ways to develop and deliver software.
 
