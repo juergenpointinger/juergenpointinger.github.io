@@ -2,21 +2,34 @@
 @import url(./fonts.css);
 @import url(./grid-gallery.css);
 
+.main {
+  width: 98%;
+  margin: 0 auto;
+}
+
+hr {
+  height: 1px;
+  border-width: 0;
+  color: #ccc;
+  background-color: #ccc
+}
+
 .location {
   display: inline-block;
   position: relative;
   left: 50%;
   transform: translateX(-50%);
 
-  font-family: Arvo, sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 400;
   background-image: url(../images/main/map.svg);
   background-position: 0%;
   background-size: 16px;
   background-repeat: no-repeat;
-  margin: 10px 0px 10px;
-  padding: 2px 20px;
-  font-size: 22px;
+  margin: 20px 0px 20px;
+  padding: 2px 30px;
+  font-size: 16px;
+  font-weight: 500;
   line-height: 32px;
   text-align: center;
 }
