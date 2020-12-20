@@ -89,7 +89,7 @@ The intrinsic motivation to influence the goals is obvious and instead of being 
 
 I will go into these topics in one of my next articles.
 
-## Further information
+## Additional reading
 
 - [DevOps Research and Assessment (DORA)](https://www.devops-research.com/research.html)
 - [DORA DevOps Quick Check](https://www.devops-research.com/quickcheck.html)
