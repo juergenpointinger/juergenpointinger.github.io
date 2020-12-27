@@ -101,7 +101,7 @@ Despite the great interest in transformational leadership, a number of theoretic
 
 In the study [Dimensions of transformational leadership: conceptual and empirical extensions](https://isiarticles.com/bundles/Article/pre/pdf/19462.pdf) (2004), published by Mark A. Griffin and Alannah E. Rafferty, aspects of transformational leadership theory were identified that led to a lack of empirical support for the hypothesized factor structure of the model and very strong relationships among leadership components.
 
-They proposed five more focused subdimensions of transformational leadership, including vision, inspirational communication, intellectual stimulation, supportive leadership and personal recognition. Without a vision, we don’t know where to go. Lewis Carroll paraphrased this beautifully in 'Alice in Wonderland'.
+They proposed five more focused subdimensions of transformational leadership, including vision, inspirational communication, intellectual stimulation, supportive leadership and personal recognition. Without a vision, we don’t know where to go. Lewis Carroll paraphrased this beautifully in *Alice's Adventures in Wonderland*.
 
 > Alice: Would you tell me, please, which way I ought to go from here? <br />
 > The Cheshire Cat: That depends a good deal on where you want to get to. <br />
