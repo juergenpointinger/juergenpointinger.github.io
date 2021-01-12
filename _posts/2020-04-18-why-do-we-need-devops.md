@@ -11,7 +11,7 @@ image: /assets/images/blog/why-do-we-need-devops.jpg
 
 A long time ago, it was at the beginning of the 18th century, more precisely in 1809, when Charles Darwin made a statement that was formative for that time, a statement that is still valid today and will probably survive for a long time.
 
-![Charles Darwin](/assets/images/blog/darwin.jfif)
+![Charles Darwin](/assets/images/blog/darwin.png)
 
 > It is not the strongest of the species that survives, 
 nor the most intelligent. It is the one most adaptable to change.
