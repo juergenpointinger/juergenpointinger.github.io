@@ -1,0 +1,64 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+/* Theme specific */
+
+.container-lg {
+  margin-top: 80px !important;
+}
+
+.markdown-body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.markdown-body img {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.markdown-body hr {
+  height: 1px;
+}
+
+.markdown-body ul {
+  margin-left: 2em;
+}
+
+.markdown-body ol {
+  margin-left: 0.5em;
+}
+
+.markdown-body ul, .markdown-body ol {
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+
+.markdown-body blockquote {
+  padding: 1.2em 20px 1.2em 45px;
+  font-family: 'Roboto Mono', 'Courier New', Courier, monospace;  
+  font-size: 0.9em;
+  border-left: 0.25em solid #009DD9;
+  background-color: #f6f8fa;
+  margin: 20px auto;
+  position: relative;
+}
+  
+.markdown-body blockquote::before{
+  content: "\201C";
+  color:#ccc;
+  font-size: 3em;
+  position: absolute;
+  left: 10px;
+  top: 5px;
+}
+  
+.markdown-body blockquote::after{
+  content: '';
+}
+
+.markdown-body blockquote code, blockquote tt {
+  font-size: 1em;
+}

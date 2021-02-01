@@ -2,10 +2,10 @@
 layout: base
 ---
 
-<div class="background"> </div>
 <div class="loader-overlay"> </div>
-<a href="/"><div class="logo">juergenpointinger</div></a>
 
-<div role="main" class="container-lg px-3 my-5 markdown-body main">
+{% include navigation.html %}
+
+<div role="main" class="container-lg markdown-body">
   {{ content }}
 </div>

@@ -11,87 +11,204 @@ permalink: /index.html
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="./assets/css/main.css">
-  <link rel="shortcut icon" type="image/svg+xml" href="./assets/images/main/favicon.svg" sizes="any">
+  <link rel="stylesheet" href="/assets/css/2.0/main.css">
 
-  <script src="./assets/scripts/jquery-2.2.4.min.js"></script>
-  <script src="./assets/scripts/loader-overlay.js"></script>
+  <link rel="shortcut icon" type="image/svg+xml" href="/assets/images/2.0/logo.svg" sizes="any">
+
+  <script src="https://kit.fontawesome.com/bf7280a28a.js" crossorigin="anonymous"></script>
+  
+  <script src="/assets/scripts/common/jquery-2.2.4.min.js"></script>
+  <script src="/assets/scripts/common/loader-overlay.js"></script>
   <title>&copy; juergenpointinger</title>
 </head>
+<!-- -->
+
 <body>
   <div class="loader-overlay"></div>
 
-  <div class="grid">
-    <div class="devops">
-      <div class="inner-content">
-        <div class="caps grey">LEARN MORE</div>
-        <h2>How to use DevOps in the Wild</h2>
-        <a href="./categories#DevOps" class="arrow-link">LEARN <span class="arrow">›</span></a>
-      </div>
-      <img class="image" src="./assets/images/main/rocket.svg" width="200" alt="" />
-    </div>
-    
-    <div class="adaptable-quote">
-      <h2>
-        It is not the strongest of the species that survives, 
-        nor the most intelligent that survives.
-        It is the one that is most adaptable to change.
-      </h2>
-      <div class="caps grey">- Charles Darwin</div>
-    </div>
-    
-    <div class="photography">
-      <img class="image" src="./assets/images/main/photo-camera.svg" width="128" alt="" />
-      <h3>Photography</h3>
-      <a href="./gallery.html" class="arrow-link yellow">TAKE A SHOT <span class="arrow">›</span></a>
-    </div>
-    
-    <div class="profile">
-      <div class="inner-content"></div>
-      <div class="inner-content">
-        <div class="caps white">ABOUT ME</div>
-        <h2 class="white">Jürgen Pointinger</h2>
-        <div class="text white">The tattooed DevOps enthusiast and architect ...</div>
-        <a href="./aboutme.html" class="arrow-link">READ MORE <span class="arrow">›</span></a>
-      </div>        
-    </div>
-    
-    <div class="coding">
-      <img class="image" src="./assets/images/main/coding.svg" width="128" alt="" />
-      <h3>Coding</h3>
-      <div class="text grey">Think twice, code once</div>
-      <a href="./categories#Coding" class="arrow-link">LEARN <span class="arrow">›</span></a>
-    </div>
-    
-    <div class="twitter">
+  {% include navigation.html %}
 
-      <a href="https://twitter.com/intent/follow?follow-button%2Foverview&ref_src=twsrc%5Etfw&region=follow_link&screen_name=pointij&tw_p=followbutton" target="_blank" title="Follow me on Twitter" class="no-decoraction">
-        <div class="twitter-badge">
-          <img class="image" src="./assets/images/main/twitter.png" width="48"/>
-          <h3>Connect with Twitter</h3>
+  <div id="page">
+    <div id="container">
+
+      <span class="tags top-tags">
+        &lt;html&gt; <br />
+        &nbsp;&nbsp;&lt;body&gt;
+      </span>
+        
+      <div class="intro">
+
+        <div class="hello">
+          <h1>Hi, <br />
+            I'm Jürgen, <br />
+            IT Consultant.</h1>
+          <h5>DevOps Enthusiast / Solution Architect / Software Developer</h5>
+          <a href="#contact-form"><button>Contact me!</button></a>
         </div>
-      </a>
-    </div>
 
-    <div class="improvement-quote">
-      <p>
-        <h2>Continuous improvement is the only constant in DevOps</h2>
-      </p>
-    </div>
-
-    <div class="leadership">
-      <div class="leadership-badge">
-        <div class="text-block">POPULAR</div>
-        <span> </span>
-        <img class="image" src="./assets/images/main/tv.svg" width="150"/>
-        <span> </span>
-        <div class="caps white">Lead by example</div>
+        <img src="/assets/images/2.0/logo.svg" width="300px"/>        
+        
       </div>
-      <h2>Leadership</h2>
-      <div class="text white">Great people, who have fun in their work and feel engaged, deliver great software</div> 
-      <a href="./categories#Leadership" class="button w-button">START EXPERIMENTING</a>
+
+      <div id="about">
+        <div class="avatar">                    
+          <img src="/assets/images/2.0/avatar.jpg" alt="Avatar" />
+        </div>
+
+        <div class="text-zone">
+          <h2>About me</h2>
+          <p>
+            I was born in Linz (Upper Austria, AUT) in 1984.
+            With loving support from my mom and stepdad, I grew up in a small town near Linz.
+            I spent my childhood on sports pitches, where I started to love soccer and 
+            became a huge Bayern Munich (GER) fan.
+          </p>
+          <p>
+            After almost 25 years in Upper Austria I met the love of my life and followed her to Vienna (AUT) in 2009.
+            Since then I live in the most beautiful and most livable city in the world.
+            Our 2 boys make our family happiness complete. They make me proud every day!
+          </p>
+          <p>
+            At <a href="https://www.nagarro.com" target="_blank">Nagarro</a> I can live out my entrepreneurial spirit and
+            accompany my clients on their journey of change so they can get closer to their business goals.
+            Some claim that I am a good leader and mentor.
+            I want to thank them a lot and I try to return this trust every day.
+          </p>
+        </div>        
+      </div>
+
+      <div id="skills">        
+        <div class="skill-item">
+          <img src="/assets/images/2.0/skills/leadership.svg" alt="Leadership" /> <br />
+          Transformational, Situational, Servant leadership
+        </div>
+
+        <div class="skill-item">
+          <img src="/assets/images/2.0/skills/management.svg" alt="Management" /> <br />
+          Lean management & Lean product development
+        </div>
+
+        <div class="skill-item">
+          <img src="/assets/images/2.0/skills/architecture.svg" alt="Architecture" /> <br />
+          Software architecture
+        </div>
+
+        <div class="skill-item">
+          <img src="/assets/images/2.0/skills/development.svg" alt="Development" /> <br />
+          Agile development, Technical excellence & DevOps enthusiasm
+        </div>
+
+        <h3>Skills and strength</h3>
+      </div>
+
+      <div id="trainings">
+        <h3>Trainings and certificates</h3>
+        
+        <div class="text-zone">          
+          <p>
+            › Advanced training „Enthusiasm for successful communication“ <br />
+            › ISAQB® Certified Professional for Software Architecture, Foundation Level (2016) <br />
+            › ISAQB® CPSA Advanced Modul AWERT (Software Architecture Analysis) <br />
+            › Nagarro Test Automation Curriculum <br />
+            › Nagarro Certified Connected Enterprise Superhero <br />
+            › ICAgile Certified Professional - Agile Fundamentals (ICP) <br />
+            › ICAgile Certified Professional – Agile Programming (ICP-PRG) <br />
+            › Microsoft Azure DevOps Assessment <br />
+            › Microsoft Azure Sales Fundamentals <br />
+            › Microsoft Certified Azure Fundamentals (AZ-900)
+          </p>
+        </div>        
+      </div>
+
+      <div id="projects">
+        <h2>Partial project history</h2>
+        <div class="carousel">
+          <div class="slide">
+            <notes>USA (2020-ongoing)</notes>
+            <title>International provider of vehicle remarketing services</title>
+            <summary>Leadership consulting and implementation of a quality vision and DevOps transformation</summary>                     
+          </div>
+
+          <div class="slide">
+            <notes>Austria (2020-ongoing)</notes>
+            <title>Native advertsing and content marketing company</title>
+            <summary>Chief Technology Office: CTO-as-a-Service</summary>             
+          </div>
+
+          <div class="slide">
+            <notes>Austria, Sweden, USA (2019-2020)</notes>
+            <title>Global provider of intelligent transport systems</title>
+            <summary>Development and rollout of a cross-continent test strategy and DevOps transformatio</summary>             
+          </div>
+
+          <div class="slide">
+            <notes>Austria (2018-2019)</notes>
+            <title>Power supply company</title>
+            <summary>Consulting in DevOps, Agile, Scrum, Software Architecture and Test automation for different web applications (Order Management System, Trading platform, E-Commerce)</summary>             
+          </div>
+
+          <div class="slide">
+            <notes>Austria (2019)</notes>
+            <title>International Austrian Transport Enterprise</title>
+            <summary>Leadership and Coaching of a Test Automation Team during a transition period</summary>             
+          </div>
+
+          <div class="slide">
+            <notes>Austria (2018-2019)</notes>
+            <title>Agricultural market</title>
+            <summary>Consulting in DevOps and review of a test automation framework based on Robot Framework</summary>             
+          </div>
+
+          <div class="slide">
+            <notes>Germany (2019)</notes>
+            <title>German Telecommunications Company</title>
+            <summary>Development of an Automation Strategy Outline to support the restructuring of the technical department with 20.000 employees</summary>             
+          </div>
+
+          <div class="slide">
+            <notes>Austria (2010-2017)</notes>
+            <title>Tech Company for digital selfcare & customer experience solutions in the telecommunications sector</title>
+            <summary>Team Lead Core, Apple, Content Development in Application, Chief Software Architect & Product Development for Internet Service Providers</summary>             
+          </div>
+        </div>
+        <div class="carousel-navigation"></div>       
+      </div>
+
+      <div id="contact-form">
+        <div class="text-zone">
+          <h2>Contact me</h2>
+          <p>
+            If you have any request or question, don't hesitate to contact me using below form.
+          </p>
+        </div>
+
+        <form id="contact" action="https://formspree.io/f/mknpegng" method="post" autocomplete="off">
+          <div class="form-group">
+            <input type="text" class="form-input" placeholder="Name" name="name" />
+            <input type="email" class="form-input" placeholder="Email" name="_replyto" />
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-input"  placeholder="Subject" name="subject" />
+            <input type="hidden" name="_subject" value="New submission!" />
+          </div>
+          <div class="form-group">
+            <textarea type="text" class="form-input" placeholder="Message" name="message"></textarea>
+          </div>
+
+          <button type="submit">Send</button>
+        </form>
+      </div>
+
+      <span class="tags bottom-tags">
+        &nbsp;&nbsp;&lt;/body&gt; <br />
+        &lt;/html&gt;
+      </span>
+
     </div>
 
-  </div>
+    {% include footer.html %}
+  </div>  
+
+  <script src="/assets/scripts/2.0/carousel.js"></script>
 </body>
 </html>

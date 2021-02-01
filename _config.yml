@@ -28,10 +28,10 @@ theme: jekyll-theme-primer
 # --- Misc --- #
 
 # Image to show in meta tags - image must be a square (width = height)
-avatar: /assets/images/main/avatar.png
+avatar: /assets/images/2.0/avatar.jpg
 
 # Shortcut Icon (svg)
-favicon: /assets/images/main/favicon.svg
+favicon: /assets/images/2.0/logo.svg
 
 # --- Footer options --- #
 

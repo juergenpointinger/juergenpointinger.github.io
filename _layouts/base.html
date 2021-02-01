@@ -1,20 +1,14 @@
 ---
 common-css:
-  - "/assets/css/base.css"
-  - "/assets/css/fonts.css"
-  - "/assets/css/blog.css"
-common-ext-css:
-  - "//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
-common-googlefonts:
-  - "Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800"
-  - "Prompt"
+  - "/assets/css/2.0/blog.css"
 common-js:
-  - "/assets/scripts/jquery-2.2.4.min.js"
-  - "/assets/scripts/loader-overlay.js"
-  - "/assets/scripts/toc.js"
+  - "/assets/scripts/common/jquery-2.2.4.min.js"
+  - "/assets/scripts/common/loader-overlay.js"
+  - "/assets/scripts/common/toc.js"
 common-ext-js:
   - href: "//cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js"
     sri: "sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg="
+  - "//kit.fontawesome.com/bf7280a28a.js"
 ---
 
 <!DOCTYPE html>
@@ -28,7 +22,7 @@ common-ext-js:
 
     <script>
       if (typeof jQuery == 'undefined') {
-        document.write('<script src="{{ "/assets/scripts/jquery-2.2.4.min.js" | relative_url }}"></scr' + 'ipt>');
+        document.write('<script src="{{ "/assets/scripts/common/jquery-2.2.4.min.js" | relative_url }}"></scr' + 'ipt>');
       }
     </script>
     
