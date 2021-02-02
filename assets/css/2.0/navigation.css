@@ -163,3 +163,9 @@
 .footer-links a:hover {
   color: var(--lightgreen);
 }
+
+@media screen and (max-width: 960px) {
+  .footer-logo {
+    display: none;
+  }
+}
