@@ -75,10 +75,10 @@ article a:hover {
 }
 
 .card p {
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 500;
   line-height: 1.7;
   text-align: center;
-  font-family: var(--font-family-mono);
-  color: var(--color-font-dark);
+  font-family: var(--font-family-main);
+  color: var(--grey);
 }

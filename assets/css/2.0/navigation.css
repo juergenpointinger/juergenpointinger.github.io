@@ -36,19 +36,19 @@
 #menu a {
   margin: 0px 5px;
   padding: 0px 32px;
-  color: var(--color-highlight2);
+  color: var(--lightblue);
   border: 2px solid transparent;
   border-radius: 8px;
   transition-duration: 0.4s;
   cursor: pointer;
-  font-family: var(--font-family-mono);
+  font-family: var(--font-family-monospace);
   text-transform: uppercase;
   text-decoration: none;
 }
 
 #menu a:hover {
-  background-color: var(--color-highlight2);  
-  color: var(--color-font-dark);
+  background-color: var(--lightblue);  
+  color: var(--grey);
 }
 
 @media screen and (max-width: 780px){  
@@ -101,8 +101,8 @@
   display: flex;
   width: 64px;
   height: 64px;
-  background-color: var(--color-highlight);
-  color: var(--color-main-dark);
+  background-color: var(--lightgreen);
+  color: var(--black);
   border-radius: 50%;
   margin: -32px auto 0px auto;
   font-size: 32px;
@@ -143,9 +143,9 @@
 }
 
 .footer-links a {
-  color: var(--color-main-light);
+  color: var(--white);
 }
 
 .footer-links a:hover {
-  color: var(--color-highlight);
+  color: var(--lightgreen);
 }

@@ -4,7 +4,7 @@
     var defaults = {
       noBackToTopLinks: false,
       minimumHeaders: 3,
-      headers: 'h1, h2, h3, h4, h5, h6',
+      headers: 'h1, h2',
       listType: 'ol', // values: [ol|ul]
       showEffect: 'none', // values: [show|slideDown|fadeIn|none]
       showSpeed: '0', // set to 0 to deactivate effect

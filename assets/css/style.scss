@@ -38,9 +38,9 @@
 
 .markdown-body blockquote {
   padding: 1.2em 20px 1.2em 45px;
-  font-family: 'Roboto Mono', 'Courier New', Courier, monospace;  
+  font-family:  var(--font-family-monospace);
   font-size: 0.9em;
-  border-left: 0.25em solid #009DD9;
+  border-left: 0.25em solid var(--lightblue);
   background-color: #f6f8fa;
   margin: 20px auto;
   position: relative;
