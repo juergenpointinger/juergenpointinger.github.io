@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', themeChange);
+document.addEventListener('DOMContentLoaded', loaderFadeOut);
 // document.addEventListener('turbolinks:load', loaderFadeOut);
 
 function loaderFadeOut(){
