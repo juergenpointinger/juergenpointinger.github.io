@@ -3,14 +3,5 @@
 {% elsif include.js.href %}
   <script src="{{ include.js.href }}"></script>
 {% else %}
-  {% if js contains 'jquery' %}
-    <script src="{{ include.js | relative_url }}"></script>
-    <script>
-      if (typeof jQuery == 'undefined') {
-        document.write('<script src="{{ include.js | relative_url }}"></scr' + 'ipt>');
-      }
-    </script>
-  {% else %}
-    <script src="{{ include.js | relative_url }}"></script>
-  {% endif %}
+  <script src="{{ include.js | relative_url }}"></script>
 {% endif %}
