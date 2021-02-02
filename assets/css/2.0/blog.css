@@ -6,21 +6,39 @@
 @import url(navigation.css);
 @import url(categories.css);
 
-:root {
-  --white: rgb(255, 255, 255);
-  --black: rgb(29, 29, 29);
-
-  --lightgreen: rgb(56, 248, 160);
-  --lightblue: rgb(138, 222, 237);
-  --color-font-light: rgb(250, 250, 250);
-  --grey: rgb(51, 51, 51);
-  
+:root {    
   --font-family-main: 'Roboto', sans-serif;
   --font-family-sans: 'Open Sans', sans-serif;
   --font-family-monospace: 'Roboto Mono', 'Courier New', Courier, monospace;
   --font-family-cursive: 'La Belle Aurore', cursive;
 
   --section-padding: 65px 0px 0px;
+}
+
+html {
+  --background: rgb(250, 250, 250);
+  --foreground: rgb(29, 29, 29);
+
+  --lightgreen: rgb(48, 201, 130);
+  --lightblue: rgb(48, 201, 230);
+  --grey: rgb(51, 51, 51);
+
+  --background-navigation: rgb(24, 24, 24);
+
+  --logo: url(/assets/images/2.0/logo_dark.svg);
+}
+
+html[data-theme="dark"] {
+  --background: rgb(29, 29, 29);
+  --foreground: rgb(250, 250, 250);
+
+  --lightgreen: rgb(56, 248, 160);
+  --lightblue: rgb(56, 248, 260);
+  --grey: rgb(51, 51, 51);
+
+  --background-navigation: rgb(24, 24, 24);
+
+  --logo: url(/assets/images/2.0/logo_light.svg);
 }
 
 *, ::after, ::before {
@@ -34,7 +52,7 @@ body {
   display: block;
 
   margin: 0;
-  background: #fff;
+  background-color: var(--background);
   color: var(--grey);
   font-family: var(--font-family-sans);
   font-size: 14px;

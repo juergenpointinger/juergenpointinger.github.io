@@ -6,14 +6,7 @@
 @import url(loader.css);
 @import url(navigation.css);
 
-:root {
-  --white: rgb(255, 255, 255);
-  --black: rgb(29, 29, 29);
-  --lightgreen: rgb(56, 248, 160);
-  --lightblue: rgb(138, 222, 237);
-  --color-font-light: rgb(250, 250, 250);
-  --grey: rgb(81, 81, 81);  
-  
+:root {  
   --font-family-main: 'Roboto', sans-serif;
   --font-family-sans: 'Open Sans', sans-serif;
   --font-family-monospace: 'Roboto Mono', 'Courier New', Courier, monospace;
@@ -31,15 +24,49 @@ html {
   height: 100%;
 }
 
+html {
+  --background: rgb(250, 250, 250);
+  --foreground: rgb(29, 29, 29);
+
+  --lightgreen: rgb(48, 201, 130);
+  --lightblue: rgb(48, 201, 230);
+  --grey: rgb(81, 81, 81);
+
+  --color-tags: rgb(228, 228, 228);
+  --color-placeholder: rgb(141, 141, 141);
+  --color-bg-input: rgb(242, 242, 242);
+  --background-navigation: rgb(24, 24, 24);
+  --foreground-navigation: rgb(250, 250, 250);
+
+  --logo: url(/assets/images/2.0/logo_dark.svg);
+}
+
+html[data-theme="dark"] {
+  --background: rgb(29, 29, 29);
+  --foreground: rgb(250, 250, 250);
+
+  --lightgreen: rgb(56, 248, 160);
+  --lightblue: rgb(56, 248, 260);
+  --grey: rgb(81, 81, 81);
+
+  --color-tags: rgb(81, 81, 81);
+  --color-placeholder: rgb(141, 141, 141);
+  --color-bg-input: rgb(43, 43, 43);
+  --background-navigation: rgb(24, 24, 24);
+  --foreground-navigation: rgb(250, 250, 250);
+
+  --logo: url(/assets/images/2.0/logo_light.svg);
+}
+
 body {
   display: block;
   margin: 0;
-  background: var(--black);
+  background: var(--background);
 
   font-family: var(--font-family-main);
   font-size: 14px;
   line-height: 26px;
-  color: var(--color-font-light);
+  color: var(--foreground);
 
   -ms-user-select:none;
   -moz-user-select:none;
@@ -97,7 +124,7 @@ h5 {
 button {
   color: var(--lightgreen);
   padding: 15px 32px;
-  background-color: var(--black);
+  background-color: var(--background);
   border: 2px solid var(--lightgreen);
   border-radius: 12px;
   transition-duration: 0.4s;
@@ -107,8 +134,13 @@ button {
 }
 
 button:hover {
-  color: var(--black);
+  color: var(--background);
   background-color: var(--lightgreen);
+}
+
+input, textarea {
+  font-size: 14px;
+  font-family: var(--font-family-sans);
 }
 
 textarea {
@@ -124,7 +156,7 @@ textarea {
 }
 
 #container {
-  color: var(--color-font-light);
+  color: var(--foreground);
   max-width: 1160px;
   margin: 0px auto;
   padding: 20px 15px 60px;
@@ -144,13 +176,21 @@ textarea {
   display: flex;
   -webkit-box-pack: justify;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
-  /* margin-top: 35px; */
 }
 
-.hello {
+.welcome-zone {
   display: flex;
   flex-direction: column;
+}
+
+.intro-logo {
+  width: 300px;
+  height: 150px;
+  background-image: var(--logo);
+  background-size: 300px;
+  background-repeat: no-repeat; 
 }
 
 @media screen and (max-width: 960px) {
@@ -352,10 +392,9 @@ textarea {
 #contact-form input[type="email"] {
   width: 100%;
   border: 0;
-  background: #2b2b2b;
+  background: var(--color-bg-input);
   height: 50px;
-  font-size: 16px;
-  color: #8d8d8d;
+  color: var(--color-placeholder);
   padding: 0 20px;
   box-sizing: border-box;
   flex-direction: column;
@@ -365,10 +404,9 @@ textarea {
 #contact-form textarea {
   width: 100%;
   border: 0;
-  background: #2b2b2b;
+  background: var(--color-bg-input);
   height: 50px;
-  font-size: 16px;
-  color: #8d8d8d;
+  color: var(--color-placeholder);
   padding: 20px;
   box-sizing: border-box;
   min-height: 150px;
@@ -393,7 +431,7 @@ textarea {
 /* TAGS */
 
 .tags {
-  color: var(--grey);
+  color: var(--color-tags);
   position: relative;
   left: -20px;
   top: auto;

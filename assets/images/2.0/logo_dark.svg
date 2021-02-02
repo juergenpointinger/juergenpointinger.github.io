@@ -1,0 +1,27 @@
+<svg id="Dark" xmlns="http://www.w3.org/2000/svg" width="199.699" height="98.467" viewBox="0 0 578 285">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+        stroke-width: 15px;
+        fill-rule: evenodd;
+      }
+
+      .cls-1 {
+        stroke: #30c9e6;
+      }
+
+      .cls-2 {
+        stroke: #30c982;
+      }
+    </style>
+  </defs>
+  <g id="P">
+    <path id="Line_1_copy" data-name="Line 1 copy" class="cls-1" d="M39.608,277.768L550.37,36.216Z"/>
+    <path id="Shape_1_copy" data-name="Shape 1 copy" class="cls-1" d="M543.85,38.354C643.7,249.488,432.8,363.937,317.682,198.662"/>
+  </g>
+  <g id="J">
+    <path id="Line_1" data-name="Line 1" class="cls-2" d="M537.392,7.232L26.63,248.784Z"/>
+    <path class="cls-2" d="M33.15,246.646C-66.7,35.512,144.2-78.937,259.318,86.338"/>
+  </g>
+</svg>

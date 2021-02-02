@@ -1,0 +1,16 @@
+{% if include.js.sri %}
+  <script src="{{ include.js.href }}" integrity="{{ include.js.sri }}" crossorigin="anonymous"></script>
+{% elsif include.js.href %}
+  <script src="{{ include.js.href }}"></script>
+{% else %}
+  {% if js contains 'jquery' %}
+    <script src="{{ include.js | relative_url }}"></script>
+    <script>
+      if (typeof jQuery == 'undefined') {
+        document.write('<script src="{{ include.js | relative_url }}"></scr' + 'ipt>');
+      }
+    </script>
+  {% else %}
+    <script src="{{ include.js | relative_url }}"></script>
+  {% endif %}
+{% endif %}
