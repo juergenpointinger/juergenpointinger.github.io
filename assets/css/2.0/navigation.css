@@ -1,5 +1,7 @@
+/* NAVIGATION*/
+
 #navigation {
-  background: rgb(24, 24, 24);
+  background-color: var(--background-navigation);
   width: 100%;
   height: 60px;
   position: fixed;
@@ -13,16 +15,16 @@
   z-index: 3;  
 }
 
-.logo {
+.navigation-logo {
   margin: 0px 20px;
   width: 50px;
   height: 25px;
-  background-image: url(/assets/images/2.0/logo.svg);
+  background-image: var(--logo);
   background-size: 50px;
   background-repeat: no-repeat; 
 }
 
-#navigation label, #menu-button { 
+#navigation .burger, #menu-button { 
   display: none;
 }
 
@@ -52,9 +54,9 @@
 }
 
 @media screen and (max-width: 780px){  
-  #navigation label { 
+  #navigation .burger { 
     display: inline-block; 
-    color: var(--color-font-light);
+    color: var(--foreground-navigation);
     font-style: normal;
     font-size: 1.2em;
     padding: 10px;
@@ -76,13 +78,16 @@
     margin: 0;
     top: 60px;
     width: 100%;
-    background-color: rgb(24, 24, 24);
+    background-color: var(--background-navigation);
     text-align: center;    
   }
 }
 
+
+/* FOOTER */
+
 #footer {
-  background: rgb(24, 24, 24);
+  background-color: var(--background-navigation);
   width: 100%;
   bottom: 0;
   position: fixed;
@@ -102,7 +107,7 @@
   width: 64px;
   height: 64px;
   background-color: var(--lightgreen);
-  color: var(--black);
+  color: var(--background);
   border-radius: 50%;
   margin: -32px auto 0px auto;
   font-size: 32px;
@@ -111,7 +116,7 @@
 }
 
 .goto:hover > i {
-  color:rgb(255, 255, 255);
+  color: var(--foreground);
 }
 
 .footer-content {
@@ -125,6 +130,15 @@
 .copyright {
   display: flex;
   margin: 0px 20px;
+  align-items: center;
+}
+
+.footer-logo {
+  width: 30px;
+  height: 15px;
+  background-image: var(--logo);
+  background-size: 30px;
+  background-repeat: no-repeat; 
 }
 
 .footer-links {
@@ -143,7 +157,7 @@
 }
 
 .footer-links a {
-  color: var(--white);
+  color: var(--foreground-navigation);
 }
 
 .footer-links a:hover {

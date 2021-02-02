@@ -5,7 +5,7 @@ permalink: /index.html
 
 <!DOCTYPE html>
 <!-- https://www.flaticon.com/packs/creativity-design -->
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -13,18 +13,18 @@ permalink: /index.html
 
   <link rel="stylesheet" href="/assets/css/2.0/main.css">
 
-  <link rel="shortcut icon" type="image/svg+xml" href="/assets/images/2.0/logo.svg" sizes="any">
-
-  <script src="https://kit.fontawesome.com/bf7280a28a.js" crossorigin="anonymous"></script>
+  <link rel="shortcut icon" type="image/svg+xml" href="/assets/images/2.0/logo_light.svg" sizes="any">
   
-  <script src="/assets/scripts/common/jquery-2.2.4.min.js"></script>
-  <script src="/assets/scripts/common/loader-overlay.js"></script>
+  <script src="/assets/js/common/jquery-2.2.4.min.js"></script>
+  <script src="https://kit.fontawesome.com/bf7280a28a.js" crossorigin="anonymous"></script>
+  <script src="/assets/js/common/loader.js"></script>
+
   <title>&copy; juergenpointinger</title>
 </head>
 <!-- -->
 
 <body>
-  <div class="loader-overlay"></div>
+  <div id="loader"></div>
 
   {% include navigation.html %}
 
@@ -38,7 +38,7 @@ permalink: /index.html
         
       <div class="intro">
 
-        <div class="hello">
+        <div class="welcome-zone">
           <h1>Hi, <br />
             I'm Jürgen, <br />
             IT Consultant.</h1>
@@ -46,8 +46,7 @@ permalink: /index.html
           <a href="#contact-form"><button>Contact me!</button></a>
         </div>
 
-        <img src="/assets/images/2.0/logo.svg" width="300px"/>        
-        
+        <div class="intro-logo"></div>        
       </div>
 
       <div id="about">
@@ -209,6 +208,6 @@ permalink: /index.html
     {% include footer.html %}
   </div>  
 
-  <script src="/assets/scripts/2.0/carousel.js"></script>
+  <script src="/assets/js/2.0/carousel.js"></script>
 </body>
 </html>

@@ -1,31 +1,22 @@
 ---
-common-css:
-  - "/assets/css/2.0/blog.css"
-common-js:
-  - "/assets/scripts/common/jquery-2.2.4.min.js"
-  - "/assets/scripts/common/loader-overlay.js"
-  - "/assets/scripts/common/toc.js"
-common-ext-js:
+css:
+  - "/assets/css/2.0/blog.css" 
+script:
+  - "/assets/js/common/jquery-2.2.4.min.js"
+  - "//kit.fontawesome.com/bf7280a28a.js"
+  - "/assets/js/common/loader.js"
   - href: "//cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js"
     sri: "sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg="
-  - "//kit.fontawesome.com/bf7280a28a.js"
+  - "/assets/js/common/toc.js"
 ---
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   {% include head.html %}
 
   <body>
     {{ content }}
 
-    {% include footer-scripts.html %}
-
-    <script>
-      if (typeof jQuery == 'undefined') {
-        document.write('<script src="{{ "/assets/scripts/common/jquery-2.2.4.min.js" | relative_url }}"></scr' + 'ipt>');
-      }
-    </script>
-    
     <!-- Add anchors -->
     <script>
       $(document).ready(function() { anchors.add(); });  

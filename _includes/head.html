@@ -16,26 +16,21 @@
     <!-- Theme style -->
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
   
-    {% if layout.common-css %}
-      {% for css in layout.common-css %}
-        <link rel="stylesheet" href="{{ css | relative_url }}" />
+    {% if layout.css %}
+      {% for css in layout.css %}
+        {% include load-css.html css=css %}
       {% endfor %}
     {% endif %}
-  
-    {% if page.ext-css %}
-      {% for css in page.ext-css %}
-        {% include ext-css.html css=css %}
-      {% endfor %}
-    {% endif %}
-  
-    {% if page.css %}
-      {% for css in page.css %}
-        <link rel="stylesheet" href="{{ css | relative_url }}" />
+
+    <!-- Scripts -->
+
+    {% if layout.script %}
+      {% for js in layout.script %}
+        {% include load-script.html js=js %}
       {% endfor %}
     {% endif %}
   
     <!-- OG -->
-
     {% if page.meta-title %}
     <meta property="og:title" content="{{ page.meta-title }}" />
     {% elsif page.title %}
