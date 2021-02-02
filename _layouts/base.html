@@ -7,7 +7,7 @@ script:
   - "/assets/js/common/loader.js"
   - href: "//cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js"
     sri: "sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg="
-  - "/assets/js/common/toc.js"
+  - "/assets/js/common/table-of-content.js"
 ---
 
 <!DOCTYPE html>
@@ -17,11 +17,12 @@ script:
   <body>
     {{ content }}
 
-    <!-- Add anchors -->
+    <!-- Add anchor -->
     <script>
-      $(document).ready(function() { anchors.add(); });  
+      $(document).ready(function() { anchors.add(); });
     </script>
 
+    <!-- Cookie consent -->
     {% include cookie-consent.html %}
   </body>
 </html>
