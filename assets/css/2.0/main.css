@@ -194,7 +194,7 @@ textarea {
 }
 
 @media screen and (max-width: 960px) {
-  .intro > img {
+  .intro-logo {
     display: none;
   }
 }
