@@ -21,6 +21,7 @@ html {
 
   --lightgreen: rgb(48, 201, 130);
   --lightblue: rgb(48, 201, 230);
+  --lightred: rgb(230, 48, 48);
   --lightgrey: rgb(117, 117, 117);
   --grey: rgb(51, 51, 51);
   --darkgrey: rgb(41, 41, 41);
@@ -37,6 +38,7 @@ html[data-theme="dark"] {
 
   --lightgreen: rgb(56, 248, 160);
   --lightblue: rgb(56, 248, 260);
+  --lightred: rgb(248, 56, 56);
   --lightgrey: rgb(117, 117, 117);
   --grey: rgb(51, 51, 51);
   --darkgrey: rgb(41, 41, 41);
@@ -136,6 +138,7 @@ ol, ul, dl {
 }
 
 .tags {
+  padding-top: 30px;
   margin: 10px 0px;
 }
 

@@ -61,6 +61,8 @@ exclude:
   - LICENSE
   - README.md
   - Vagrantfile
+  - logo.psd
+  - diagrams.pptx
 
 plugins:
   - jekyll-feed
