@@ -5,6 +5,11 @@
 
 /* Theme specific */
 
+.markdown-body pre code, .markdown-body pre tt {
+  font-family: var(--font-family-monospace);
+  font-size: 12px;
+}
+
 .container-lg {
   margin-top: 80px !important;
 }
@@ -65,4 +70,45 @@
 
 .markdown-body h2 {
   border-bottom: 1px solid var(--border);
+}
+
+/* Highlight */
+
+.highlight .c, .highlight .cd, .highlight .cm, 
+.highlight .cp, .highlight .c1, .highlight .cs { 
+  color: var(--lightgreen);
+}
+
+.highlight .bp, .highlight .nn,
+.highlight .gd, .highlight .ge, .highlight .gh, 
+.highlight .go, .highlight .gp, .highlight .gu,
+.highlight .gi, .highlight .k, .highlight .kc, 
+.highlight .kd, .highlight .kn, .highlight .kp, 
+.highlight .kr, .highlight .kt, .highlight .kv, 
+.highlight .o, .highlight .w, .highlight .ow {
+  color: var(--grey);
+}
+
+.highlight .nb, .highlight .nc, .highlight .nt,
+.highlight .nv, .highlight .no, .highlight .nd,
+.highlight .m, .highlight .mb, .highlight .mf, 
+.highlight .mh, .highlight .il, .highlight .mi, 
+.highlight .mo, .highlight .mx { 
+  color: var(--lightblue);
+}
+
+.highlight .err,
+.highlight .gt, .highlight .gr,
+.highlight .ni, 
+.highlight .ne, .highlight .nf, .highlight .nl, 
+.highlight .s, .highlight .s1, .highlight .sb, 
+.highlight .sc, .highlight .sd, .highlight .s2, 
+.highlight .se, .highlight .sh, .highlight .si, 
+.highlight .ss, .highlight .sx { 
+  color: var(--lightred);
+}
+
+.highlight .sr, .highlight .na,
+.highlight .vc, .highlight .vg, .highlight .vi {
+  color: var(--lightgreen);
 }
