@@ -40,7 +40,7 @@
   padding: 1.2em 20px 1.2em 45px;
   font-family:  var(--font-family-monospace);
   font-size: 0.9em;
-  border-left: 0.25em solid var(--lightblue);
+  border-left: 0.25em solid var(--grey);
   background-color: #f6f8fa;
   margin: 20px auto;
   position: relative;
@@ -61,4 +61,8 @@
 
 .markdown-body blockquote code, blockquote tt {
   font-size: 1em;
+}
+
+.markdown-body h2 {
+  border-bottom: 1px solid var(--border);
 }

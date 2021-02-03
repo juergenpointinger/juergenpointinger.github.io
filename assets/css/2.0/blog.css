@@ -23,7 +23,9 @@ html {
   --lightblue: rgb(48, 201, 230);
   --lightgrey: rgb(117, 117, 117);
   --grey: rgb(51, 51, 51);
+  --darkgrey: rgb(41, 41, 41);
 
+  --border: rgb(233, 233, 233);
   --background-navigation: rgb(24, 24, 24);
 
   --logo: url(/assets/images/2.0/logo_dark.svg);
@@ -37,6 +39,7 @@ html[data-theme="dark"] {
   --lightblue: rgb(56, 248, 260);
   --lightgrey: rgb(117, 117, 117);
   --grey: rgb(51, 51, 51);
+  --darkgrey: rgb(41, 41, 41);
 
   --background-navigation: rgb(24, 24, 24);
 
@@ -97,7 +100,7 @@ post-header {
 
 post-header > .title-image {
   width: 600px;
-  margin-bottom: 10px;
+  margin: 10px 0px;
 }
 
 post-header > .title {
@@ -123,7 +126,7 @@ ol, ul, dl {
 }
 
 .meta {
-  border-top: 1px solid #e9ecef;
+  border-top: 1px solid var(--border);
   padding: 5px 0;
   color: var(--lightgrey);
   display: flex;
@@ -195,6 +198,11 @@ div#toc {
 }
 
 /* Comments */
+
+#comments {
+  border-top: 1px solid var(--border);
+  padding-top: 5px;
+}
 
 .comment {padding: 5px 0 15px;}
 .comment P:last-child {margin-bottom: 0;}
