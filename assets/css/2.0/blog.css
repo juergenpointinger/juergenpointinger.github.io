@@ -28,6 +28,7 @@ html {
 
   --border: rgb(233, 233, 233);
   --background-navigation: rgb(24, 24, 24);
+  --foreground-navigation: rgb(250, 250, 250);
 
   --logo: url(/assets/images/2.0/logo_dark.svg);
 }
@@ -43,7 +44,9 @@ html[data-theme="dark"] {
   --grey: rgb(51, 51, 51);
   --darkgrey: rgb(41, 41, 41);
 
+  --border: rgb(233, 233, 233);
   --background-navigation: rgb(24, 24, 24);
+  --foreground-navigation: rgb(250, 250, 250);
 
   --logo: url(/assets/images/2.0/logo_light.svg);
 }
@@ -61,7 +64,7 @@ body {
   margin: 0;
   background-color: var(--background);
   color: var(--grey);
-  font-family: var(--font-family-sans);
+  font-family: var(--font-family-main);
   font-size: 14px;
   line-height: 26px;
 }
