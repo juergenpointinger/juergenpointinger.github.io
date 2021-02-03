@@ -1,6 +1,6 @@
 ---
 layout: post
-categories: DevOps
+categories: [ DevOps, Flyway, Docker ]
 comment_issue_id: 2
 title: "How to use Flyway with Docker"
 date: 2020-04-16
