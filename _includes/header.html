@@ -1,27 +1,16 @@
 <post-header>
-  {% if page.image %}
-    <img class="title-image" src="{{ page.image }}" alt="">
-  {% endif %}
-
   {% if page.title %}
     <div class="title">{{ page.title }}</div>
   {% endif %}
   
   <div class="meta">
-    <ul>
-      <li>
-        <i class="far fa-calendar" aria-hidden="true"></i> <time datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: "%B %-d, %Y" }}</time>
-      </li>
-      <li>
-        <i class="fa fa-tags" aria-hidden="true"></i>
-        {% include tags.html %}
-      </li>
-      <li>
-        {% include share-buttons.html %}
-        <i class="far fa-clock" aria-hidden="true"></i>
-        {% include read-time.html content=content %}        
-      </li>
-    </ul>
+    <time datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: "%B %-d, %Y" }} - {% include read-time.html content=content %}</time>
+    {% include share-buttons.html %}
   </div>
+
+  {% if page.image %}
+    <img class="title-image" src="{{ page.image }}" alt="{{ page.title }}">
+  {% endif %}
+
 
 </post-header>
