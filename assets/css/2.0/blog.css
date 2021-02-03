@@ -65,7 +65,6 @@ body {
   background-color: var(--background);
   color: var(--grey);
   font-family: var(--font-family-main);
-  font-size: 14px;
   line-height: 26px;
 }
 
@@ -83,16 +82,6 @@ a {
 
 a:hover {
   text-decoration: none;
-}
-
-.title { 
-  color: var(--grey);
-  font-family: var(--font-family-monospace);
-  font-size: 14px;
-  line-height: 42px;
-  margin-top: 10px;
-  margin-right: 10px;
-  margin-bottom: 20px;
 }
 
 /************************/
@@ -121,7 +110,7 @@ post-header > .title {
 
 @media screen and (max-width: 550px) {
   post-header > .title {
-    font-size: 2.25rem;
+    font-size: 32px;
   }
 }
 
@@ -149,7 +138,7 @@ ol, ul, dl {
   color: var(--lightgrey);
   text-decoration: none;
   background-color: rgb(242, 242, 242);
-  font-size: 13px;
+  font-size: 12px;
   line-height: 22px;
   padding: 5px 10px;
   border-radius: 3px;
@@ -236,7 +225,7 @@ div#toc {
 img + em { 
   display: block;
   text-align: center;
-  font-size: 0.8em;
+  font-size: 12px;
 }
 
 /* Fontawesome */
