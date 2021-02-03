@@ -1,6 +1,6 @@
 ---
 layout: post
-categories: [Coding, Snippets, DevOps]
+categories: [ Coding, Snippets, DevOps, Jira, GitLab, Python ]
 comment_issue_id: 5
 title: "Move from Jira to GitLab"
 date: 2020-05-14 10:00
