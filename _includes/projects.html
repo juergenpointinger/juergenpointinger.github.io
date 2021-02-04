@@ -1,0 +1,11 @@
+<div class="carousel">
+{% for project in site.data.projects %}
+  <div class="slide">
+    <notes>{{ project.location }} ({{ project.timespan }})</notes>
+    <title>{{ project.title }}</title>
+    <summary>{{ project.summary }}</summary>  
+  </div>
+{% endfor %}
+</div>
+<div class="carousel-navigation"></div>
+<script src="/assets/js/2.0/carousel.js"></script>
