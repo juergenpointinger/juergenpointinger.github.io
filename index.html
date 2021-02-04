@@ -120,56 +120,7 @@ permalink: /index.html
 
       <div id="projects">
         <h2>Partial project history</h2>
-        <div class="carousel">
-          <div class="slide">
-            <notes>USA (2020-ongoing)</notes>
-            <title>International provider of vehicle remarketing services</title>
-            <summary>Leadership consulting and implementation of a quality vision and DevOps transformation</summary>                     
-          </div>
-
-          <div class="slide">
-            <notes>Austria (2020-ongoing)</notes>
-            <title>Native advertsing and content marketing company</title>
-            <summary>Chief Technology Office: CTO-as-a-Service</summary>             
-          </div>
-
-          <div class="slide">
-            <notes>Austria, Sweden, USA (2019-2020)</notes>
-            <title>Global provider of intelligent transport systems</title>
-            <summary>Development and rollout of a cross-continent test strategy and DevOps transformatio</summary>             
-          </div>
-
-          <div class="slide">
-            <notes>Austria (2018-2019)</notes>
-            <title>Power supply company</title>
-            <summary>Consulting in DevOps, Agile, Scrum, Software Architecture and Test automation for different web applications (Order Management System, Trading platform, E-Commerce)</summary>             
-          </div>
-
-          <div class="slide">
-            <notes>Austria (2019)</notes>
-            <title>International Austrian Transport Enterprise</title>
-            <summary>Leadership and Coaching of a Test Automation Team during a transition period</summary>             
-          </div>
-
-          <div class="slide">
-            <notes>Austria (2018-2019)</notes>
-            <title>Agricultural market</title>
-            <summary>Consulting in DevOps and review of a test automation framework based on Robot Framework</summary>             
-          </div>
-
-          <div class="slide">
-            <notes>Germany (2019)</notes>
-            <title>German Telecommunications Company</title>
-            <summary>Development of an Automation Strategy Outline to support the restructuring of the technical department with 20.000 employees</summary>             
-          </div>
-
-          <div class="slide">
-            <notes>Austria (2010-2017)</notes>
-            <title>Tech Company for digital selfcare & customer experience solutions in the telecommunications sector</title>
-            <summary>Team Lead Core, Apple, Content Development in Application, Chief Software Architect & Product Development for Internet Service Providers</summary>             
-          </div>
-        </div>
-        <div class="carousel-navigation"></div>       
+        {% include projects.html %}
       </div>
 
       <div id="contact-form">
@@ -182,15 +133,15 @@ permalink: /index.html
 
         <form id="contact" action="https://formspree.io/f/mknpegng" method="post" autocomplete="off">
           <div class="form-group">
-            <input type="text" class="form-input" placeholder="Name" name="name" />
-            <input type="email" class="form-input" placeholder="Email" name="_replyto" />
+            <input type="text" class="form-input" placeholder="Name" name="name" aria-label="Name" />
+            <input type="email" class="form-input" placeholder="Email" name="_replyto" aria-label="Email" />
           </div>
           <div class="form-group">
-            <input type="text" class="form-input"  placeholder="Subject" name="subject" />
-            <input type="hidden" name="_subject" value="New submission!" />
+            <input type="text" class="form-input"  placeholder="Subject" name="subject" aria-label="Subject" />
+            <input type="hidden" name="_subject" value="New submission!" aria-hidden="true" />
           </div>
           <div class="form-group">
-            <textarea type="text" class="form-input" placeholder="Message" name="message"></textarea>
+            <textarea type="text" class="form-input" placeholder="Message" name="message" aria-label="Message" ></textarea>
           </div>
 
           <button type="submit">Send</button>
@@ -205,8 +156,6 @@ permalink: /index.html
     </div>
 
     {% include footer.html %}
-  </div>  
-
-  <script src="/assets/js/2.0/carousel.js"></script>
+  </div>
 </body>
 </html>
