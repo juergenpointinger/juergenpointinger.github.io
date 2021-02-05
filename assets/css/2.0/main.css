@@ -25,7 +25,7 @@ html {
 }
 
 html {
-  --background: rgb(250, 250, 250);
+  --background: rgb(255, 255, 255);
   --foreground: rgb(29, 29, 29);
 
   --lightgreen: rgb(48, 201, 130);
@@ -35,8 +35,8 @@ html {
   --color-tags: rgb(228, 228, 228);
   --color-placeholder: rgb(141, 141, 141);
   --color-bg-input: rgb(242, 242, 242);
-  --background-navigation: rgb(24, 24, 24);
-  --foreground-navigation: rgb(250, 250, 250);
+  --background-navigation: rgb(250, 251, 252) ;
+  --foreground-navigation: rgb(88, 96, 105);
 
   --logo: url(/assets/images/2.0/logo_dark.svg);
 }
