@@ -3,14 +3,10 @@
     <div class="title">{{ page.title }}</div>
   {% endif %}
   
-  <div class="meta">
-    <time datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: "%B %-d, %Y" }} - {% include read-time.html content=content %}</time>
-    {% include share-buttons.html %}
-  </div>
+  {% include meta.html %}
 
   {% if page.image %}
     <img class="title-image" src="{{ page.image }}" alt="{{ page.title }}">
   {% endif %}
-
 
 </post-header>

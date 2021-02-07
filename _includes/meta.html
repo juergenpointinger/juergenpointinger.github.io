@@ -1,0 +1,27 @@
+<div id="meta">
+  <div class="meta-content">    
+    <div class="meta-links">
+      <ul>
+        <li>
+          <a href="https://twitter.com/intent/tweet?text={{ page.title | url_encode }}&url={{ page.url | absolute_url | url_encode }}" target="_blank" title="Share on Twitter">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ page.url | absolute_url | url_encode }}&title=&summary=&source='" target="_blank" title="Share on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        </li>
+        <li>
+          <a href="http://www.facebook.com/share.php?u={{ page.url | absolute_url | url_encode }}" target="_blank" title="Share on Facebook"><i class="fab fa-facebook-square"></i></a>
+        </li>
+      </ul>
+    </div>  
+    
+    <ul>
+      <li>
+        <time datetime="{{ page.date | date: "%Y-%m-%d" }}">
+          {{ page.date | date: "%B %-d, %Y" }} - {% include read-time.html content=content %}
+        </time>
+      </li>
+    </ul>
+  </div>
+</div>

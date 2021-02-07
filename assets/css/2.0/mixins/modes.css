@@ -1,0 +1,9 @@
+@import url(color-modes.css);
+
+/*
+  The page supports both dark and light color schemes,
+  and the page author prefers dark.
+*/
+:root {
+  color-scheme: dark light;
+}
