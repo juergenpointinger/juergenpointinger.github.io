@@ -210,6 +210,40 @@ textarea {
   }
 }
 
+.skills-mask {
+  height: 64px;
+  background-color: var(--color-fg);
+  margin: 10px;
+}
+
+.leadership-mask {
+  -webkit-mask: url(/assets/images/2.0/skills/leadership.svg) center no-repeat;
+  mask: url(/assets/images/2.0/skills/leadership.svg) center no-repeat;
+  -webkit-mask-size: 64px;
+  mask-size: 64px;
+}
+
+.management-mask {
+  -webkit-mask: url(/assets/images/2.0/skills/management.svg) center no-repeat;
+  mask: url(/assets/images/2.0/skills/management.svg) center no-repeat;
+  -webkit-mask-size: 64px;
+  mask-size: 64px;
+}
+
+.architecture-mask {
+  -webkit-mask: url(/assets/images/2.0/skills/architecture.svg) center no-repeat;
+  mask: url(/assets/images/2.0/skills/architecture.svg) center no-repeat;
+  -webkit-mask-size: 64px;
+  mask-size: 64px;
+}
+
+.development-mask {
+  -webkit-mask: url(/assets/images/2.0/skills/development.svg) center no-repeat;
+  mask: url(/assets/images/2.0/skills/development.svg) center no-repeat;
+  -webkit-mask-size: 64px;
+  mask-size: 64px;
+}
+
 /* TRAININGS */
 
 #trainings {

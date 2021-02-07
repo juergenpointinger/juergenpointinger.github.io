@@ -92,6 +92,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   color: #333333;
 }
 
+/************************/
 /* Caption for images */
 
 img + em { 
@@ -99,5 +100,3 @@ img + em {
   text-align: center;
   font-size: 12px;
 }
-
-/************************/
