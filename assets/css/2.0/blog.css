@@ -1,69 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
-
-@import url(loader.css);
-@import url(navigation.css);
-@import url(categories.css);
-
-:root {    
-  --font-family-main: 'Roboto', sans-serif;
-  --font-family-sans: 'Open Sans', sans-serif;
-  --font-family-monospace: 'Roboto Mono', 'Courier New', Courier, monospace;
-  --font-family-cursive: 'La Belle Aurore', cursive;
-
-  --section-padding: 65px 0px 0px;
-}
-
-html {
-  --background: rgb(250, 250, 250);
-  --foreground: rgb(29, 29, 29);
-
-  --lightgreen: rgb(48, 201, 130);
-  --lightblue: rgb(48, 201, 230);
-  --lightred: rgb(230, 48, 48);
-  --lightgrey: rgb(117, 117, 117);
-  --grey: rgb(51, 51, 51);
-  --darkgrey: rgb(41, 41, 41);
-
-  --border: rgb(233, 233, 233);
-  --background-navigation: rgb(24, 24, 24);
-  --foreground-navigation: rgb(250, 250, 250);
-
-  --logo: url(/assets/images/2.0/logo_dark.svg);
-}
-
-html[data-theme="dark"] {
-  --background: rgb(29, 29, 29);
-  --foreground: rgb(250, 250, 250);
-
-  --lightgreen: rgb(56, 248, 160);
-  --lightblue: rgb(56, 248, 260);
-  --lightred: rgb(248, 56, 56);
-  --lightgrey: rgb(117, 117, 117);
-  --grey: rgb(51, 51, 51);
-  --darkgrey: rgb(41, 41, 41);
-
-  --border: rgb(233, 233, 233);
-  --background-navigation: rgb(24, 24, 24);
-  --foreground-navigation: rgb(250, 250, 250);
-
-  --logo: url(/assets/images/2.0/logo_light.svg);
-}
-
-*, ::after, ::before {
-  box-sizing: border-box;
-  outline: none
-}
-
-/* LEGACY */
+@import url(base.css);
+@import url(mixins/meta.css);
+@import url(mixins/categories.css);
+@import url(mixins/comments.css);
 
 body {
   display: block;
 
   margin: 0;
-  background-color: var(--background);
-  color: var(--grey);
+  color: var(--color-fg);
+  background-color: var(--color-bg);
   font-family: var(--font-family-main);
   line-height: 26px;
 }
@@ -76,7 +21,7 @@ body {
 /* FONTS */
 
 a {
-  color: var(--lightblue);
+  color: var(--color-scale-blue-2);
   text-decoration: none;
 }
 
@@ -119,25 +64,15 @@ ol, ul, dl {
   margin-bottom: 1rem;
 }
 
-.meta {
-  border-top: 1px solid var(--border);
-  padding: 5px 0;
-  color: var(--lightgrey);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 14px;
-}
-
 .tags {
   padding-top: 30px;
   margin: 10px 0px;
 }
 
 .tags a {
-  color: var(--lightgrey);
+  color: var(--color-scale-grey-3);
   text-decoration: none;
-  background-color: rgb(242, 242, 242);
+  background-color: var(--color-scale-grey-100);
   font-size: 12px;
   line-height: 22px;
   padding: 5px 10px;
@@ -157,81 +92,12 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   color: #333333;
 }
 
-/* Share buttons */
-
-#share-buttons > div {
-    position: relative;
-    text-align: left; 
-    font-size: 24px; 
-    float: left; 
-    text-align: center;
-    border-radius: 50%;
-    margin: 0 0 0 5px;
-}
-#share-buttons > div:hover { 
-  cursor: pointer;
-  color: var(--lightblue);
-}
-
-/* Table of contents */
-
-div#toc::before {
-    content: "Contents";
-    font-weight: bold;
-} 
-
-div#toc {
-  border: 1px solid #e0e0e0;
-  border-radius: 10px;
-  padding: 1.5em;
-  list-style: decimal;
-  display: inline-block;
-}
-
-#toc ul {
-    list-style: decimal;
-}
-
-/* Comments */
-
-#comments {
-  border-top: 1px solid var(--border);
-  padding-top: 5px;
-}
-
-.comment {padding: 5px 0 15px;}
-.comment P:last-child {margin-bottom: 0;}
-.commentgravatar {position: absolute; width: 40px; border: 1px solid #e5e5e5;}
-.commentheader, .commentbody {padding: 5px 10px; margin-left: 55px; border: 1px solid #e5e5e5; background: white;}
-.commentheader {position: relative; background: #f4f4f4; border-bottom: 0;}
-.commentbody {padding: 10px 10px 13px;}
-.commentheader a {color: #777777;}
-.commentheader::before {
-    position: absolute;
-    content: "";
-    display: block;
-    width: 9px;
-    height: 9px;
-    background: #f4f4f4;
-    transform: rotate(-45deg);
-    left: 0;
-    margin-left: -4px;
-    margin-top: 4px;
-    box-shadow: -1px -1px 0px 0px rgba(0, 0, 0, 0.15);
-}
-
 /* Caption for images */
 
 img + em { 
   display: block;
   text-align: center;
   font-size: 12px;
-}
-
-/* Fontawesome */
-
-.fa, .far, .fas {
-  color: #9fa3a7;
 }
 
 /************************/

@@ -48,8 +48,8 @@ code, tt {
 .markdown-body blockquote {
   padding: 1.2em 20px 1.2em 45px;
   font-family:  var(--font-family-main);
-  border-left: 0.25em solid var(--grey);
-  color: var(--grey);
+  border-left: 0.25em solid var(--color-blockquote);
+  color: var(--color-blockquote);
   background-color: #f6f8fa;
   margin: 20px auto;
   position: relative;
@@ -73,14 +73,14 @@ code, tt {
 }
 
 .markdown-body h2 {
-  border-bottom: 1px solid var(--border);
+  border-bottom: 1px solid var(--color-border);
 }
 
 /* Highlight */
 
 .highlight .c, .highlight .cd, .highlight .cm, 
 .highlight .cp, .highlight .c1, .highlight .cs { 
-  color: var(--lightgreen);
+  color: var(--color-scale-green-2);
 }
 
 .highlight .bp, .highlight .nn,
@@ -90,7 +90,7 @@ code, tt {
 .highlight .kd, .highlight .kn, .highlight .kp, 
 .highlight .kr, .highlight .kt, .highlight .kv, 
 .highlight .o, .highlight .w, .highlight .ow {
-  color: var(--grey);
+  color: var(--color-scale-grey-4);
 }
 
 .highlight .nb, .highlight .nc, .highlight .nt,
@@ -98,7 +98,7 @@ code, tt {
 .highlight .m, .highlight .mb, .highlight .mf, 
 .highlight .mh, .highlight .il, .highlight .mi, 
 .highlight .mo, .highlight .mx { 
-  color: var(--lightblue);
+  color: var(--color-scale-blue-2);
 }
 
 .highlight .err,
@@ -109,10 +109,10 @@ code, tt {
 .highlight .sc, .highlight .sd, .highlight .s2, 
 .highlight .se, .highlight .sh, .highlight .si, 
 .highlight .ss, .highlight .sx { 
-  color: var(--lightred);
+  color: var(--color-scale-red-2);
 }
 
 .highlight .sr, .highlight .na,
 .highlight .vc, .highlight .vg, .highlight .vi {
-  color: var(--lightgreen);
+  color: var(--color-scale-green-2);
 }

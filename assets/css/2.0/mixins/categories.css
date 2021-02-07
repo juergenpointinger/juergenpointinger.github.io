@@ -57,7 +57,6 @@ article a:hover {
 }
 
 .card-image {
-  background-color: #2c2c2c;
   height: 200px;
 }
 
@@ -80,5 +79,5 @@ article a:hover {
   line-height: 1.7;
   text-align: center;
   font-family: var(--font-family-main);
-  color: var(--grey);
+  color: var(--color-scale-grey-5);
 }
