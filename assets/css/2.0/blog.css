@@ -2,6 +2,7 @@
 @import url(mixins/meta.css);
 @import url(mixins/categories.css);
 @import url(mixins/comments.css);
+@import url(mixins/cookie.css);
 
 body {
   display: block;
@@ -61,7 +62,6 @@ post-header > .title {
 
 ol, ul, dl {
   margin-top: 0;
-  margin-bottom: 1rem;
 }
 
 .tags {

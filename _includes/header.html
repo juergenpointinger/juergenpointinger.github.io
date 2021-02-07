@@ -1,9 +1,11 @@
 <post-header>
-  {% if page.title %}
+  {% if page.title and include.type == "post" %}
     <div class="title">{{ page.title }}</div>
   {% endif %}
   
-  {% include meta.html %}
+  {% if include.type == "post" %}
+    {% include meta.html %}
+  {% endif %}
 
   {% if page.image %}
     <img class="title-image" src="{{ page.image }}" alt="{{ page.title }}">
