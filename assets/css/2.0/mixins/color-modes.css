@@ -42,7 +42,8 @@ html {
 
   --color-bg-footer: var(--color-scale-grey-8);
   --color-fg-footer: var(--color-scale-grey-1);
-  --color-link-footer: var(--color-scale-green-1);
+  --color-link-footer: var(--color-scale-grey-1);
+  --color-link-hover-footer: var(--color-scale-green-1);
   --color-goto-footer: var(--color-scale-green-1);
 
   --color-border: rgb(233, 233, 233);
@@ -67,7 +68,8 @@ html[data-color-mode=light] {
 
   --color-bg-footer: var(--color-scale-grey-1);
   --color-fg-footer: var(--color-scale-grey-5);
-  --color-link-footer: var(--color-scale-green-2);
+  --color-link-footer: var(--color-scale-blue-3);
+  --color-link-hover-footer: var(--color-scale-green-2);
   --color-goto-footer: var(--color-scale-green-2);
 
   /* --color-bg-navigation: rgb(250, 251, 252) ;
