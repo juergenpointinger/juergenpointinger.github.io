@@ -102,11 +102,11 @@
 }
 
 #footer a {
-  color: var(--color-scale-blue-3);
+  color: var(--color-link-footer);
 }
 
 #footer a:hover {
-  color: var(--color-link-footer);
+  color: var(--color-link-hover-footer);
 }
 
 .top {

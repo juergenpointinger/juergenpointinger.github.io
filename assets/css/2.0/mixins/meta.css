@@ -10,11 +10,11 @@
 }
 
 #meta a {
-  color: var(--color-scale-blue-3);
+  color: var(--color-link-footer);
 }
 
 #meta a:hover {
-  color: var(--color-link-footer);
+  color: var(--color-link-hover-footer);
 }
 
 .meta-content {
