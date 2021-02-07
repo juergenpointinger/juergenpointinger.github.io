@@ -1,11 +1,17 @@
 {% if site.gtag %}
 <div id="cookie-consent">
   <span>
-    This site uses cookies and scripts to delivery its services and to improve its functionality.
+    This website uses cookies to improve and customize your browsing experience and for analytics and metrics about the visitors. To find out more about the cookies, see our <a href="/privacy">Privacy Policy</a>.
   </span>
-  <a href="/privacy" class="btn btn-primary btn-sm">More details</a>
-  <a id="cookie-consent-accept" class="btn btn-primary btn-sm">OK</a>
-  <!-- <a id="cookie-consent-reject" class="btn btn-secondary btn-sm">Reject</a> -->
+
+  <ul>
+    <li>
+      <a id="cookie-consent-accept" class="btn-primary">Accept</a>
+    </li>
+    <li>
+      <a id="cookie-consent-reject" class="btn-secondary">Reject</a>
+    </li>
+  </ul>
 </div>
 
 <script>
@@ -58,9 +64,9 @@
     hideBanner(true);
   });
 
-  // document.getElementById('cookie-consent-reject').addEventListener("click", function () {
-  //   deleteCookie(cookie_name);
-  //   hideBanner();
-  // });
+  document.getElementById('cookie-consent-reject').addEventListener("click", function () {
+    deleteCookie(cookie_name);
+    hideBanner();
+  });
 </script>
 {% endif %}

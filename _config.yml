@@ -7,9 +7,8 @@ title: © Jürgen Pointinger
 
 # Short description of your site
 description: >- # this means to ignore newlines until "baseurl:"
-  A blog about DevOps, Agility, Software Development Practices, Coding and Management 3.0.
-  Created by Jürgen Pointinger, a Consultant for Software Development Life Cycle (SDLC),
-  Technical Agile Coach, DevOps Advocate, Facilitator and Catalyst.
+  A blog about DevOps, Agility, Software Development Practices, Coding and Leadership.
+  Created by Jürgen Pointinger, an IT Consultant, DevOps Enthusiast, Solution Architect and Software Developer.
 
 # --- Local development options ---
 # If your website is hosted locally rather than on GitHub, then you need to uncomment the next two parameters to set the url and baseurl
@@ -44,7 +43,7 @@ author:
 # --- Web Statistics Section --- #
 
 # Fill in your Google Analytics gtag.js ID to track your website using gtag
-# gtag: "UA-163914938-1"
+gtag: "UA-163914938-1"
   
 # --- Don't need to touch anything below here (but you can if you want) --- #
 
