@@ -4,19 +4,10 @@ permalink: /privacy/
 title: Privacy Policy
 ---
 
-# Datenschutz / Privacy Policy
-
-## Eingebettete Social Media Elemente Datenschutzerklärung
-Wir binden auf unserer Webseite Elemente von Social Media Diensten ein um Bilder, Videos und Texte anzuzeigen.
-Durch den Besuch von Seiten die diese Elemente darstellen, werden Daten von Ihrem Browser zum jeweiligen Social Media Dienst übertragen und dort gespeichert. Wir haben keinen Zugriff auf diese Daten.
-Die folgenden Links führen Sie zu den Seiten der jeweiligen Social Media Dienste wo erklärt wird, wie diese mit Ihren Daten umgehen:
-
-- Instagram-Datenschutzrichtlinie: [https://help.instagram.com/519522125107875](https://help.instagram.com/519522125107875)
-- Für YouTube gilt die Google Datenschutzerklärung: [https://policies.google.com/privacy?hl=de](https://policies.google.com/privacy?hl=de)
-- Facebook-Datenrichtline: [https://www.facebook.com/about/privacy](https://www.facebook.com/about/privacy)
-- Twitter Datenschutzrichtlinie: [https://twitter.com/de/privacy](https://twitter.com/de/privacy)
+# Datenschutzerklärung / Privacy Policy
 
 ## Datenschutz
+
 Wir haben diese Datenschutzerklärung (Fassung 20.04.2020-211123365) verfasst, um Ihnen gemäß der Vorgaben der [Datenschutz-Grundverordnung (EU) 2016/679](https://eur-lex.europa.eu/legal-content/DE/ALL/?uri=celex%3A32016R0679&tid=211123365) zu erklären, welche Informationen wir sammeln, wie wir Daten verwenden und welche Entscheidungsmöglichkeiten Sie als Besucher dieser Webseite haben.
 
 Leider liegt es in der Natur der Sache, dass diese Erklärungen sehr technisch klingen, wir haben uns bei der Erstellung jedoch bemüht die wichtigsten Dinge so einfach und klar wie möglich zu beschreiben.
@@ -110,22 +101,24 @@ Wir nutzen Ihre persönlichen Daten somit nur für die Kommunikation mit jenen B
 
 Wenn Sie uns persönliche Daten per E-Mail schicken – somit abseits dieser Webseite – können wir keine sichere Übertragung und den Schutz Ihrer Daten garantieren. Wir empfehlen Ihnen, vertrauliche Daten niemals unverschlüsselt per E-Mail zu übermitteln.
 
-## Rechte laut Datenschutzgrundverordnung
-Ihnen stehen laut den Bestimmungen der DSGVO und des österreichischen [Datenschutzgesetzes (DSG)](https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10001597&tid=211123365) grundsätzlich die folgende Rechte zu:
-
-Recht auf Berichtigung (Artikel 16 DSGVO)
-Recht auf Löschung („Recht auf Vergessenwerden“) (Artikel 17 DSGVO)
-Recht auf Einschränkung der Verarbeitung (Artikel 18 DSGVO)
-Recht auf Benachrichtigung – Mitteilungspflicht im Zusammenhang mit der Berichtigung oder Löschung personenbezogener Daten oder der Einschränkung der Verarbeitung (Artikel 19 DSGVO)
-Recht auf Datenübertragbarkeit (Artikel 20 DSGVO)
-Widerspruchsrecht (Artikel 21 DSGVO)
-Recht, nicht einer ausschließlich auf einer automatisierten Verarbeitung — einschließlich Profiling — beruhenden Entscheidung unterworfen zu werden (Artikel 22 DSGVO)
-Wenn Sie glauben, dass die Verarbeitung Ihrer Daten gegen das Datenschutzrecht verstößt oder Ihre datenschutzrechtlichen Ansprüche sonst in einer Weise verletzt worden sind, können Sie sich bei der Aufsichtsbehörde beschweren, welche in Österreich die Datenschutzbehörde ist, deren Webseite Sie unter [https://www.dsb.gv.at/](https://www.dsb.gv.at/) finden.
-
 ## Auswertung des Besucherverhaltens
+
 In der folgenden Datenschutzerklärung informieren wir Sie darüber, ob und wie wir Daten Ihres Besuchs dieser Website auswerten. Die Auswertung der gesammelten Daten erfolgt in der Regel anonym und wir können von Ihrem Verhalten auf dieser Website nicht auf Ihre Person schließen.
 
 Mehr über Möglichkeiten dieser Auswertung der Besuchsdaten zu widersprechen erfahren Sie in der folgenden Datenschutzerklärung.
+
+## Rechte laut Datenschutzgrundverordnung
+Ihnen stehen laut den Bestimmungen der DSGVO und des österreichischen [Datenschutzgesetzes (DSG)](https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10001597&tid=211123365) grundsätzlich die folgende Rechte zu:
+
+- Recht auf Berichtigung (Artikel 16 DSGVO)
+- Recht auf Löschung („Recht auf Vergessenwerden“) (Artikel 17 DSGVO)
+- Recht auf Einschränkung der Verarbeitung (Artikel 18 DSGVO)
+- Recht auf Benachrichtigung – Mitteilungspflicht im Zusammenhang mit der Berichtigung oder Löschung personenbezogener Daten oder der Einschränkung der Verarbeitung (Artikel 19 DSGVO)
+- Recht auf Datenübertragbarkeit (Artikel 20 DSGVO)
+- Widerspruchsrecht (Artikel 21 DSGVO)
+- Recht, nicht einer ausschließlich auf einer automatisierten Verarbeitung — einschließlich Profiling — beruhenden Entscheidung unterworfen zu werden (Artikel 22 DSGVO)
+
+Wenn Sie glauben, dass die Verarbeitung Ihrer Daten gegen das Datenschutzrecht verstößt oder Ihre datenschutzrechtlichen Ansprüche sonst in einer Weise verletzt worden sind, können Sie sich bei der Aufsichtsbehörde beschweren, welche in Österreich die Datenschutzbehörde ist, deren Webseite Sie unter [https://www.dsb.gv.at/](https://www.dsb.gv.at/) finden.
 
 ## TLS-Verschlüsselung mit https
 Wir verwenden https um Daten abhörsicher im Internet zu übertragen (Datenschutz durch Technikgestaltung Artikel 25 Absatz 1 DSGVO). Durch den Einsatz von TLS (Transport Layer Security), einem Verschlüsselungsprotokoll zur sicheren Datenübertragung im Internet können wir den Schutz vertraulicher Daten sicherstellen. Sie erkennen die Benutzung dieser Absicherung der Datenübertragung am kleinen Schlosssymbol links oben im Browser und der Verwendung des Schemas https (anstatt http) als Teil unserer Internetadresse.
