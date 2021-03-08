@@ -78,7 +78,9 @@ Now that we know some of the challenges in an SDLC, we should take a look at the
 
 If you search the Internet for an explanation of what DevOps exactly means, you will find many different views. Tool vendors try to make it a tool problem, consultants try to make it a fluffy mindset thing. I think the solution lies somewhere in the middle and I have therefore come up with my very own explanation, which I have compiled for you below.
 
-> DevOps is a `movement, a culture, a set of practices and tools` that encourage `close collaboration` within the complete Software Development Life Cycle (SDLC) to `increase the productivity and quality of the overall system.` The core values are `customer-centric, quality-driven and fast flow` of features into production.
+> DevOps is organizational culture and leadership with lean and agile principles combined with technical practices to enable continuous delivery of value to end users.
+>
+> These drive organizational performance and technology performance.
 
 You could say that this is a high-level explanation, but it helped me a lot to quickly get into conversation with the C-level management.
 
