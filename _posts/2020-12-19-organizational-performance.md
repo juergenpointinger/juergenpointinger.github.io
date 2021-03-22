@@ -1,6 +1,6 @@
 ---
 layout: post
-categories: Leadership
+categories: [Leadership, DevOps, Agile]
 comment_issue_id: 9
 title: "Organizational Performance"
 date: 2020-12-19
