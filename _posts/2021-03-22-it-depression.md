@@ -33,7 +33,7 @@ Jonas has had an uneasy feeling in his stomach for some time and has been lookin
 > 
 > Why is it not our highest priority to keep our heart healthy? 
 
-## Heart attack - hopefully not
+## Heart attack - I hope not
 
 With these findings, Jonas goes to his experienced colleagues, with whom he has always had a very good exchange and for whom the innovative views he brings in are a benefit. He shows them what he has discovered, which startles his colleagues, who thank him for this new insight. After careful consideration, his colleagues recognize a pattern:
 
@@ -69,7 +69,7 @@ Of course, it is a major challenge to explain this situation to the C-level mana
 
 Maybe you know similar situations or are currently in a similar job environment. In an organization that has grown very quickly and seems to struggle with structures and processes.
 
-## One body - usually one life
+## One body - One life
 
 Jonas continues to reflect: 
 
