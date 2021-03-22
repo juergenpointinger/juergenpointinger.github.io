@@ -9,11 +9,15 @@ image: /assets/images/blog/it-depression.jpg
 
 # Jonas, heart surgeon
 
-Jonas is 28 years old and an aspiring heart surgeon. In his younger years, he was already present at many of his colleagues' surgeries, was allowed to assist and already had some of these vital organs in his hands.
+Jonas is 28 years old and an aspiring heart surgeon. Some would argue that at 28, he's still a bit young to be a heart surgeon. But Jonas has always been ahead of his time and is very talented. In his younger years, he was already present at many of his colleagues' surgeries, was allowed to assist and already had some of these vital organs in his hands.
 
 In fact, they were all different, but as Jonas looked closer, he saw many similarities. Well, at least they were all hearts, you might think. But let him tell us about his discovery himself:
 
-> Teams act like hearts, which keep our organization, our organism alive.
+> I have always been fascinated by the most important organ in our body. The heart looks different with each person. Sometimes a little smaller, sometimes larger. Sometimes, unfortunately, the heart does not work as it should. When I looked very closely, I could even see broken hearts.
+>
+> Some of the people who needed heart surgery seemed to work directly in the IT industry. Which is why I tried to find a connex.
+>
+> Teams act like hearts, I thought to myself. They keep our organization, our organism, alive.
 > Without a heart, we could not survive and so could not our organization.
 >
 > Communication is like an artery through which our heart is supplied with oxygen. If our arteries are clogged, our heart doesn't work properly either - in the worst cases we die!
@@ -23,7 +27,7 @@ In fact, they were all different, but as Jonas looked closer, he saw many simila
 ![Dr. Jonas](/assets/images/blog/doctor.png)
 *Dr. Jonas and his colleagues*
 
-Jonas has had an uneasy feeling in his stomach for some time and looks to the IT industry for answers. He recognizes many hearts that are seriously ill. The COVID-19 year, with its #WFA (work from anywhere) or the change in face-to-face communication, was in some places just a drop in the bucket. He comes to one conclusion:
+Jonas has had an uneasy feeling in his stomach for some time and has been looking for answers to his thesis in the IT industry. He recognizes many hearts that are seriously ill. The COVID-19 year, with its #WFA (work from anywhere) or the change in face-to-face communication, was in some places just a drop in the bucket. He comes to one conclusion:
 
 > The IT industry is in the midst of a depression, and not just since yesterday. It has been shown to us more clearly than ever what many of us are facing.
 > 
