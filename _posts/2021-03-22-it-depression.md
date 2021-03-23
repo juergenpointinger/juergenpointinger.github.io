@@ -27,7 +27,7 @@ In fact, they were all different, but as Jonas looked closer, he saw many simila
 ![Dr. Jonas](/assets/images/blog/doctor.png)
 *Dr. Jonas and his colleagues*
 
-Jonas has had an uneasy feeling in his stomach for some time and has been looking for answers to his thesis in the IT industry. He recognizes many hearts that are seriously ill. The COVID-19 year, with its #WFA (work from anywhere) or the change in face-to-face communication, was in some places just a drop in the bucket. He comes to one conclusion:
+Jonas has had an uneasy feeling for some time and has been looking for answers to his thesis in the IT industry. He recognizes many hearts that are seriously ill. The COVID-19 year, with its #WFA (work from anywhere) or the change in face-to-face communication, was in some places just a drop in the bucket. He comes to one conclusion:
 
 > The IT industry is in the midst of a depression, and not just since yesterday. It has been shown to us more clearly than ever what many of us are facing.
 > 
