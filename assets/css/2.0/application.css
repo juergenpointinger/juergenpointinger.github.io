@@ -247,14 +247,14 @@ textarea {
 
 /* TRAININGS */
 
-#trainings {
+#trainings, #publications {
   display: flex;  
   margin: 0px auto;
   padding: var(--padding-section);
 }
 
 @media screen and (max-width: 960px) {
-  #trainings {
+  #trainings, #publications {
     flex-flow: column wrap;
   }
 }
