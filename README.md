@@ -1,5 +1,11 @@
 # Jekyll
 
+https://jekyllrb.com/docs/installation/
+
+```sh
+$ gem install jekyll bundler
+```
+
 ### Run Jekyll local
 
 ```sh

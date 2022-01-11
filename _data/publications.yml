@@ -1,77 +1,92 @@
 - title: "Performance und Agilität dank DevOps"
   publisher: it&t business
-  type: Roundtable
   date: 2021-05-31
-  link: https://www.ittbusiness.at/article/ittbusiness-roundtable-devops
+  links: 
+    - type: Roundtable
+      link: https://www.ittbusiness.at/article/ittbusiness-roundtable-devops
 
 - title: "Nagarro DevOps"
   publisher: CIO Report
-  type: Print
   date: 2021-06-28
-  link: https://www.nagarro.com/hubfs/AT%20-%20Files/Articles/CIO%20REPORT_Interview%20J%c3%bcrgen%20Pointinger_2021.pdf
+  links:
+    - type: Print
+      link: https://www.nagarro.com/hubfs/AT%20-%20Files/Articles/CIO%20REPORT_Interview%20J%c3%bcrgen%20Pointinger_2021.pdf
 
 - title: "Nagarro DevOps"
   publisher: Computerwelt
-  type: Interview
   date: 2021-06-28
-  link: https://computerwelt.at/promotion/nagarro-devops-interview-mit-juergen-pointinger/
+  links:
+    - type: Interview
+      link: https://computerwelt.at/promotion/nagarro-devops-interview-mit-juergen-pointinger/
 
-- title: "Die richtige Einbahnstraße"
+- title: "DevOps: Die richtige Einbahnstraße"
   publisher: it&t business
-  type: Article
   date: 2021-07-02
-  link: https://www.ittbusiness.at/article/roundtable-devops
+  links:
+    - type: Article
+      link: https://www.ittbusiness.at/article/roundtable-devops
+    - type: Print
+      link: https://www.ittbusiness.at/public/epaper/07-08_2021/#page=10
 
 - title: "What is DevOps"
   publisher: Nagarro
-  type: Video
   date: 2021-08-19
-  link: https://youtu.be/uxgFPUYh_U8
+  links:
+    - type: Video
+      link: https://youtu.be/uxgFPUYh_U8
 
 - title: "A holistic approach to DevOps"
   publisher: Nagarro
-  type: Whitepaper
   date: 2021-09-15
-  link: https://go.nagarro.com/devops-wp
+  links:
+    - type: Whitepaper
+      link: https://go.nagarro.com/devops-wp
 
 - title: "State of DevOps Report 2021"
   publisher: Nagarro
-  type: Whitepaper
   date: 2021-10-15
-  link: https://go.nagarro.com/devops-report
+  links:
+    - type: Whitepaper
+      link: https://go.nagarro.com/devops-report
 
 - title: "Hochleistungsteamarbeit mit Tücken"
   publisher: it&t business
-  type: Article
   date: 2021-10-29
-  link: https://www.ittbusiness.at/article/nagarro-state-of-devops-report-2021
+  links:
+    - type: Article
+      link: https://www.ittbusiness.at/article/nagarro-state-of-devops-report-2021
 
 - title: "Evolutionäre Organisationsform: Mit kritischem Blick zu besseren, nachhaltigen Ergebnissen"
   publisher: IT Spektrum 06/21
-  type: Print
   date: 2021-11-23
-  link: https://www.nagarro.com/de/news-press-release/evolutionaere-organisation-it-spektrum
+  links:
+    - type: Print
+      link: https://www.nagarro.com/de/news-press-release/evolutionaere-organisation-it-spektrum
 
 - title: "Software-Future-Talk"
   publisher: brutkasten
-  type: Interview
   date: 2021-12-06
-  link: https://brutkasten.com/videos/software-future-talk-mit-nagarro/
+  links:
+    - type: Interview
+      link: https://brutkasten.com/videos/software-future-talk-mit-nagarro/
 
 - title: "Branche braucht DevOps-Kickstart"
   publisher: Computerwelt
-  type: Print
   date: 2021-12-13
-  link: https://www.clip.at/archivhades/doublem_2478/print/20211213/20211213084022_2478_4627981id419585.pdf
+  links:
+    - type: Print
+      link: https://www.clip.at/archivhades/doublem_2478/print/20211213/20211213084022_2478_4627981id419585.pdf
 
 - title: "Nagarro DevOps Report 2021"
   publisher: Computerwelt
-  type: Article
   date: 2021-12-15
-  link: https://computerwelt.at/promotion/gratis-download-nagarro-devops-report-2021/
+  links:
+    - type: Article
+      link: https://computerwelt.at/promotion/gratis-download-nagarro-devops-report-2021/
 
 - title: "Wie Unternehmen DevOps für Software-Entwicklung nutzen"
   publisher: brutkasten
-  type: Article
   date: 2021-12-20
-  link: https://brutkasten.com/devops-report-nagarro/
+  links:
+    - type: Article
+      link: https://brutkasten.com/devops-report-nagarro/
