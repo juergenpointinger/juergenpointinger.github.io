@@ -1,0 +1,91 @@
+- name: ISAQB® Certified Professional for Software Architecture (CPSA-F)
+  organization: Future Network Cert
+  type: Certificate
+  issue_date: 2016-02-26
+
+- name: 360° Test Automation
+  organization: Nagarro
+  type: Training
+  issue_date: 2017-10-18
+
+- name: ISAQB® CPSA Advanced Level Module - Architecture Evaluation (ARCEVAL)
+  organization: embarc
+  type: Certificate
+  issue_date: 2019-06-11
+
+- name: ISAQB® CPSA Advanced Level Module - Flexible Architectural Models (FLEX)
+  organization: INNOQ
+  type: Certificate
+  issue_date: 2021-03-08
+
+- name: Test Automation Architect Curriculum
+  organization: Nagarro
+  type: Training
+  issue_date: 2018-11-30
+
+- name: Certified Connected Enterprise Superhero
+  organization: Nagarro
+  type: Certificate
+  issue_date: 2019-01-24
+
+- name: ICAgile® Certified Professional - Agile Fundamentals (ICP)
+  organization: Nagarro
+  type: Certificate
+  issue_date: 2020-11-09
+
+- name: ICAgile® Certified Professional - Agile Programming (ICP-PRG)
+  organization: Nagarro
+  type: Certificate
+  issue_date: 2019-07-08
+
+- name: Azure DevOps Assessment
+  organization: Microsoft
+  type: Certificate
+  issue_date: 2019-08-01
+
+- name: Azure Sales Fundamentals
+  organization: Microsoft
+  type: Certificate
+  issue_date: 2019-08-01
+
+- name: Labor law, Challenging conversations
+  organization: osb international
+  type: Training
+  issue_date: 2019-12-01
+
+- name: Burnout prevention, Economic leadership, Emotional intelligence, Situational leadership, Perception & conversation, Principles of Self-Management
+  organization: osb international
+  type: Training
+  issue_date: 2020-01-01
+
+- name: Management 3.0
+  organization: Nagarro
+  type: Training
+  issue_date: 2020-01-01
+
+- name: Economic leadership
+  organization: osb international
+  type: Training
+  issue_date: 2020-03-01
+
+- name: Certified Azure Fundamentals (AZ-900)
+  organization: Microsoft
+  type: Certificate
+  issue_date: 2020-10-09
+
+- name: Certified SAFe® 5 Agilist
+  organization: Nagarro
+  type: Certificate
+  issue_date: 2021-02-25
+
+- name: Leadership perspectives, Team leadership, Conflict management
+  organization: osb international
+  type: Training
+  issue_date: 2021-05-01
+
+- name: Change & Transformation
+  organization: osb international
+  type: Training
+  issue_date: 2022-01-01
+
+  
