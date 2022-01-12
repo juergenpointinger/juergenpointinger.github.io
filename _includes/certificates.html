@@ -1,0 +1,9 @@
+<div class="text-zone">          
+  <p>
+  {% assign certificates = site.data.certificates | sort: 'issue_date' %}
+  {% for cert in certificates %}
+    › {{ cert.organization }}: „{{ cert.name }}“ ({{ cert.issue_date | date: "%b %Y" }})
+    {% unless forloop.last %} <br /> {% endunless %}
+  {% endfor %}
+  </p>
+</div>

@@ -1,9 +1,11 @@
 # Jekyll
 
 https://jekyllrb.com/docs/installation/
+Ruby 2.7.5-1 (devkit)
 
 ```sh
 $ gem install jekyll bundler
+$ bundle install
 ```
 
 ### Run Jekyll local
