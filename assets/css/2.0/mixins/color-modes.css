@@ -40,6 +40,10 @@ html {
   --color-fg-navigation: var(--color-scale-grey-1);
   --color-link-navigation: var(--color-scale-blue-1);
 
+  --color-bg-tooltip: var(--color-scale-grey-6);
+  --color-fg-tooltip: var(--color-scale-grey-2);
+  --color-border-tooltip: var(--color-scale-grey-4);
+
   --color-bg-footer: var(--color-scale-grey-8);
   --color-fg-footer: var(--color-scale-grey-1);
   --color-link-footer: var(--color-scale-grey-1);
@@ -62,6 +66,9 @@ html[data-color-mode=light] {
   --color-link: var(--color-scale-blue-2);
 
   --color-bg-input: var(--color-scale-grey-100);
+
+  --color-bg-tooltip: var(--color-scale-grey-100);
+  --color-border-tooltip: var(--color-scale-grey-99);
 
   --color-bg-navigation: var(--color-scale-blue-4);
   --color-link-navigation: var(--color-scale-blue-2);
