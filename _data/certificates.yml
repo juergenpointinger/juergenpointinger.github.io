@@ -1,109 +1,323 @@
 - name: ISAQB® Certified Professional for Software Architecture (CPSA-F)
+  learning_objectives:
+    - The concept and meaning of software architecture
+    - Components, modules, interfaces and relationships
+    - Architecture and quality goals
+    - Tasks and responsibility for you as a software architect
+    - Your role as a software architect in projects 
+    - State-of-the-art methods and techniques for the development of software architectures
   organization: Future Network Cert
   type: Certificate
   issue_date: 2016-02-26
 
 - name: 360° Test Automation
+  learning_objectives:
+    - Technical basics
+    - Data-driven test automation
+    - Keyword-driven test automation
+    - Test automation in the test process
+    - Test management
+    - Market overview tools
   organization: Nagarro
   type: Training
   issue_date: 2017-10-18
 
 - name: ISAQB® CPSA Advanced Level Module - Architecture Evaluation (ARCEVAL)
+  learning_objectives:
+    - Basic terms of software architecture evaluation
+    - Requirements in architecture evaluation
+    - Evaluation workshop
+    - Rework and result utilization
+    - Evaluation of existing systems (and system parts)
+    - Examples for the evaluation of software architectures
   organization: embarc
   type: Certificate
   issue_date: 2019-06-11
 
 - name: ISAQB® CPSA Advanced Level Module - Flexible Architectural Models (FLEX)
+  learning_objectives:
+    - Availability, reliability, time-to-market, flexibility, predictability, reproducibility, homogenisation of the stages, internet / web-scale, distributed systems, parallelism of feature development, evolution of the architecture (build for replacement), heterogeneity, automation
+    - Motivation for decompositioning into smaller systems
+    - Different kinds of modularisation, coupling
+    - System limits as a way of isolation
+    - Hierarchical structure
+    - Application, self-contained system, Microservice
+    - Domain-driven design concepts and "Strategic Design", Bounded contexts
+    - Frontend integration, legacy systems, authentication, authorisation, (loose) coupling, scalability, messaging patterns, domain events, decentralised data management.
+    - Modern operations, DevOps, Infrastructure as Code, Configuration Management
+    - Monitoring, Operations, Logging, Tracing, Metrics
+    - "Consistency models: ACID, BASE, partitioning, CAP"
+    - "Resilience: Resilient Software Design, Stability, Availability, Graceful Degradation, Circuit Breaker, Bulkhead"
   organization: INNOQ
   type: Certificate
   issue_date: 2021-03-08
 
 - name: Test Automation Architect Curriculum
+  learning_objectives:
+    - A2A and test automation basics
+    - A2A Test Automation Framework (TAF) introduction
+    - Compact test cases
+    - Process and risk management
+    - Test automation in the delivery lifecycle
+    - .NET/Java development
+    - Selenium
+    - Test management tools
+    - Basics of Microsoft test automation
+    - Load and performance testing
+    - Web service testing
+    - DevOps basics
+    - ISTQB Foundation Level
   organization: Nagarro
   type: Training
   issue_date: 2018-11-30
 
-- name: Certified Connected Enterprise Superhero
-  organization: Nagarro
-  type: Certificate
-  issue_date: 2019-01-24
-
 - name: ICAgile® Certified Professional - Agile Fundamentals (ICP)
+  learning_objectives:
+    - "History: Origins of Agile; Agile Manifesto; Agile beyond software development"
+    - "Culture and mindset: Understanding the Agile Mindset; Establishing the Agile Mindset; Agile in context (as a journey)"
+    - "Creating shared understanding: Developing soft skills; Understanding communication barriers; Sharing knowledge; Physical work environments; Collaboration techniques; Techniques for sharing understanding"
+    - Shifts in roles
+    - "Incremental development: Value-based work; Retaining quality"
+    - "Work-In-Progress (WIP): Continuous integration; Cost and benefit of frequent delivery"
+    - "Include customers and users: Defining customer; User involvement; User feedback"
+    - "Planning and adapting: Planning; Estimation"
+    - Process and product adaptation
   organization: Nagarro
   type: Certificate
   issue_date: 2020-11-09
 
 - name: ICAgile® Certified Professional - Agile Programming (ICP-PRG)
+  learning_objectives:
+    - "Unit testing: Types of tests to automate; Fixture setup"
+    - "Readable tests: Coding tests by intention; Verifying results"
+    - "Test coverage: Identifying completeness conditions; Avoiding duplication in the conditions"
+    - "Testing patterns: Listening to your tests; Testing the tests; Refactoring tests"
+    - "Speed of builds: Test speed"
+    - "Test doubles: Use test doubles; Dependency injection"
+    - "Code smells: Clean programming; Common code smells"
+    - "Refactoring with existing test: Principles of refactoring; Common refactoring; Refactoring tools"
+    - "Dealing with legacy code: Approaching legacy code; Refactoring without tests; Retrofitting tests onto legacy code"
+    - "Test-driven development (TDD): The value of TDD; Red-Green-Refactor"
+    - "BDD: Identifying usage patterns to define the object or function interface"
+    - "Living documentation: Tests as specification and documentation: ATDD as an aid to Design Thinking"
+    - "Acceptance Test-driven development (ATDD): ATDD process; ATDD styles and tools"
+    - Continuous integration, version control and build automation
+    - Pair Programming
   organization: Nagarro
   type: Certificate
   issue_date: 2019-07-08
 
-- name: Azure DevOps Assessment
-  organization: Microsoft
-  type: Certificate
-  issue_date: 2019-08-01
-
-- name: Azure Sales Fundamentals
-  organization: Microsoft
-  type: Certificate
-  issue_date: 2019-08-01
-
-- name: Labor law, Challenging conversations
-  organization: osb international
-  type: Training
-  issue_date: 2019-12-01
-
-- name: Burnout prevention, Economic leadership, Emotional intelligence, Situational leadership, Perception & conversation, Principles of Self-Management
-  organization: osb international
-  type: Training
-  issue_date: 2020-01-01
-
-- name: Management 3.0
-  organization: Nagarro
-  type: Training
-  issue_date: 2020-01-01
-
-- name: Economic leadership
+- name: Agile Leadership Skills
+  learning_objectives:
+    - Labor law
+    - Challenging conversations
+    - Burnout prevention
+    - Economic leadership
+    - Emotional intelligence
+    - Situational leadership
+    - Perception and conversation
+    - Principles of Self-Management
+    - Economic leadership
   organization: osb international
   type: Training
   issue_date: 2020-03-01
 
+- name: Management 3.0
+  learning_objectives:
+    - Management and Leadership
+    - Complexity Thinking
+    - Energize People
+    - Empower Teams
+    - Align Constraints
+    - Develop Competence
+    - Grow Structure
+    - Improve Everything
+  organization: Nagarro
+  type: Training
+  issue_date: 2020-01-01
+
 - name: Certified Azure Fundamentals (AZ-900)
+  learning_objectives:
+    - Cloud concepts
+    - Core Azure services
+    - Core solutions and management tools on Azure
+    - General security and network security features
+    - Identity, governance, privacy, and compliance features
+    - Azure cost management and Service Level Agreements
   organization: Microsoft
   type: Certificate
   issue_date: 2020-10-09
 
 - name: Certified SAFe® 5 Agilist
+  learning_objectives:
+    - Boosting productivity
+    - Improving product quality
+    - Decreasing time to market
+    - Increasing employee engagement
+    - Establish Team and Technical Agility and organize around the flow of value.
+    - Align massive organizations around clear, common objectives
+    - Participate successfully in critical SAFe events, such as PI Planning
+    - Adopt a customer-centric mindset.
   organization: Nagarro
   type: Certificate
   issue_date: 2021-02-25
 
-- name: Leadership perspectives, Team leadership, Conflict management
+- name: Agile Leadership Skills
+  learning_objectives:
+    - Leadership perspectives
+    - Team leadership
+    - Conflict management
   organization: osb international
   type: Training
   issue_date: 2021-05-01
 
-- name: Change & Transformation
-  organization: osb international
-  type: Training
-  issue_date: 2022-01-01
-
-- name: Lean Leadership Skills, Lean Culture & Lean Management
+- name: Lean Leadership Skills, Lean Culture and Lean Management
+  learning_objectives:
+    - Introduction to Lean Leadership and Culture
+    - The House of Lean
+    - Lean Culture Principles and Practices
+    - "The Job of the Lean Leader: To Challenge and To Serve"
+    - Getting to Lean - Designing the System for a New Culture
+    - "The Habits of Continuous Improvement: The Team Kata"
   organization: Udemy
-  type: Training
+  type: Certificate
   issue_date: 2022-01-17
 
-- name: Wicked Problem Solving Practitioner 2.0
-  organization: PMI
-  type: Training
-  issue_date: 2022-01-18
-
 - name: Design Thinking in 3 Steps
+  learning_objectives:
+    - What is Design Thinking?
+    - "Understand: Plan your Research; Conduct your Research; Identify your Findings; Evaluate your Progress"
+    - "Envision: Brainstorm new Ideas; Choose an Idea; Evaluate your Progress"
+    - "Prototype: Build a Storyboard; Test with Users; Evaluate your Progress"
   organization: Udemy
   type: Training
   issue_date: 2022-01-18
 
 - name: Agile Leadership and Resilient Teams
+  learning_objectives:
+    - Riding the Head Curve
+    - Building strong relationships
+    - Building flexible relationships
+    - Building fair business relationships
+    - "Agile team meetings: Going up the Heat Curve"
+    - Resilient leadereship
+  organization: Udemy / NASBA
+  type: Certificate
+  issue_date: 2022-01-18
+
+- name: Change Management for Organizations
+  learning_objectives:
+    - Building a Common Framework and Language
+    - Create and Clarify Vision
+    - Involve and Engage the Organization
+    - Implement and Sustain the Change
+    - Change Management Challenges and Solutions
+  organization: Udemy / NASBA
+  type: Certificate
+  issue_date: 2022-01-19
+
+- name: Agile Leadership Skills
+  learning_objectives:
+    - Change and Transformation
+  organization: osb international
+  type: Training
+  issue_date: 2022-01-21
+
+- name: Emotional Intelligence at Work
+  learning_objectives:
+    - Emotional Intelligence explained
+    - Developing your EQ
+    - EQ in the Workplace
+  organization: Udemy / NASBA
+  type: Certificate
+  issue_date: 2022-01-21
+
+- name: Introduction to Service Management with ITIL4
+  learning_objectives:
+    - Service Management
+    - The Basics of ITIL 4    
   organization: Udemy
   type: Training
-  issue_date: 2022-01-18
+  issue_date: 2022-01-22
+
+- name: Transformational Leadership and Leading Corporate Culture
+  learning_objectives:
+      - Principled Leadership and Culture
+      - The Business Case for Principled Leadership
+      - The Transformational Principles
+  organization: Udemy
+  type: Certificate
+  issue_date: 2022-01-24
+
+- name: Wicked Problem Solving Practitioner 2.0
+  learning_objectives:
+    - Wicked Problems
+    - Tools and environment
+    - "Better system: A better system, Plays, Problems, Collaboration"
+    - "Lead with key questions: Key questions, Frame, Navigate, Probe"
+    - "Make ideas visible: Expres, Organize, Map"
+    - "Engage with forwards steps: Move, Shift, Align"
+    - "Resolve clearly: Solve, Top down, Bottum up, Impact"
+  organization: PMI
+  type: Certificate
+  issue_date: 2022-01-24
+
+- name: Team Leadership and Team Management Master Class
+  learning_objectives:
+    - >-
+      Planning and Organizing: Principles of Lean Management;
+      Organizing your Team;
+      Stages of Team and Organization Development;
+      Clarifying Decision Styles;
+      Develop your Scorecard and Visual display
+    - >-
+      The Team Improvement KATA: Defining customer requirements and Improvement targets;
+      Solving problems;
+      Mapping your value stream;
+      Analyzing variances;
+      Finding and eliminating waste;
+      Motivation and human performance;
+      Standard work;
+      Designing hybrid work systems
+    - >- 
+      Improving Team Effectiveness: The personal responsibility of team members to self-manage;
+      Team member's responsibility to be a great team member;
+      Facilitating remote or virtual teams; 
+      Team facilitation skills;
+      Effective listening skills;
+      Giving and receiving feedback;
+      Conflict resolution;
+      Improving the system
+  organization: Udemy
+  type: Certificate
+  issue_date: 2022-01-28
+
+- name: "Business Strategy Execution: Agile Organization Design"
+  learning_objectives:
+      - The Agile/Lean Way
+      - Defining Strategy, Culture and Capabilities
+      - The Plan for Agile Strategy Execution
+      - What is the Business Strategy
+      - "Assessment: Leadership and Life Cycles; The Five Forms of Capital; Lean Culture"
+      - Writing the Strategy Design Charter
+      - Design Team Discovery
+      - Dream the Ideal Future
+      - Design the Future System
+      - Deploying and Developing the Future State
+  organization: Udemy
+  type: Certificate
+  issue_date: 2022-02-03
+
+- name: "OKR Goal Setting 101"
+  learning_objectives:
+      - You, your current goals, and the 10 biggest mistakes have to avoid
+      - Everything about OKRs and how you can use them to achieve more and be happy
+      - "Time to take action: Define your own OKRs now"
+      - TOP 10 OKR-related questions from 20,000 attendees and consulting clients
+      - OKRs as a management and leadership principle
+      - Types of OKRs - aspiring and committed OKRs
+      - ORKs in the real world environment
+      - OKR tools and tips to implement ORKs
+  organization: Udemy
+  type: Certificate
+  issue_date: 2022-02-06

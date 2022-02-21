@@ -2,6 +2,7 @@
 @import url(mixins/typography.css);
 @import url(mixins/loader.css);
 @import url(mixins/navigation.css);
+@import url(mixins/tooltips.css);
 
 :root {
   --padding-section: 65px 0px 0px;

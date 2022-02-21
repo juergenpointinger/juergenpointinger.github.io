@@ -2,8 +2,21 @@
   <p>
   {% assign certificates = site.data.certificates | sort: 'issue_date' %}
   {% for cert in certificates %}
+    <div class="tooltip">
     › {{ cert.organization }}: „{{ cert.name }}“ ({{ cert.issue_date | date: "%b %Y" }})
-    {% unless forloop.last %} <br /> {% endunless %}
+      
+    {% if cert.learning_objectives %}
+    <p class="tooltiptext">
+      <u>Learning objectives:</u> <br />
+      {% for lo in cert.learning_objectives %}
+      › {{ lo }}
+      {% unless forloop.last %}<br />{% endunless %}
+      {% endfor %}
+    </p>
+    {% endif %}
+
+    {% unless forloop.last %}<br />{% endunless %}
+    </div>
   {% endfor %}
   </p>
 </div>
