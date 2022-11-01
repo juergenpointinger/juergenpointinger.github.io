@@ -321,3 +321,34 @@
   organization: Udemy
   type: Certificate
   issue_date: 2022-02-06
+
+- name: "Masterclass Self-organization"
+  learning_objectives:
+      - Where and why self-organization is superior to specification
+      - How and why self-organization works
+      - What requirements self-organization needs
+      - The role of management in relation to self-organization
+      - Introducing self-organization
+      - Self-organization and value creation
+      - Self-organization and market orientation
+      - Self-organization, commitment & involvement
+      - Management and self-organization
+      - Compliance and self-organization
+      - Authorization framework of self-organization
+      - Self-organization and informal networks
+      - Coordination within and between teams
+      - Challenge of home office and distributed teams
+      - Tools and techniques
+  organization: Alinbu Consulting
+  type: Training
+  issue_date: 2022-09-22
+
+- name: "Agile Leadership"
+  learning_objectives:
+      - Why Agile Leadership?
+      - The agile mindset
+      - Making organizations agile
+      - Implement agility
+  organization: WU Executive Academy
+  type: Certificate
+  issue_date: 2022-10-31
