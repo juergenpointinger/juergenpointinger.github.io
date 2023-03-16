@@ -242,9 +242,9 @@
 
 - name: Transformational Leadership and Leading Corporate Culture
   learning_objectives:
-      - Principled Leadership and Culture
-      - The Business Case for Principled Leadership
-      - The Transformational Principles
+    - Principled Leadership and Culture
+    - The Business Case for Principled Leadership
+    - The Transformational Principles
   organization: Udemy
   type: Certificate
   issue_date: 2022-01-24
@@ -294,61 +294,81 @@
 
 - name: "Business Strategy Execution: Agile Organization Design"
   learning_objectives:
-      - The Agile/Lean Way
-      - Defining Strategy, Culture and Capabilities
-      - The Plan for Agile Strategy Execution
-      - What is the Business Strategy
-      - "Assessment: Leadership and Life Cycles; The Five Forms of Capital; Lean Culture"
-      - Writing the Strategy Design Charter
-      - Design Team Discovery
-      - Dream the Ideal Future
-      - Design the Future System
-      - Deploying and Developing the Future State
+    - The Agile/Lean Way
+    - Defining Strategy, Culture and Capabilities
+    - The Plan for Agile Strategy Execution
+    - What is the Business Strategy
+    - "Assessment: Leadership and Life Cycles; The Five Forms of Capital; Lean Culture"
+    - Writing the Strategy Design Charter
+    - Design Team Discovery
+    - Dream the Ideal Future
+    - Design the Future System
+    - Deploying and Developing the Future State
   organization: Udemy
   type: Certificate
   issue_date: 2022-02-03
 
 - name: "OKR Goal Setting 101"
   learning_objectives:
-      - You, your current goals, and the 10 biggest mistakes have to avoid
-      - Everything about OKRs and how you can use them to achieve more and be happy
-      - "Time to take action: Define your own OKRs now"
-      - TOP 10 OKR-related questions from 20,000 attendees and consulting clients
-      - OKRs as a management and leadership principle
-      - Types of OKRs - aspiring and committed OKRs
-      - ORKs in the real world environment
-      - OKR tools and tips to implement ORKs
+    - You, your current goals, and the 10 biggest mistakes have to avoid
+    - Everything about OKRs and how you can use them to achieve more and be happy
+    - "Time to take action: Define your own OKRs now"
+    - TOP 10 OKR-related questions from 20,000 attendees and consulting clients
+    - OKRs as a management and leadership principle
+    - Types of OKRs - aspiring and committed OKRs
+    - ORKs in the real world environment
+    - OKR tools and tips to implement ORKs
   organization: Udemy
   type: Certificate
   issue_date: 2022-02-06
 
 - name: "Masterclass Self-organization"
   learning_objectives:
-      - Where and why self-organization is superior to specification
-      - How and why self-organization works
-      - What requirements self-organization needs
-      - The role of management in relation to self-organization
-      - Introducing self-organization
-      - Self-organization and value creation
-      - Self-organization and market orientation
-      - Self-organization, commitment & involvement
-      - Management and self-organization
-      - Compliance and self-organization
-      - Authorization framework of self-organization
-      - Self-organization and informal networks
-      - Coordination within and between teams
-      - Challenge of home office and distributed teams
-      - Tools and techniques
+    - Where and why self-organization is superior to specification
+    - How and why self-organization works
+    - What requirements self-organization needs
+    - The role of management in relation to self-organization
+    - Introducing self-organization
+    - Self-organization and value creation
+    - Self-organization and market orientation
+    - Self-organization, commitment & involvement
+    - Management and self-organization
+    - Compliance and self-organization
+    - Authorization framework of self-organization
+    - Self-organization and informal networks
+    - Coordination within and between teams
+    - Challenge of home office and distributed teams
+    - Tools and techniques
   organization: Alinbu Consulting
   type: Training
   issue_date: 2022-09-22
 
 - name: "Agile Leadership"
   learning_objectives:
-      - Why Agile Leadership?
-      - The agile mindset
-      - Making organizations agile
-      - Implement agility
+    - Why Agile Leadership?
+    - The agile mindset
+    - Making organizations agile
+    - Implement agility
   organization: WU Executive Academy
   type: Certificate
   issue_date: 2022-10-31
+
+- name: "Certified Aware Leader"
+  learning_objectives:
+    - Understanding business agility - designing your own business case for agility
+    - Introduction to the Leadership Agility model
+    - Increasing Leadership Capacity - Leading Situationally with Catalyst Leadership
+    - Developing "Catalysts Leadership" competencies ("Micro Culture")
+    - Understanding and developing your own corporate culture ("Macro Culture")
+    - Leading a business transformation in an agile way
+  organization: Agile Leadership Journey
+  type: Certificate
+  issue_date: 2023-03-16
+
+- name: "Certified Agile Leadership"
+  learning_objectives:
+      - Certified Agile Leadership Essentials (CAL-E)
+      - Certified Agile Leadership for Organizations (CAL-O)
+  organization: Scrum Alliance
+  type: Certificate
+  issue_date: 2023-03-16
