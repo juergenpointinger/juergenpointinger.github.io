@@ -90,3 +90,10 @@
   links:
     - type: Article
       link: https://brutkasten.com/devops-report-nagarro/
+
+- title: "Podcast: Agiles Arbeiten im Unternehmen und der Bildung #23"
+  publisher: Retrospektiv
+  date: 2023-03-20
+  links:
+    - type: Interview
+      link: https://retrospektiv.letscast.fm/episode/agiles-arbeiten-im-unternehmen-und-der-bildung-23      
