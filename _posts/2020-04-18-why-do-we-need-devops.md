@@ -1,6 +1,6 @@
 ---
 layout: post
-categories: DevOps
+categories: [Leadership]
 comment_issue_id: 1
 title: "Why do we need DevOps"
 date: 2020-04-18
