@@ -1,8 +1,8 @@
 ---
 layout: post
-categories: [Coding, Snippets, DevOps, Docker]
+categories: [Coding & Snippets]
 comment_issue_id: 3
-title: "Useful Docker commands"
+title: "Docker Cheat Sheet"
 date: 2020-04-15 14:30
 image: /assets/images/blog/useful-docker-commands.jpg
 ---

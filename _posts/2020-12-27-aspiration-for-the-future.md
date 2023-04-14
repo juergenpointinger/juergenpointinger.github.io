@@ -1,6 +1,6 @@
 ---
 layout: post
-categories: [Leadership, DevOps, Agile]
+categories: [Leadership]
 comment_issue_id: 10
 title: "Aspiration for the future"
 date: 2020-12-27

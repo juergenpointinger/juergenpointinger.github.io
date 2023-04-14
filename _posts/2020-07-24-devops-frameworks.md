@@ -1,6 +1,6 @@
 ---
 layout: post
-categories: [DevOps, Leadership]
+categories: [Leadership]
 comment_issue_id: 8
 title: "DevOps Frameworks"
 date: 2020-07-24
