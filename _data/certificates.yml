@@ -367,8 +367,22 @@
 
 - name: "Certified Agile Leadership"
   learning_objectives:
+      - Certified Agile Leader (CAL-1)
       - Certified Agile Leadership Essentials (CAL-E)
       - Certified Agile Leadership for Organizations (CAL-O)
   organization: Scrum Alliance
   type: Certificate
   issue_date: 2023-03-16
+
+- name: "Flight Level 3 Design"
+  learning_objectives:
+      - Flight Level 3 Essentials
+      - A Flight Level 3 Board
+      - Flight Level 3 at Different Scales
+      - Stories, Outcomes, Flight Items (SOFI)
+      - Flight Level 3 Board Design
+      - Create Focus and Set Constraints
+      - Establish Agile Interactions
+  organization: Flight Levels Academy
+  type: Certificate
+  issue_date: 2024-05-21
