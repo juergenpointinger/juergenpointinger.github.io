@@ -386,3 +386,18 @@
   organization: Flight Levels Academy
   type: Certificate
   issue_date: 2024-05-21
+
+- name: "Geschäftsführer (GmbH) Rechte und Pflichten"
+  learning_objectives:
+      - Merkmale
+      - GmbHG
+      - Gründung
+      - Organe
+      - Aufsichtsrat
+      - Generalversammlung
+      - Gesellschafter, Geschäftsführer, Vertretung
+      - Pflichten, Haftung
+      - Minderung Risiken 
+  organization: WIFI
+  type: Training
+  issue_date: 2024-10-02
