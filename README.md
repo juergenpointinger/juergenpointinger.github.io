@@ -5,7 +5,9 @@ Install Ruby and [Jekyll](https://jekyllrb.com/docs/installation/) first.
 ```sh
 $ winget install -e --id RubyInstallerTeam.RubyWithDevKit.3.2
 $ gem install jekyll bundler
+$ bundle update --all
 $ bundle install
+$ bundle lock --update
 ```
 
 ### Run Jekyll local
