@@ -8,10 +8,9 @@
 
   font-size: 90%;
 
-  width: 460px;
+  width: fit-content;
+  max-width: 98%;
   bottom: 70%;
-  left: 50%;
-  margin-left: -230px;
   border-radius: 5px;
   position: absolute;
   z-index: 1;
