@@ -404,12 +404,12 @@
 
 - name: ISAQB® CPSA Advanced Level Module - Domain-Driven Design (DDD)
   learning_objectives:
-    - Domain, model, and Ubiquitous Language
-    - Knowledge Crunching: The path to the model
-    - From model to implementation
-    - The model in application architecture
-    - Strategic Design 1: Cutting and distinguishing models from one another”
-    - Strategic Design 2: Context Mapping
+      - Domain, model, and Ubiquitous Language
+      - "Knowledge Crunching: The path to the model"
+      - From model to implementation
+      - The model in application architecture
+      - "Strategic Design 1: Cutting and distinguishing models from one another"
+      - "Strategic Design 2: Context Mapping"
   organization: WPS
   type: Certificate
   issue_date: 2024-10-25
