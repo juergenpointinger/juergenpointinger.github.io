@@ -2,12 +2,20 @@
 layout: base
 ---
 
-<div id="loader"></div>
+<body>
+  <div id="loader"></div>
 
-{% include navigation.html %}
+  {% include navigation.html %}
 
-<div role="main" class="container-lg px-3 my-5 markdown-body">
-  {{ content }}
-</div>
+  <div id="page">
+    <div id="container">
+      {{ content }}
+    </div>
 
-{% include footer.html type="post" %}
+    {% include footer.html type="post" %}
+
+    <script src="/assets/js/2.0/animate.js"></script>
+
+    <!-- Cookie consent -->
+    {% include cookie-consent.html %}
+</body>

@@ -1,6 +1,6 @@
 ---
 layout: post
-categories: [Coding & Snippets]
+category: Code & Snippets
 comment_issue_id: 3
 title: "Docker Cheat Sheet"
 date: 2020-04-15 14:30

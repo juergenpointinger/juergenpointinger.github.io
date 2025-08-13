@@ -1,6 +1,6 @@
 ---
 layout: post
-categories: [Leadership]
+category: Leadership
 comment_issue_id: 12
 title: "Being a heart surgeon in an IT depression"
 date: 2021-03-22

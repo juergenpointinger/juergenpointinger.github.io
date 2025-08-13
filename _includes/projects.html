@@ -1,11 +1,9 @@
-<div class="carousel">
-{% for project in site.data.projects %}
-  <div class="slide">
+<div class="projects-grid">
+  {% for project in site.data.projects %}
+  <div class="project-card">
     <notes>{{ project.location }} ({{ project.timespan }})</notes>
     <title>{{ project.industry }}</title>
-    <summary>{{ project.summary }}</summary>  
+    <summary>{{ project.summary }}</summary>
   </div>
-{% endfor %}
+  {% endfor %}
 </div>
-<div class="carousel-navigation"></div>
-<script src="/assets/js/2.0/carousel.js"></script>

@@ -1,6 +1,6 @@
 ---
 layout: post
-categories: [Leadership]
+category: Leadership
 comment_issue_id: 10
 title: "Aspiration for the future"
 date: 2020-12-27

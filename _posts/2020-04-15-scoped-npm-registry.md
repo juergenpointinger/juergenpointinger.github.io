@@ -1,6 +1,6 @@
 ---
 layout: post
-categories: [Coding & Snippets]
+category: Code & Snippets
 comment_issue_id: 4
 title: "How to use scoped NPM registry"
 date: 2020-04-15 14:30

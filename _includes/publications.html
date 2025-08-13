@@ -1,10 +1,11 @@
-<div class="text-zone">          
+<div class="text-zone">
   <p>
-  {% assign publications = site.data.publications | sort: 'date' %}
-  {% for asset in publications %}
-    › {{ asset.publisher }}: „{{ asset.title }}“ ({% for link in asset.links %}<a href ="{{ link.link }}" target="_blank">{{ link.type }}</a>{% unless forloop.last %} | {% endunless %}{% endfor %}
+    {% assign publications = site.data.publications | sort: 'date' %}
+    {% for asset in publications %}
+    › {{ asset.publisher }}: „{{ asset.title }}“ ({% for link in asset.links %}<a href="{{ link.link }}"
+      target="_blank">{{ link.type }}</a>{% unless forloop.last %} | {% endunless %}{% endfor %}
     {{ asset.date | date: "%b %Y" }})
     {% unless forloop.last %} <br /> {% endunless %}
-  {% endfor %}
+    {% endfor %}
   </p>
 </div>

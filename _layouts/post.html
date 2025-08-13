@@ -2,10 +2,14 @@
 layout: default
 ---
 
-{% include header.html type="post" %}
+<div class="markdown-body">
 
-{{ content }}
+  {% include header.html type="post" %}
 
-{% include tags.html %}
+  {{ content }}
 
-{% include comments.html element=".container-lg" %}
+  <!--{% include tags.html %}-->
+
+  {% include comments.html element=".container-lg" %}
+
+</div>

@@ -1,6 +1,6 @@
 ---
 layout: post
-categories: [Coding & Snippets]
+category: Code & Snippets
 comment_issue_id: 2
 title: "How to use Flyway with Docker"
 date: 2020-04-16

@@ -1,21 +1,168 @@
 @import url(base.css);
 @import url(mixins/meta.css);
-@import url(mixins/categories.css);
+@import url(mixins/posts.css);
 @import url(mixins/comments.css);
 @import url(mixins/cookie.css);
 
+:root {
+  /* Fluid Type Scale for Hero */
+  --fs-hero-h1: clamp(2.25rem, 1.2rem + 3vw, 3.5rem);   /* ~36–56px */
+  --fs-hero-h2: clamp(1.4rem, 0.9rem + 1.2vw, 2rem); /* ~22–32px */
+  --fs-hero-h4: clamp(1rem, 0.9rem + .4vw, 1.25rem);   /* ~16–20px */
+
+  --lh-tight: 1.15;
+  --lh-normal: 1.6;
+}
+
 body {
   display: block;
-
   margin: 0;
-  color: var(--color-fg);
-  background-color: var(--color-bg);
+  background: var(--color-bg);
+
   font-family: var(--font-family-main);
-  line-height: 26px;
+  font-size: 14px;
+  line-height: var(--lh-normal);
+  color: var(--color-fg);
+
+  -ms-user-select:none;
+  -moz-user-select:none;
+  -webkit-user-select:none;
+  -webkit-touch-callout: none;
+  -khtml-user-select: none;
+  user-select:none;
+}
+
+h1, h2, h3 {
+  margin: 15px 0px;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: var(--lh-normal);
+  font-family: var(--font-family-monospace);
+  letter-spacing: -2px;
+}
+
+h2, h3 {
+  color: var(--color-title-2);
+}
+
+h2, h3, h4 {
+  font-size: 38px;
+  letter-spacing: normal;
+}
+
+h3, h4 {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 30%;
+  margin: auto;
+  text-align: center;
+}
+
+h4 {
+  color: var(--color-title-1);
+  font-size: 24px;
+}
+
+h5 {
+  font-size: 11px;
+  font-weight: normal;
+  font-family: var(--font-family-main);
+  letter-spacing: 3px;
+  color: rgb(141, 141, 141);
+  margin: 5px 0px;
 }
 
 .image {
   margin: 20px 0 20px 0;
+}
+
+.markdown-body h2 {
+  border-bottom: 0px !important;
+}
+
+/* === PAGE === */
+#page {
+  width: 100%;
+  height: 100%;
+  margin: 60px 0px 0px;
+}
+
+#container {
+  color: var(--color-fg);
+  max-width: 1300px;
+  margin: 0px auto;
+  padding: 20px 15px 60px;
+}
+
+/* === HERO === */
+.hero {
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.welcome-zone {
+  display: flex;
+  flex-direction: column;
+  margin-right: 50px;
+  padding: 0px 0px 30px;
+}
+
+/* === HERO TYPOGRAPHY OVERRIDES === */
+.welcome-zone h1,
+.welcome-zone h2,
+.welcome-zone h3,
+.welcome-zone h4,
+.welcome-zone h5 {
+  font-family: var(--font-family-main) !important;
+  color: var(--color-fg) !important;
+  letter-spacing: 0 !important;
+  text-align: left !important;
+  margin: 0;  
+}
+
+.welcome-zone h1 {
+  font-weight: 800;
+  font-size: var(--fs-hero-h1);
+  line-height: var(--lh-tight);
+  margin: 0 0 .4em 0;
+}
+.welcome-zone h5 {
+  font-weight: 400;
+  font-size: 0.9rem;
+  color: var(--color-muted);
+  margin: 0 0 1em;
+}
+.welcome-zone h2 {
+  font-weight: 800;
+  font-size: var(--fs-hero-h2);
+  line-height: var(--lh-tight);
+  margin: .2em 0 0;
+}
+.welcome-zone h3 {
+  font-weight: 300;
+  font-size: calc(var(--fs-hero-h2) - .7rem);
+  line-height: var(--lh-tight);
+  margin: .1em 0 .8em;
+
+  display: block;
+  flex-direction: initial;
+  align-items: initial;
+}
+.welcome-zone h3 .accent {
+  color: var(--color-accent);
+  font-weight: inherit;
+}
+
+/* H4: Substatement */
+.welcome-zone h4{
+  font-weight: 300;
+  font-size: calc(var(--fs-hero-h2) - .7rem);
+  line-height: var(--lh-tight);
+  color: var(--color-muted);
+  margin: 0 0 1.2em;
 }
 
 /************************/

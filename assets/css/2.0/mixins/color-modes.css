@@ -2,7 +2,7 @@
   --color-scale-white: rgb(255, 255, 255);
   --color-scale-black: rgb(29, 29, 29);  
   --color-scale-green-1: rgb(56, 248, 160);
-  --color-scale-green-2: rgb(48, 201, 130);
+  --color-scale-green-2: rgb(10, 163, 108); 
   --color-scale-blue-1: rgb(56, 248, 260);
   --color-scale-blue-2: rgb(48, 201, 230);
   --color-scale-blue-3: rgb(114, 119, 144);
@@ -32,6 +32,11 @@ html {
   --color-tags-text: var(--color-scale-grey-4);
   --color-button: var(--color-scale-green-1);
   --color-link: var(--color-scale-blue-1);
+
+  --color-accent: var(--color-scale-green-2);
+  --color-muted: var(--color-scale-grey-3);
+
+  --color-section: var(--color-scale-grey-1);
 
   --color-placeholder: var(--color-scale-grey-2);
   --color-bg-input: var(--color-scale-grey-6);

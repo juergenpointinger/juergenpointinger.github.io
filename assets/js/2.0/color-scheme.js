@@ -3,16 +3,17 @@ window.matchMedia('(prefers-color-scheme: light)').addEventListener('change', se
 
 function setColorMode() {
   if (window.matchMedia && window.matchMedia('(prefers-color-scheme)').media !== 'not all') {
-    let matched = window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches;
+    document.documentElement.setAttribute('data-color-mode', 'light');
+    /*let matched = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
     if (matched) {
-      // Light mode
-      document.documentElement.setAttribute('data-color-mode', 'light');
-    } else {
       // Dark mode
       document.documentElement.setAttribute('data-color-mode', 'dark');
-    }
+    } else {
+      // Light mode
+      document.documentElement.setAttribute('data-color-mode', 'light');
+    }*/
   } else {
-    // Color scheme not support (use dark mode)
-    document.documentElement.setAttribute('data-color-mode', 'dark');
+    // Color scheme not support (use light mode)
+    document.documentElement.setAttribute('data-color-mode', 'light');
   }  
 }

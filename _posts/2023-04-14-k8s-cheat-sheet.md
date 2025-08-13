@@ -1,6 +1,6 @@
 ---
 layout: post
-categories: [Coding & Snippets]
+category: Code & Snippets
 comment_issue_id: 28
 title: "Kubernetes Cheat Sheet"
 date: 2023-04-01
