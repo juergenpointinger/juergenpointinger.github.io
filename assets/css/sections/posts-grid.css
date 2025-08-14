@@ -1,6 +1,3 @@
-body { line-height: var(--lh-normal); }
-
-/* === POSTS === */
 #posts{
   margin: 0 auto;
   padding: 0 15px 60px;

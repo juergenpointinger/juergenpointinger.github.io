@@ -1,0 +1,96 @@
+:root {
+  /* Fluid Type Scale for Hero */
+  --fs-hero-h1: clamp(2.25rem, 1.2rem + 3vw, 3.5rem);   /* ~36–56px */
+  --fs-hero-h2: clamp(1.4rem, 0.9rem + 1.2vw, 2rem); /* ~22–32px */
+  --fs-hero-h4: clamp(1rem, 0.9rem + .4vw, 1.25rem);   /* ~16–20px */
+}
+
+.hero {
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.claim {
+  display: flex;
+  flex-direction: column;
+  margin-right: 50px;
+  padding: 0px 0px 30px;
+}
+
+.avatar {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 35%;
+}
+
+.avatar img {
+  display: block;
+  border-radius: 50%;
+  width: 300px;
+  margin: auto;
+  /*filter: grayscale(100%);*/
+}
+
+@media (max-width: 960px) {
+  .avatar {
+    display: none;
+  }
+}
+
+/* === HERO TYPOGRAPHY OVERRIDES === */
+.claim h1,
+.claim h2,
+.claim h3,
+.claim h4,
+.claim h5 {
+  font-family: var(--font-family-main) !important;
+  color: var(--color-fg) !important;
+  letter-spacing: 0 !important;
+  text-align: left !important;
+  margin: 0;  
+}
+
+.claim h1 {
+  font-weight: 800;
+  font-size: var(--fs-hero-h1);
+  line-height: var(--lh-tight);
+  margin: 0 0 .4em 0;
+}
+.claim h5 {
+  font-weight: 400;
+  font-size: 0.9rem;
+  color: var(--color-muted);
+  margin: 0 0 1em;
+}
+.claim h2 {
+  font-weight: 800;
+  font-size: var(--fs-hero-h2);
+  line-height: var(--lh-tight);
+  margin: .2em 0 0;
+}
+.claim h3 {
+  font-weight: 300;
+  font-size: calc(var(--fs-hero-h2) - .7rem);
+  line-height: var(--lh-tight);
+  margin: .1em 0 .8em;
+
+  display: block;
+  flex-direction: initial;
+  align-items: initial;
+}
+.claim h3 .accent {
+  color: var(--color-accent);
+  font-weight: inherit;
+}
+
+/* H4: Substatement */
+.claim h4{
+  font-weight: 300;
+  font-size: calc(var(--fs-hero-h2) - .7rem);
+  line-height: var(--lh-tight);
+  color: var(--color-muted);
+  margin: 0 0 1.2em;
+}

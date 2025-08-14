@@ -1,0 +1,58 @@
+#projects h2{
+  margin: 0 auto 1rem;
+  text-align: center;
+}
+
+.projects-grid{
+  display: grid;
+  grid-template-columns: repeat(3, minmax(280px, 1fr));
+  gap: 1rem;
+  margin: 0 auto;
+  transform: none !important;
+  transition: none !important;
+}
+
+/* Card look for each slide */
+.project-card{
+  background: var(--color-bg);
+  border-radius: 14px;
+  box-shadow: 0 1px 6px rgba(0,0,0,.06);
+  padding: 1rem 1.2rem;
+  line-height: var(--lh-normal);
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+.project-card:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0,0,0,.08);
+}
+
+/* Map your custom tags to a nice hierarchy */
+.project-card notes{
+  display: block;
+  font-size: .75rem;
+  color: var(--color-muted);
+  margin: 0 0 .35rem 0;
+  text-transform: none;           /* keep it human */
+  letter-spacing: 0;
+}
+.project-card title{
+  display: block;
+  font-family: var(--font-family-main);
+  font-weight: 800;
+  font-size: 1.1rem;
+  color: var(--color-fg);
+  margin: 0 0 .35rem 0;
+}
+.project-card summary{
+  display: block;
+  color: var(--color-fg);
+  margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 960px){
+  .projects-grid{ grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 560px){
+  .projects-grid{ grid-template-columns: 1fr; }
+}

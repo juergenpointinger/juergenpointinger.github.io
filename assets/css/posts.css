@@ -1,0 +1,92 @@
+@import url(base.css);
+
+.image {
+  margin: 20px 0 20px 0;
+}
+
+.markdown-body h2 {
+  border-bottom: 0px !important;
+}
+
+/************************/
+/* FONTS */
+
+a {
+  color: var(--color-scale-blue-2);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/************************/
+/* POST */
+
+post-header {
+  display: block;
+  min-width: 100%;
+}
+
+post-header > .title-image {
+  width: 600px;
+  margin: 10px 0px;
+}
+
+post-header > .title {
+  margin-bottom: 3rem;
+
+  margin: 15px 0px;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1.4;
+  font-family: var(--font-family-main);
+  letter-spacing: -1px;
+}
+
+@media (max-width: 550px) {
+  post-header > .title {
+    font-size: 32px;
+  }
+}
+
+ol, ul, dl {
+  margin-top: 0;
+}
+
+.tags {
+  padding-top: 30px;
+  margin: 10px 0px;
+}
+
+.tags a {
+  color: var(--color-scale-grey-3);
+  text-decoration: none;
+  background-color: var(--color-scale-grey-100);
+  font-size: 12px;
+  line-height: 22px;
+  padding: 5px 10px;
+  border-radius: 3px;
+  margin-right: 8px;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  margin-bottom: .5rem;
+  font-family: var(--font-family-main);
+  font-weight: 400;
+  line-height: 1.5;
+  color: #333333;
+}
+
+/************************/
+/* Caption for images */
+
+img + em { 
+  display: block;
+  text-align: center;
+  font-size: 12px;
+}

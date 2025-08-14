@@ -1,0 +1,103 @@
+#about{
+  display: flex;
+  flex-wrap: wrap;
+  padding: var(--padding-section);
+  gap: 2rem;
+  column-gap: 3rem;
+}
+
+#about .text-zone h2{
+  font-size: 32px;
+  margin: 0 0 .75rem 0;
+}
+
+#about .text-zone p{
+  max-width: 62ch;
+  margin: 0 0 1rem 0;
+}
+
+/* === Principles === */
+.principles {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50%;
+}
+
+.principles-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin: auto;
+}
+
+.principle-card{
+  background: var(--color-bg);
+  text-align: center;
+  padding: .6rem .5rem;
+  border-radius: 14px;  
+  transition: transform .18s ease, box-shadow .18s ease, background-color .18s ease;
+}
+.principle-card h4{
+  font-family: var(--font-family-main);
+  font-weight: 700;
+  color: var(--color-fg);
+  margin: .5rem 0 .25rem;
+}
+.principle-card p{
+  font-size: .95rem;
+  line-height: 1.5;
+  color: var(--color-muted);
+  margin: 0;
+}
+.principle-card:hover .principle-mask{ background-color: var(--color-accent); }
+.principle-card:hover h4{ color: var(--color-accent); }
+
+/* Icons */
+.principle-mask{
+  width: 48px;
+  height: 48px;
+  background-color: var(--color-fg);
+  margin: 0 auto .4rem auto;
+  display: block;
+}
+
+.trust-mask {
+  -webkit-mask: url(/assets/images/principles/trust.png) center no-repeat;
+  mask: url(/assets/images/principles/trust.png) center no-repeat;
+  -webkit-mask-size: 48px;
+  mask-size: 48px;
+}
+.autonomy-mask {
+  -webkit-mask: url(/assets/images/principles/autonomy.png) center no-repeat;
+  mask: url(/assets/images/principles/autonomy.png) center no-repeat;
+  -webkit-mask-size: 48px;
+  mask-size: 48px;
+}
+.learning-mask {
+  -webkit-mask: url(/assets/images/principles/learning.png) center no-repeat;
+  mask: url(/assets/images/principles/learning.png) center no-repeat;
+  -webkit-mask-size: 48px;
+  mask-size: 48px;
+}
+.clarity-mask {
+  -webkit-mask: url(/assets/images/principles/clarity.png) center no-repeat;
+  mask: url(/assets/images/principles/clarity.png) center no-repeat;
+  -webkit-mask-size: 48px;
+  mask-size: 48px;
+}
+
+/* Responsive */
+@media (max-width: 960px) {
+  #about {
+    flex-direction: column;
+  }
+  .principles-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .principles-grid {
+    grid-template-columns: 1fr;
+  }
+}

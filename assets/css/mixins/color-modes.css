@@ -1,3 +1,11 @@
+/*
+  The page supports both dark and light color schemes,
+  and the page author prefers light.
+*/
+:root {
+  color-scheme: light dark;
+}
+
 :root {
   --color-scale-white: rgb(255, 255, 255);
   --color-scale-black: rgb(29, 29, 29);  
@@ -20,8 +28,8 @@
   --color-scale-grey-99: rgb(228, 228, 228);
   --color-scale-grey-100: rgb(242, 242, 242);
 
-  --logo-light: url(/assets/images/2.0/logo_light.svg);
-  --logo-dark: url(/assets/images/2.0/logo_dark.svg);
+  --logo-light: url(/assets/images/logo_light.svg);
+  --logo-dark: url(/assets/images/logo_dark.svg);
 }
 
 html {

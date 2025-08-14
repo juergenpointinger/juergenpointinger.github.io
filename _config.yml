@@ -27,10 +27,10 @@ theme: jekyll-theme-primer
 # --- Misc --- #
 
 # Image to show in meta tags - image must be a square (width = height)
-avatar: /assets/images/2.0/avatar.jpg
+avatar: /assets/images/avatar.jpg
 
 # Shortcut Icon (svg)
-favicon: /assets/images/2.0/logo_light.svg
+favicon: /assets/images/logo_light.svg
 
 # --- Footer options --- #
 
@@ -44,7 +44,7 @@ author:
 
 # Fill in your Google Analytics gtag.js ID to track your website using gtag
 gtag: "UA-163914938-1"
-  
+
 # --- Don't need to touch anything below here (but you can if you want) --- #
 
 # Exclude these files from production site

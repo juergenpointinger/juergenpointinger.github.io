@@ -1,27 +1,28 @@
 ---
 css:
-  - "/assets/css/2.0/blog.css" 
+- "/assets/css/posts.css"
 script:
-  - "/assets/js/common/jquery-2.2.4.min.js"
-  - "https://kit.fontawesome.com/bf7280a28a.js"
-  - "/assets/js/common/loader.js"
-  - href: "https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js"
-    sri: "sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg="
+- "/assets/js/common/jquery-2.2.4.min.js"
+- "https://kit.fontawesome.com/bf7280a28a.js"
+- "/assets/js/common/loader.js"
+- href: "https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js"
+sri: "sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg="
 ---
 
 <!DOCTYPE html>
 <html lang="en" data-color-mode="light">
-  {% include head.html %}
+{% include head.html %}
 
-  <body>
-    {{ content }}
+<body>
+  {{ content }}
 
-    <!-- Add anchor -->
-    <script>
-      $(document).ready(function() { anchors.add(); });
-    </script>
+  <!-- Add anchor -->
+  <script>
+    $(document).ready(function () { anchors.add(); });
+  </script>
 
-    <!-- Cookie consent -->
-    {% include cookie-consent.html %}
-  </body>
+  <!-- Cookie consent -->
+  {% include cookie-consent.html %}
+</body>
+
 </html>
