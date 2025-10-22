@@ -195,67 +195,77 @@ permalink: /index.html
         <h3>Publications & talks</h3>
 
         <div class="pubs-grid">
-          <a class="pub-card"
-            href="https://retrospektiv.letscast.fm/episode/agiles-arbeiten-im-unternehmen-und-der-bildung-23"
-            target="_blank" rel="noopener">
-            <img src="/assets/images/publications/retrospektiv.png" alt="Retrospektiv">
+          <a class="pub-card" href="https://youtu.be/Y3t95NWFwnI?si=jJrdsbOvzjskMpED" target="_blank" rel="noopener">
+            <img src="/assets/images/publications/untis-plattform.png" alt="Untis Plattform Video">
             <div class="pub-meta">
-              <span class="pub-tag">Podcast</span>
-              <h4>Agiles Arbeiten im Unternehmen und der Bildung</h4>
-              <span class="pub-year">2023</span>
+              <span class="pub-tag">Video</span>
+              <h4>Wie Untis als Plattform den EdTech-Markt neu definiert</h4>
+              <span class="pub-year">2025</span>
             </div>
           </a>
 
-          <a class="pub-card" href="https://brutkasten.com/videos/software-future-talk-mit-nagarro/" target="_blank"
-            rel="noopener">
-            <img src="/assets/images/publications/brutkasten.png" alt="Brutkasten">
-            <div class="pub-meta">
-              <span class="pub-tag">Talk</span>
-              <h4>Software-Future-Talk</h4>
-              <span class="pub-year">2021</span>
-            </div>
-          </a>
+          <div class="pubs-grid">
+            <a class="pub-card"
+              href="https://retrospektiv.letscast.fm/episode/agiles-arbeiten-im-unternehmen-und-der-bildung-23"
+              target="_blank" rel="noopener">
+              <img src="/assets/images/publications/retrospektiv.png" alt="Retrospektiv">
+              <div class="pub-meta">
+                <span class="pub-tag">Podcast</span>
+                <h4>Agiles Arbeiten im Unternehmen und der Bildung</h4>
+                <span class="pub-year">2023</span>
+              </div>
+            </a>
 
-          <a class="pub-card" href="https://brutkasten.com/videos/software-future-talk-mit-nagarro/" target="_blank"
-            rel="noopener">
-            <img src="/assets/images/publications/itspektrum.png" alt="ITSpektrum">
-            <div class="pub-meta">
-              <span class="pub-tag">Print</span>
-              <h4>Evolutionäre Organisationsform - Mit kritischem Blick zu besseren, nachhaltigen Ergebnissen</h4>
-              <span class="pub-year">2021</span>
-            </div>
-          </a>
+            <a class="pub-card" href="https://brutkasten.com/videos/software-future-talk-mit-nagarro/" target="_blank"
+              rel="noopener">
+              <img src="/assets/images/publications/brutkasten.png" alt="Brutkasten">
+              <div class="pub-meta">
+                <span class="pub-tag">Talk</span>
+                <h4>Software-Future-Talk</h4>
+                <span class="pub-year">2021</span>
+              </div>
+            </a>
 
-          <a class="pub-card" href="https://go.nagarro.com/devops-wp" target="_blank" rel="noopener">
-            <img src="/assets/images/publications/devops.png" alt="Publication cover">
-            <div class="pub-meta">
-              <span class="pub-tag">Whitepaper</span>
-              <h4>A holistic approach to DevOps </h4>
-              <span class="pub-year">2021</span>
-            </div>
-          </a>
+            <a class="pub-card" href="https://brutkasten.com/videos/software-future-talk-mit-nagarro/" target="_blank"
+              rel="noopener">
+              <img src="/assets/images/publications/itspektrum.png" alt="ITSpektrum">
+              <div class="pub-meta">
+                <span class="pub-tag">Print</span>
+                <h4>Evolutionäre Organisationsform - Mit kritischem Blick zu besseren, nachhaltigen Ergebnissen</h4>
+                <span class="pub-year">2021</span>
+              </div>
+            </a>
+
+            <a class="pub-card" href="https://go.nagarro.com/devops-wp" target="_blank" rel="noopener">
+              <img src="/assets/images/publications/devops.png" alt="Publication cover">
+              <div class="pub-meta">
+                <span class="pub-tag">Whitepaper</span>
+                <h4>A holistic approach to DevOps </h4>
+                <span class="pub-year">2021</span>
+              </div>
+            </a>
+          </div>
+
+          <details class="pubs-all">
+            <summary>View all publications</summary>
+            {% include publications.html %}
+          </details>
         </div>
 
-        <details class="pubs-all">
-          <summary>View all publications</summary>
-          {% include publications.html %}
-        </details>
+        <div id="projects">
+          <h2>Impact stories</h2>
+          {% include projects.html %}
+        </div>
+
       </div>
 
-      <div id="projects">
-        <h2>Impact stories</h2>
-        {% include projects.html %}
-      </div>
-
+      {% include footer.html %}
     </div>
 
-    {% include footer.html %}
-  </div>
+    <script src="/assets/js/animate.js"></script>
 
-  <script src="/assets/js/animate.js"></script>
-
-  <!-- Cookie consent -->
-  {% include cookie-consent.html %}
+    <!-- Cookie consent -->
+    {% include cookie-consent.html %}
 </body>
 
 </html>
