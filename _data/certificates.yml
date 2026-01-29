@@ -399,7 +399,7 @@
       - Pflichten, Haftung
       - Minderung Risiken 
   organization: WIFI
-  type: Training
+  type: Certificate
   issue_date: 2024-10-02
 
 - name: ISAQB® CPSA Advanced Level Module - Domain-Driven Design (DDD)
@@ -413,3 +413,13 @@
   organization: WPS
   type: Certificate
   issue_date: 2024-10-25
+
+- name: "KI-Basis: Chancen, Risiken, Verantwortung, Sicherheit"
+  learning_objectives:
+      - Chancen und Risiken der künstlichen Intelligenz in der Arbeitspraxis analysieren
+      - Eigenes Haftungspotenzial sowie das des Unternehmens
+      - Relevante gesetzliche Anforderungen und zentrale Fachbegriffe im Bereich KI
+      - Präventive und risikominimierende Sicherheitsvorkehrungen in der Praxis anwenden
+  organization: WIFI
+  type: Certificate
+  issue_date: 2026-01-09
