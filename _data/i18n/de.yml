@@ -1,0 +1,127 @@
+# -----------------------------------------------------------------------------
+# Deutsche Textbausteine (Standardsprache, Root-URL "/")
+#
+# Konvention:
+#   - Struktur MUSS identisch zu en.yml sein. Neue Keys immer in beiden Dateien.
+#   - Werte duerfen Inline-HTML enthalten (Liquid escaped Data-Strings nicht).
+#   - Eigennamen, Produkt- und Zertifikatsnamen werden NICHT uebersetzt.
+# -----------------------------------------------------------------------------
+
+meta:
+  title: "© Jürgen Pointinger"
+  description: >-
+    Jürgen Pointinger – Co-CEO der Untis GmbH. Führung mit Klarheit, Vertrauen und Sinn:
+    EdTech, in der Menschen, Technologie und Kultur sich entfalten.
+
+nav:
+  home: "Startseite"
+  menu: "Menü"
+  about: "Über mich"
+  skills: "Fähigkeiten & Stärken"
+  projects: "Impact Stories"
+  blog: "Blog"
+
+language:
+  label: "Sprache wechseln"
+
+hero:
+  greeting: "Hi,"
+  intro: "ich bin Jürgen."
+  role: "Co-CEO Untis GmbH | Führung mit Klarheit, Vertrauen & Sinn"
+  headline: "EdTech entwickeln, die etwas verändert"
+  subline: 'dort wo <span class="accent">Menschen</span>, Technologie & Kultur sich entfalten.'
+  tagline: "Dabei helfe ich Umgebungen zu schaffen, in denen Vertrauen, Autonomie und Lernen den Weg weisen."
+  avatar_alt: "Porträt von Jürgen Pointinger"
+
+experiences:
+  years: "Jahre Erfahrung in der Führung von Technologie & Mensch"
+  organizations: "begleitete Organisationen"
+  teams: "Teams, die begeistert sind, Großes zu erreichen"
+
+about:
+  title: "Über mich – Kulturen, die sich entfalten"
+  paragraphs:
+    - >-
+      Meine Reise durch die Welt der Technologie und Unternehmensführung hat mich gelehrt,
+      dass der bedeutendste Fortschritt dann entsteht, wenn Menschen, Ziele und Strategie aufeinander abgestimmt sind.
+      Im Laufe meiner Karriere war ich in verschiedenen Branchen wie Bildung, Finanzen,
+      Verkehr und Telekommunikation tätig&nbsp;&ndash; stets mit einem klaren Fokus auf
+      skalierbare, sichere und nutzerorientierte Lösungen.
+    - >-
+      Heute konzentriere ich mich als Co-CEO von <a href="https://www.untis.at" target="_blank">Untis</a>, 
+      das Unternehmen so zu gestalten, dass Vertrauen stärker ist als Hierarchien und dass die Teams über die
+      notwendige Klarheit und Autonomie verfügen, um ihre beste Leistung zu erbringen.
+    - >-
+      Mein Führungsstil verbindet Prinzipien der transformationalen Führung mit denen der dienenden Führung: 
+      Veränderung anstoßen, Eigenverantwortung ermöglichen und Zusammenarbeit über alle Ebenen hinweg fördern.
+      Agiles Arbeiten heißt für mich weniger Prozess als vielmehr die richtigen Bedingungen
+      dafür zu schaffen, dass Menschen sich anpassen, Neues wagen und wachsen können.
+    - >-
+      Was mich täglich antreibt: zu sehen, wie Menschen wachsen, Ideen Gestalt annehmen und
+      Kultur entsteht, die in der komplexen, sich ständig wandelnden Welt der
+      Bildungstechnologie tragfähig bleibt.
+
+principles:
+  trust:
+    title: "Vertrauen"
+    text: "Beziehungen aufbauen, in denen Transparenz und Verlässlichkeit selbstverständlich sind."
+  autonomy:
+    title: "Autonomie"
+    text: "Teams die Freiheit geben, zu entscheiden, zu gestalten und Verantwortung zu übernehmen."
+  learning:
+    title: "Lernen"
+    text: "Neugier und Wachstum als Konstante fördern, nicht als Ausnahme."
+  clarity:
+    title: "Klarheit"
+    text: "Richtung und Sinn geben, damit alle wissen, wohin es geht."
+
+skills:
+  title: "Fähigkeiten & Stärken"
+  leadership:
+    title: "Leadership"
+    text: "Transformationale und dienende Führung mit Fokus auf Klarheit, Vertrauen und Sinn."
+  people:
+    title: "Menschen & Organisation"
+    text: "Lean-Arbeitsweisen, die Autonomie und geteilte Verantwortung ermöglichen."
+  strategy:
+    title: "Strategie & Produkt"
+    text: "Von der Vision zum Wert: Ziele, Ergebnisse und verantwortungsvolle Umsetzung."
+  technology:
+    title: "Technologie"
+    text: "Moderne Architektur und Engineering für robuste, skalierbare Systeme."
+
+trainings:
+  title: "Trainings & Zertifikate"
+  subtitle: "Fokus auf Führung, agile Arbeitsweisen und verantwortungsvolle Produktentwicklung."
+  show_all: "Vollständige Zertifikatshistorie anzeigen"
+  learning_objectives: "Lernziele:"
+
+publications:
+  title: "Publikationen & Vorträge"
+  show_all: "Alle Publikationen anzeigen"
+  # Schlagwoerter der Publikationsarten. Keys entsprechen den Werten in _data/publications.yml.
+  types:
+    Video: "Video"
+    Podcast: "Podcast"
+    Talk: "Vortrag"
+    Print: "Print"
+    Whitepaper: "Whitepaper"
+    Article: "Artikel"
+    Interview: "Interview"
+    Roundtable: "Roundtable"
+
+projects:
+  title: "Impact Stories"
+
+footer:
+  back_to_top: "Nach oben"
+  linkedin: "Auf LinkedIn folgen"
+  github: "Auf GitHub folgen"
+  feed: "Feed abonnieren"
+
+cookie:
+  text: >-
+    Diese Website verwendet Cookies, um das Surferlebnis zu verbessern und zu personalisieren
+    sowie für Analysen und Statistiken über die Besucher. Mehr über die verwendeten Cookies
+    erfahren Sie in unserer <a href="/privacy">Datenschutzerklärung</a>.
+  accept: "Akzeptieren"

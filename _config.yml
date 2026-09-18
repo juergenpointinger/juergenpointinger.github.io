@@ -24,6 +24,34 @@ permalink: /:title/
 
 theme: jekyll-theme-primer
 
+# --- Languages (i18n) --- #
+
+# Standardsprache. Sie wird auf der Root-URL ausgeliefert und gilt fuer alle
+# Seiten, die in ihrem Front Matter kein eigenes "lang" setzen.
+lang_default: de
+
+# Reihenfolge bestimmt die Anzeige im Sprachumschalter.
+# "url" muss dem Permalink der jeweiligen Sprachvariante der Startseite entsprechen.
+languages:
+  - code: de
+    name: Deutsch
+    url: /
+  - code: en
+    name: English
+    url: /en/
+
+# Blog und Rechtstexte sind (noch) ausschliesslich englisch -> Chrome in Englisch.
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      lang: en
+  - scope:
+      path: "sitemap"
+    values:
+      lang: en
+
 # --- Misc --- #
 
 # Image to show in meta tags - image must be a square (width = height)

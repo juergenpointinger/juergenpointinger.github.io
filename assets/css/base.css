@@ -76,13 +76,11 @@ h2, h3, h4 {
   letter-spacing: normal;
 }
 
-h3, h4 {
-  display: flex;
-  flex-direction: column;
-  flex-basis: 30%;
-  margin: auto;
-  text-align: center;
-}
+/* Bewusst KEINE globale Flex-Regel fuer h3/h4.
+   Ein Heading als Spalten-Flex-Container bricht jedes Inline-Kind in eine
+   eigene Zeile - das betraf den AnchorJS-Link in Blogposts und das
+   <span class="accent"> im Hero (siehe .claim h3 in sections/hero.css).
+   Layout-Eigenschaften gehoeren in die jeweilige Section, nicht auf das Element. */
 
 h4 {
   color: var(--color-title-1);

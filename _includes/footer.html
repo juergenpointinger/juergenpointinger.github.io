@@ -1,7 +1,10 @@
+{%- comment -%} Aktive Sprache + Textbausteine lokal auflösen (siehe _data/i18n/). {%- endcomment -%}
+{%- assign lang = page.lang | default: site.lang_default -%}
+{%- assign t = site.data.i18n[lang] -%}
 <div id="footer">
   <div class="top">
-    <a href="#" aria-label="Back to top">
-      <div class="goto" title="Back to top">
+    <a href="#" aria-label="{{ t.footer.back_to_top }}">
+      <div class="goto" title="{{ t.footer.back_to_top }}">
         <i class="fa fa-arrow-up" aria-hidden="true"></i>
       </div>
     </a>
@@ -10,15 +13,15 @@
   <div class="footer-content">
     <ul class="footer-links">
       <li>
-        <a href="https://www.linkedin.com/in/juergen-pointinger/" target="_blank" title="Follow me on LinkedIn"><i
-            class="fab fa-linkedin-in"></i></a>
+        <a href="https://www.linkedin.com/in/juergen-pointinger/" target="_blank"
+          title="{{ t.footer.linkedin }}" aria-label="{{ t.footer.linkedin }}"><i class="fab fa-linkedin-in"></i></a>
       </li>
       <li>
-        <a href="https://github.com/juergenpointinger/" target="_blank" title="Follow me on GitHub"><i
-            class="fab fa-github"></i></a>
+        <a href="https://github.com/juergenpointinger/" target="_blank"
+          title="{{ t.footer.github }}" aria-label="{{ t.footer.github }}"><i class="fab fa-github"></i></a>
       </li>
       <li>
-        <a href="/feed" title="Follow my feed"><i class="fas fa-rss"></i></a>
+        <a href="/feed" title="{{ t.footer.feed }}" aria-label="{{ t.footer.feed }}"><i class="fas fa-rss"></i></a>
       </li>
     </ul>
 

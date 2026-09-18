@@ -2,20 +2,22 @@
 layout: base
 ---
 
-<body>
-  <div id="loader"></div>
+{%- comment -%}
+  Rahmen fuer Unterseiten und Blogposts. Das Body-Element, das Laden der
+  Skripte und der Cookie-Banner liegen ausschliesslich in base.html; hier wird
+  nur der Seiteninhalt aufgebaut (analog zu _layouts/home.html).
+{%- endcomment -%}
 
-  {% include navigation.html %}
+<div id="loader"></div>
 
-  <div id="page">
-    <div id="container">
-      {{ content }}
-    </div>
+{% include navigation.html %}
 
-    {% include footer.html type="post" %}
+<div id="page">
+  <div id="container">
+    {{ content }}
+  </div>
 
-    <script src="/assets/js/animate.js"></script>
+  {% include footer.html type="post" %}
+</div>
 
-    <!-- Cookie consent -->
-    {% include cookie-consent.html %}
-</body>
+<script src="/assets/js/animate.js"></script>

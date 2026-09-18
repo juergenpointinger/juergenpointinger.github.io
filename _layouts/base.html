@@ -9,8 +9,9 @@ script:
 sri: "sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg="
 ---
 
+{%- assign lang = page.lang | default: site.lang_default -%}
 <!DOCTYPE html>
-<html lang="en" data-color-mode="light">
+<html lang="{{ lang }}" data-color-mode="light">
 {% include head.html %}
 
 <body>

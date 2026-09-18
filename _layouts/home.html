@@ -1,0 +1,275 @@
+{%- comment -%}
+  Landing Page, sprachneutral. Alle Texte kommen aus _data/i18n/<lang>.yml.
+  Verwendet von index.html (lang: de, "/") und en/index.html (lang: en, "/en/").
+{%- endcomment -%}
+{%- assign lang = page.lang | default: site.lang_default -%}
+{%- assign t = site.data.i18n[lang] -%}
+<!DOCTYPE html>
+<!-- https://www.flaticon.com/authors/ultimatearm -->
+<html lang="{{ lang }}" data-color-mode="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--
+    The page supports both dark and light color schemes,
+    and the page author prefers light.
+  -->
+  <meta name="color-scheme" content="light dark">
+
+  <link rel="stylesheet" href="/assets/css/base.css">
+
+  <link rel="shortcut icon" type="image/svg+xml" href="/assets/images/logo_light.svg" sizes="any">
+
+  <script src="/assets/js/common/jquery-2.2.4.min.js"></script>
+  <script src="https://kit.fontawesome.com/bf7280a28a.js" crossorigin="anonymous"></script>
+  <script src="/assets/js/common/loader.js"></script>
+  <script src="/assets/js/color-scheme.js"></script>
+
+  <title>{{ t.meta.title }}</title>
+  <meta name="description" content="{{ t.meta.description | strip_newlines }}">
+  <meta name="author" content="{{ site.author.name }}">
+
+  <!-- Sprachvarianten fuer Suchmaschinen -->
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
+  {%- for l in site.languages %}
+  <link rel="alternate" hreflang="{{ l.code }}" href="{{ l.url | absolute_url }}">
+  {%- endfor %}
+  {%- for l in site.languages -%}{%- if l.code == site.lang_default %}
+  <link rel="alternate" hreflang="x-default" href="{{ l.url | absolute_url }}">
+  {%- endif -%}{%- endfor %}
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="{% if lang == 'de' %}de_AT{% else %}en_US{% endif %}">
+  <meta property="og:title" content="{{ t.meta.title }}">
+  <meta property="og:description" content="{{ t.meta.description | strip_newlines }}">
+  <meta property="og:url" content="{{ page.url | absolute_url }}">
+  <meta property="og:image" content="{{ site.avatar | absolute_url }}">
+</head>
+<!-- -->
+
+<body>
+  <div id="loader"></div>
+
+  {% include navigation.html %}
+
+  <div id="page">
+    <div id="container">
+
+      <div class="hero">
+        <div class="claim">
+          <h1>{{ t.hero.greeting }} <br /> {{ t.hero.intro }}</h1>
+          <h5>{{ t.hero.role }}</h5>
+          <h2>{{ t.hero.headline }}</h2>
+          <h3>{{ t.hero.subline }}</h3>
+          <h4>{{ t.hero.tagline }}</h4>
+        </div>
+        <div class="avatar">
+          <img src="/assets/images/avatar.jpg" alt="{{ t.hero.avatar_alt }}" />
+        </div>
+      </div>
+
+      <div id="experiences" class="js-animate-number-trigger">
+        <div class="experiences-grid">
+          <div class="experience-card">
+            <span class="number-counter js-animate-number">25</span>
+            <span class="plus">+</span>
+            <p>{{ t.experiences.years }}</p>
+          </div>
+          <div class="experience-card">
+            <span class="number-counter js-animate-number">20</span>
+            <span class="plus">+</span>
+            <p>{{ t.experiences.organizations }}</p>
+          </div>
+          <div class="experience-card">
+            <span class="number-counter js-animate-number">50</span>
+            <span class="plus">+</span>
+            <p>{{ t.experiences.teams }}</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="about">
+        <div class="text-zone">
+          <h2>{{ t.about.title }}</h2>
+          {%- for paragraph in t.about.paragraphs %}
+          <p>{{ paragraph }}</p>
+          {%- endfor %}
+        </div>
+
+        <div class="principles">
+          <div class="principles-grid">
+            <div class="principle-card">
+              <div class="principle-mask trust-mask"></div>
+              <h4>{{ t.principles.trust.title }}</h4>
+              <p>{{ t.principles.trust.text }}</p>
+            </div>
+            <div class="principle-card">
+              <div class="principle-mask autonomy-mask"></div>
+              <h4>{{ t.principles.autonomy.title }}</h4>
+              <p>{{ t.principles.autonomy.text }}</p>
+            </div>
+            <div class="principle-card">
+              <div class="principle-mask learning-mask"></div>
+              <h4>{{ t.principles.learning.title }}</h4>
+              <p>{{ t.principles.learning.text }}</p>
+            </div>
+            <div class="principle-card">
+              <div class="principle-mask clarity-mask"></div>
+              <h4>{{ t.principles.clarity.title }}</h4>
+              <p>{{ t.principles.clarity.text }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="skills">
+        <h3 class="skills-title">{{ t.skills.title }}</h3>
+
+        <div class="skills-grid">
+          <div class="skill-card">
+            <div class="skills-mask leadership-mask"></div>
+            <h4>{{ t.skills.leadership.title }}</h4>
+            <p>{{ t.skills.leadership.text }}</p>
+          </div>
+
+          <div class="skill-card">
+            <div class="skills-mask management-mask"></div>
+            <h4>{{ t.skills.people.title }}</h4>
+            <p>{{ t.skills.people.text }}</p>
+          </div>
+
+          <div class="skill-card">
+            <div class="skills-mask architecture-mask"></div>
+            <h4>{{ t.skills.strategy.title }}</h4>
+            <p>{{ t.skills.strategy.text }}</p>
+          </div>
+
+          <div class="skill-card">
+            <div class="skills-mask development-mask"></div>
+            <h4>{{ t.skills.technology.title }}</h4>
+            <p>{{ t.skills.technology.text }}</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div id="trainings">
+        <div class="text-zone">
+          <h3>{{ t.trainings.title }}</h3>
+          <p>{{ t.trainings.subtitle }}</p>
+        </div>
+
+        {%- comment -%} Kachelbeschriftungen sind Eigennamen und bleiben unuebersetzt. {%- endcomment -%}
+        <div class="trainings-grid">
+          <div class="training-card">
+            <img src="/assets/images/trainings/scrumalliance.svg" alt="Scrum Alliance">
+            <span>Scrum Alliance – Certified Agile Leader</span>
+          </div>
+          <div class="training-card">
+            <img src="/assets/images/trainings/wuacademy.jpg" alt="WU Executive Academy">
+            <span>WU Executive Academy – Agile Leadership</span>
+          </div>
+          <div class="training-card">
+            <img src="/assets/images/trainings/pmi.jpg" alt="Project Management Institute">
+            <span>PMI – Wicked Problem Solving Practitioner 2.0</span>
+          </div>
+          <div class="training-card">
+            <img src="/assets/images/trainings/flightlevels.jpg" alt="Flight Levels">
+            <span>Flight Levels Academy – Flight Level 3 Design</span>
+          </div>
+          <div class="training-card">
+            <img src="/assets/images/trainings/isaqb.jpg" alt="ISAQB">
+            <span>ISAQB® – CPSA Domain Driven Design (DDD)</span>
+          </div>
+          <div class="training-card">
+            <img src="/assets/images/trainings/alinbu.jpg" alt="Alinbu">
+            <span>Alinbu – Masterclass Selbstorganisation BetaCodex</span>
+          </div>
+        </div>
+
+        <details class="trainings-all">
+          <summary>{{ t.trainings.show_all }}</summary>
+          {% include certificates.html %}
+        </details>
+      </div>
+
+      <div id="publications">
+        <h3>{{ t.publications.title }}</h3>
+
+        {%- comment -%} Publikationstitel bleiben in der Originalsprache, nur die Chips sind lokalisiert. {%- endcomment -%}
+        <div class="pubs-grid">
+          <a class="pub-card" href="https://youtu.be/Y3t95NWFwnI?si=jJrdsbOvzjskMpED" target="_blank" rel="noopener">
+            <img src="/assets/images/publications/untis-plattform.png" alt="Untis Plattform Video">
+            <div class="pub-meta">
+              <span class="pub-tag">{{ t.publications.types.Video }}</span>
+              <h4>Wie Untis als Plattform den EdTech-Markt neu definiert</h4>
+              <span class="pub-year">2025</span>
+            </div>
+          </a>
+
+          <a class="pub-card"
+            href="https://retrospektiv.letscast.fm/episode/agiles-arbeiten-im-unternehmen-und-der-bildung-23"
+            target="_blank" rel="noopener">
+            <img src="/assets/images/publications/retrospektiv.png" alt="Retrospektiv">
+            <div class="pub-meta">
+              <span class="pub-tag">{{ t.publications.types.Podcast }}</span>
+              <h4>Agiles Arbeiten im Unternehmen und der Bildung</h4>
+              <span class="pub-year">2023</span>
+            </div>
+          </a>
+
+          <a class="pub-card" href="https://brutkasten.com/videos/software-future-talk-mit-nagarro/" target="_blank"
+            rel="noopener">
+            <img src="/assets/images/publications/brutkasten.png" alt="Brutkasten">
+            <div class="pub-meta">
+              <span class="pub-tag">{{ t.publications.types.Talk }}</span>
+              <h4>Software-Future-Talk</h4>
+              <span class="pub-year">2021</span>
+            </div>
+          </a>
+
+          <a class="pub-card" href="https://brutkasten.com/videos/software-future-talk-mit-nagarro/" target="_blank"
+            rel="noopener">
+            <img src="/assets/images/publications/itspektrum.png" alt="ITSpektrum">
+            <div class="pub-meta">
+              <span class="pub-tag">{{ t.publications.types.Print }}</span>
+              <h4>Evolutionäre Organisationsform - Mit kritischem Blick zu besseren, nachhaltigen Ergebnissen</h4>
+              <span class="pub-year">2021</span>
+            </div>
+          </a>
+
+          <a class="pub-card" href="https://go.nagarro.com/devops-wp" target="_blank" rel="noopener">
+            <img src="/assets/images/publications/devops.png" alt="Publication cover">
+            <div class="pub-meta">
+              <span class="pub-tag">{{ t.publications.types.Whitepaper }}</span>
+              <h4>A holistic approach to DevOps </h4>
+              <span class="pub-year">2021</span>
+            </div>
+          </a>
+        </div>
+
+        <details class="pubs-all">
+          <summary>{{ t.publications.show_all }}</summary>
+          {% include publications.html %}
+        </details>
+      </div>
+
+      <div id="projects">
+        <h2>{{ t.projects.title }}</h2>
+        {% include projects.html %}
+      </div>
+
+    </div>
+
+    {% include footer.html %}
+  </div>
+
+  <script src="/assets/js/animate.js"></script>
+
+  <!-- Cookie consent -->
+  {% include cookie-consent.html %}
+</body>
+
+</html>

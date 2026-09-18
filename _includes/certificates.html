@@ -1,14 +1,22 @@
-<div class="text-zone">          
+{%- comment -%}
+  Zertifikatshistorie. Namen der Zertifikate und Organisationen bleiben im
+  Original, nur die Lernziele sind lokalisiert (learning_objectives_de/_en).
+{%- endcomment -%}
+{%- assign lang = page.lang | default: site.lang_default -%}
+{%- assign t = site.data.i18n[lang] -%}
+{%- assign k_objectives = 'learning_objectives_' | append: lang -%}
+<div class="text-zone">
   <p>
   {% assign certificates = site.data.certificates | sort: 'issue_date' %}
   {% for cert in certificates %}
+    {%- assign objectives = cert[k_objectives] | default: cert.learning_objectives_en -%}
     <div class="tooltip">
     › {{ cert.organization }}: „{{ cert.name }}“ ({{ cert.issue_date | date: "%b %Y" }})
-      
-    {% if cert.learning_objectives %}
+
+    {% if objectives %}
     <p class="tooltiptext">
-      <u>Learning objectives:</u> <br />
-      {% for lo in cert.learning_objectives %}
+      <u>{{ t.trainings.learning_objectives }}</u> <br />
+      {% for lo in objectives %}
       › {{ lo }}
       {% unless forloop.last %}<br />{% endunless %}
       {% endfor %}

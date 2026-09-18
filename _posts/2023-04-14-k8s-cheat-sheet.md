@@ -40,6 +40,7 @@ $ kubectl config use-context my-cluster-name           # set the default context
 
 ### Viewing, finding resources
 
+{% raw %}
 ```bash
 # Get commands with basic output
 kubectl get services                          # List all services in the namespace
@@ -128,6 +129,7 @@ for pod in $(kubectl get po --output=jsonpath={.items..metadata.name}); do echo 
 # Get a deployment's status subresource
 kubectl get deployment nginx-deployment --subresource=status
 ```
+{% endraw %}
 
 ### Updating resources
 

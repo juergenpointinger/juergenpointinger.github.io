@@ -1,9 +1,18 @@
+{%- comment -%}
+  Impact Stories. Die Felder in _data/projects.yml sind sprachsuffixiert
+  (*_de / *_en); fehlt eine Uebersetzung, wird auf Englisch zurueckgefallen.
+{%- endcomment -%}
+{%- assign lang = page.lang | default: site.lang_default -%}
+{%- assign k_industry = 'industry_' | append: lang -%}
+{%- assign k_location = 'location_' | append: lang -%}
+{%- assign k_timespan = 'timespan_' | append: lang -%}
+{%- assign k_summary = 'summary_' | append: lang -%}
 <div class="projects-grid">
   {% for project in site.data.projects %}
   <div class="project-card">
-    <notes>{{ project.location }} ({{ project.timespan }})</notes>
-    <title>{{ project.industry }}</title>
-    <summary>{{ project.summary }}</summary>
+    <notes>{{ project[k_location] | default: project.location_en }} ({{ project[k_timespan] | default: project.timespan_en }})</notes>
+    <title>{{ project[k_industry] | default: project.industry_en }}</title>
+    <summary>{{ project[k_summary] | default: project.summary_en }}</summary>
   </div>
   {% endfor %}
 </div>

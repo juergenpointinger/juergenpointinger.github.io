@@ -1,41 +1,73 @@
+# -----------------------------------------------------------------------------
+# Trainings & Zertifikate
+#
+# name / organization / issue_date sind sprachneutral (Eigennamen bzw. Daten).
+# Lokalisiert werden ausschliesslich die Lernziele:
+#   learning_objectives_en  Original
+#   learning_objectives_de  deutsche Fassung
+# _includes/certificates.html waehlt anhand von page.lang und faellt bei
+# fehlender Uebersetzung auf *_en zurueck.
+# -----------------------------------------------------------------------------
+
 - name: ISAQB® Certified Professional for Software Architecture (CPSA-F)
-  learning_objectives:
+  learning_objectives_en:
     - The concept and meaning of software architecture
     - Components, modules, interfaces and relationships
     - Architecture and quality goals
     - Tasks and responsibility for you as a software architect
-    - Your role as a software architect in projects 
+    - Your role as a software architect in projects
     - State-of-the-art methods and techniques for the development of software architectures
+  learning_objectives_de:
+    - Begriff und Bedeutung von Softwarearchitektur
+    - Komponenten, Module, Schnittstellen und Beziehungen
+    - Architektur- und Qualitätsziele
+    - Aufgaben und Verantwortung als Softwarearchitekt
+    - Die Rolle des Softwarearchitekten im Projekt
+    - Aktuelle Methoden und Techniken zur Entwicklung von Softwarearchitekturen
   organization: Future Network Cert
   type: Certificate
   issue_date: 2016-02-26
 
 - name: 360° Test Automation
-  learning_objectives:
+  learning_objectives_en:
     - Technical basics
     - Data-driven test automation
     - Keyword-driven test automation
     - Test automation in the test process
     - Test management
     - Market overview tools
+  learning_objectives_de:
+    - Technische Grundlagen
+    - Datengetriebene Testautomatisierung
+    - Keyword-getriebene Testautomatisierung
+    - Testautomatisierung im Testprozess
+    - Testmanagement
+    - Marktüberblick Werkzeuge
   organization: Nagarro
   type: Training
   issue_date: 2017-10-18
 
 - name: ISAQB® CPSA Advanced Level Module - Architecture Evaluation (ARCEVAL)
-  learning_objectives:
+  learning_objectives_en:
     - Basic terms of software architecture evaluation
     - Requirements in architecture evaluation
     - Evaluation workshop
     - Rework and result utilization
     - Evaluation of existing systems (and system parts)
     - Examples for the evaluation of software architectures
+  learning_objectives_de:
+    - Grundbegriffe der Softwarearchitektur-Bewertung
+    - Anforderungen in der Architekturbewertung
+    - Bewertungs-Workshop
+    - Nacharbeit und Verwertung der Ergebnisse
+    - Bewertung bestehender Systeme (und Systemteile)
+    - Beispiele für die Bewertung von Softwarearchitekturen
   organization: embarc
   type: Certificate
   issue_date: 2019-06-11
 
 - name: ISAQB® CPSA Advanced Level Module - Flexible Architectural Models (FLEX)
-  learning_objectives:
+  learning_objectives_en:
     - Availability, reliability, time-to-market, flexibility, predictability, reproducibility, homogenisation of the stages, internet / web-scale, distributed systems, parallelism of feature development, evolution of the architecture (build for replacement), heterogeneity, automation
     - Motivation for decompositioning into smaller systems
     - Different kinds of modularisation, coupling
@@ -48,12 +80,25 @@
     - Monitoring, Operations, Logging, Tracing, Metrics
     - "Consistency models: ACID, BASE, partitioning, CAP"
     - "Resilience: Resilient Software Design, Stability, Availability, Graceful Degradation, Circuit Breaker, Bulkhead"
+  learning_objectives_de:
+    - Verfügbarkeit, Zuverlässigkeit, Time-to-Market, Flexibilität, Vorhersagbarkeit, Reproduzierbarkeit, Homogenisierung der Stages, Internet-/Web-Scale, verteilte Systeme, Parallelisierung der Feature-Entwicklung, Evolution der Architektur (build for replacement), Heterogenität, Automatisierung
+    - Motivation für die Zerlegung in kleinere Systeme
+    - Formen der Modularisierung, Kopplung
+    - Systemgrenzen als Mittel der Isolation
+    - Hierarchische Struktur
+    - Anwendung, Self-contained System, Microservice
+    - Konzepte des Domain-Driven Design und „Strategic Design“, Bounded Contexts
+    - Frontend-Integration, Legacy-Systeme, Authentifizierung, Autorisierung, (lose) Kopplung, Skalierbarkeit, Messaging-Patterns, Domain Events, dezentrale Datenhaltung
+    - Moderner Betrieb, DevOps, Infrastructure as Code, Configuration Management
+    - Monitoring, Betrieb, Logging, Tracing, Metriken
+    - "Konsistenzmodelle: ACID, BASE, Partitionierung, CAP"
+    - "Resilience: Resilient Software Design, Stabilität, Verfügbarkeit, Graceful Degradation, Circuit Breaker, Bulkhead"
   organization: INNOQ
   type: Certificate
   issue_date: 2021-03-08
 
 - name: Test Automation Architect Curriculum
-  learning_objectives:
+  learning_objectives_en:
     - A2A and test automation basics
     - A2A Test Automation Framework (TAF) introduction
     - Compact test cases
@@ -67,12 +112,26 @@
     - Web service testing
     - DevOps basics
     - ISTQB Foundation Level
+  learning_objectives_de:
+    - Grundlagen von A2A und Testautomatisierung
+    - Einführung in das A2A Test Automation Framework (TAF)
+    - Kompakte Testfälle
+    - Prozess- und Risikomanagement
+    - Testautomatisierung im Delivery-Lifecycle
+    - .NET-/Java-Entwicklung
+    - Selenium
+    - Testmanagement-Werkzeuge
+    - Grundlagen der Microsoft-Testautomatisierung
+    - Last- und Performancetests
+    - Web-Service-Testing
+    - DevOps-Grundlagen
+    - ISTQB Foundation Level
   organization: Nagarro
   type: Training
   issue_date: 2018-11-30
 
 - name: ICAgile® Certified Professional - Agile Fundamentals (ICP)
-  learning_objectives:
+  learning_objectives_en:
     - "History: Origins of Agile; Agile Manifesto; Agile beyond software development"
     - "Culture and mindset: Understanding the Agile Mindset; Establishing the Agile Mindset; Agile in context (as a journey)"
     - "Creating shared understanding: Developing soft skills; Understanding communication barriers; Sharing knowledge; Physical work environments; Collaboration techniques; Techniques for sharing understanding"
@@ -82,12 +141,22 @@
     - "Include customers and users: Defining customer; User involvement; User feedback"
     - "Planning and adapting: Planning; Estimation"
     - Process and product adaptation
+  learning_objectives_de:
+    - "Historie: Ursprünge von Agile; Agiles Manifest; Agilität jenseits der Softwareentwicklung"
+    - "Kultur und Mindset: Das agile Mindset verstehen; Das agile Mindset etablieren; Agilität im Kontext (als Weg)"
+    - "Gemeinsames Verständnis schaffen: Soft Skills entwickeln; Kommunikationsbarrieren verstehen; Wissen teilen; Physische Arbeitsumgebungen; Kollaborationstechniken; Techniken für gemeinsames Verständnis"
+    - Veränderung der Rollen
+    - "Inkrementelle Entwicklung: Wertorientiertes Arbeiten; Qualität halten"
+    - "Work-in-Progress (WIP): Continuous Integration; Kosten und Nutzen häufiger Lieferungen"
+    - "Kunden und Nutzer einbeziehen: Kunden definieren; Nutzerbeteiligung; Nutzerfeedback"
+    - "Planen und Anpassen: Planung; Schätzung"
+    - Prozess- und Produktanpassung
   organization: Nagarro
   type: Certificate
   issue_date: 2020-11-09
 
 - name: ICAgile® Certified Professional - Agile Programming (ICP-PRG)
-  learning_objectives:
+  learning_objectives_en:
     - "Unit testing: Types of tests to automate; Fixture setup"
     - "Readable tests: Coding tests by intention; Verifying results"
     - "Test coverage: Identifying completeness conditions; Avoiding duplication in the conditions"
@@ -103,12 +172,28 @@
     - "Acceptance Test-driven development (ATDD): ATDD process; ATDD styles and tools"
     - Continuous integration, version control and build automation
     - Pair Programming
+  learning_objectives_de:
+    - "Unit Testing: Zu automatisierende Testarten; Fixture-Setup"
+    - "Lesbare Tests: Tests nach Intention schreiben; Ergebnisse verifizieren"
+    - "Testabdeckung: Vollständigkeitsbedingungen identifizieren; Duplikate in den Bedingungen vermeiden"
+    - "Testing Patterns: Auf die Tests hören; Die Tests testen; Tests refactoren"
+    - "Build-Geschwindigkeit: Testgeschwindigkeit"
+    - "Test Doubles: Test Doubles einsetzen; Dependency Injection"
+    - "Code Smells: Clean Programming; Häufige Code Smells"
+    - "Refactoring mit bestehenden Tests: Prinzipien des Refactorings; Häufige Refactorings; Refactoring-Werkzeuge"
+    - "Umgang mit Legacy Code: Legacy Code erschließen; Refactoring ohne Tests; Tests nachträglich ergänzen"
+    - "Test-Driven Development (TDD): Der Wert von TDD; Red-Green-Refactor"
+    - "BDD: Nutzungsmuster identifizieren, um Objekt- und Funktionsschnittstellen zu definieren"
+    - "Living Documentation: Tests als Spezifikation und Dokumentation; ATDD als Hilfe für Design Thinking"
+    - "Acceptance Test-Driven Development (ATDD): ATDD-Prozess; ATDD-Stile und -Werkzeuge"
+    - Continuous Integration, Versionsverwaltung und Build-Automatisierung
+    - Pair Programming
   organization: Nagarro
   type: Certificate
   issue_date: 2019-07-08
 
 - name: Agile Leadership Skills
-  learning_objectives:
+  learning_objectives_en:
     - Labor law
     - Challenging conversations
     - Burnout prevention
@@ -118,12 +203,22 @@
     - Perception and conversation
     - Principles of Self-Management
     - Economic leadership
+  learning_objectives_de:
+    - Arbeitsrecht
+    - Herausfordernde Gespräche
+    - Burnout-Prävention
+    - Wirtschaftliche Führung
+    - Emotionale Intelligenz
+    - Situative Führung
+    - Wahrnehmung und Gespräch
+    - Prinzipien der Selbstführung
+    - Wirtschaftliche Führung
   organization: osb international
   type: Training
   issue_date: 2020-03-01
 
 - name: Management 3.0
-  learning_objectives:
+  learning_objectives_en:
     - Management and Leadership
     - Complexity Thinking
     - Energize People
@@ -132,24 +227,40 @@
     - Develop Competence
     - Grow Structure
     - Improve Everything
+  learning_objectives_de:
+    - Management und Leadership
+    - Komplexitätsdenken
+    - Menschen aktivieren
+    - Teams befähigen
+    - Rahmenbedingungen ausrichten
+    - Kompetenz entwickeln
+    - Strukturen wachsen lassen
+    - Alles verbessern
   organization: Nagarro
   type: Training
   issue_date: 2020-01-01
 
 - name: Certified Azure Fundamentals (AZ-900)
-  learning_objectives:
+  learning_objectives_en:
     - Cloud concepts
     - Core Azure services
     - Core solutions and management tools on Azure
     - General security and network security features
     - Identity, governance, privacy, and compliance features
     - Azure cost management and Service Level Agreements
+  learning_objectives_de:
+    - Cloud-Konzepte
+    - Zentrale Azure-Dienste
+    - Zentrale Lösungen und Management-Werkzeuge in Azure
+    - Allgemeine Sicherheits- und Netzwerksicherheitsfunktionen
+    - Identität, Governance, Datenschutz und Compliance
+    - Azure-Kostenmanagement und Service Level Agreements
   organization: Microsoft
   type: Certificate
   issue_date: 2020-10-09
 
 - name: Certified SAFe® 5 Agilist
-  learning_objectives:
+  learning_objectives_en:
     - Boosting productivity
     - Improving product quality
     - Decreasing time to market
@@ -158,99 +269,150 @@
     - Align massive organizations around clear, common objectives
     - Participate successfully in critical SAFe events, such as PI Planning
     - Adopt a customer-centric mindset.
+  learning_objectives_de:
+    - Produktivität steigern
+    - Produktqualität verbessern
+    - Time-to-Market verkürzen
+    - Mitarbeiterengagement erhöhen
+    - Team and Technical Agility etablieren und entlang des Wertstroms organisieren
+    - Große Organisationen auf klare, gemeinsame Ziele ausrichten
+    - Erfolgreich an zentralen SAFe-Events wie dem PI-Planning teilnehmen
+    - Ein kundenzentriertes Mindset entwickeln
   organization: Nagarro
   type: Certificate
   issue_date: 2021-02-25
 
 - name: Agile Leadership Skills
-  learning_objectives:
+  learning_objectives_en:
     - Leadership perspectives
     - Team leadership
     - Conflict management
+  learning_objectives_de:
+    - Führungsperspektiven
+    - Teamführung
+    - Konfliktmanagement
   organization: osb international
   type: Training
   issue_date: 2021-05-01
 
 - name: Lean Leadership Skills, Lean Culture and Lean Management
-  learning_objectives:
+  learning_objectives_en:
     - Introduction to Lean Leadership and Culture
     - The House of Lean
     - Lean Culture Principles and Practices
     - "The Job of the Lean Leader: To Challenge and To Serve"
     - Getting to Lean - Designing the System for a New Culture
     - "The Habits of Continuous Improvement: The Team Kata"
+  learning_objectives_de:
+    - Einführung in Lean Leadership und Lean Culture
+    - The House of Lean
+    - Prinzipien und Praktiken der Lean Culture
+    - "Die Aufgabe der Lean-Führungskraft: herausfordern und dienen"
+    - Der Weg zu Lean – das System für eine neue Kultur gestalten
+    - "Die Gewohnheiten kontinuierlicher Verbesserung: die Team-Kata"
   organization: Udemy
   type: Certificate
   issue_date: 2022-01-17
 
 - name: Design Thinking in 3 Steps
-  learning_objectives:
+  learning_objectives_en:
     - What is Design Thinking?
     - "Understand: Plan your Research; Conduct your Research; Identify your Findings; Evaluate your Progress"
     - "Envision: Brainstorm new Ideas; Choose an Idea; Evaluate your Progress"
     - "Prototype: Build a Storyboard; Test with Users; Evaluate your Progress"
+  learning_objectives_de:
+    - Was ist Design Thinking?
+    - "Understand: Recherche planen; Recherche durchführen; Erkenntnisse identifizieren; Fortschritt bewerten"
+    - "Envision: Neue Ideen sammeln; Eine Idee auswählen; Fortschritt bewerten"
+    - "Prototype: Storyboard erstellen; Mit Nutzern testen; Fortschritt bewerten"
   organization: Udemy
   type: Training
   issue_date: 2022-01-18
 
 - name: Agile Leadership and Resilient Teams
-  learning_objectives:
+  learning_objectives_en:
     - Riding the Head Curve
     - Building strong relationships
     - Building flexible relationships
     - Building fair business relationships
     - "Agile team meetings: Going up the Heat Curve"
     - Resilient leadereship
+  learning_objectives_de:
+    - Die Heat Curve meistern
+    - Starke Beziehungen aufbauen
+    - Flexible Beziehungen aufbauen
+    - Faire Geschäftsbeziehungen aufbauen
+    - "Agile Teammeetings: die Heat Curve hinauf"
+    - Resiliente Führung
   organization: Udemy / NASBA
   type: Certificate
   issue_date: 2022-01-18
 
 - name: Change Management for Organizations
-  learning_objectives:
+  learning_objectives_en:
     - Building a Common Framework and Language
     - Create and Clarify Vision
     - Involve and Engage the Organization
     - Implement and Sustain the Change
     - Change Management Challenges and Solutions
+  learning_objectives_de:
+    - Gemeinsamen Rahmen und gemeinsame Sprache aufbauen
+    - Vision entwickeln und schärfen
+    - Die Organisation einbeziehen und beteiligen
+    - Veränderung umsetzen und verankern
+    - Herausforderungen und Lösungen im Change Management
   organization: Udemy / NASBA
   type: Certificate
   issue_date: 2022-01-19
 
 - name: Agile Leadership Skills
-  learning_objectives:
+  learning_objectives_en:
     - Change and Transformation
+  learning_objectives_de:
+    - Veränderung und Transformation
   organization: osb international
   type: Training
   issue_date: 2022-01-21
 
 - name: Emotional Intelligence at Work
-  learning_objectives:
+  learning_objectives_en:
     - Emotional Intelligence explained
     - Developing your EQ
     - EQ in the Workplace
+  learning_objectives_de:
+    - Emotionale Intelligenz erklärt
+    - Den eigenen EQ entwickeln
+    - EQ im Arbeitsalltag
   organization: Udemy / NASBA
   type: Certificate
   issue_date: 2022-01-21
 
 - name: Introduction to Service Management with ITIL4
-  learning_objectives:
+  learning_objectives_en:
     - Service Management
-    - The Basics of ITIL 4    
+    - The Basics of ITIL 4
+  learning_objectives_de:
+    - Service Management
+    - Grundlagen von ITIL 4
   organization: Udemy
   type: Training
   issue_date: 2022-01-22
 
 - name: Transformational Leadership and Leading Corporate Culture
-  learning_objectives:
+  learning_objectives_en:
     - Principled Leadership and Culture
     - The Business Case for Principled Leadership
     - The Transformational Principles
+  learning_objectives_de:
+    - Prinzipiengeleitete Führung und Kultur
+    - Der Business Case für prinzipiengeleitete Führung
+    - Die transformationalen Prinzipien
   organization: Udemy
   type: Certificate
   issue_date: 2022-01-24
 
 - name: Wicked Problem Solving Practitioner 2.0
-  learning_objectives:
+  learning_objectives_en:
     - Wicked Problems
     - Tools and environment
     - "Better system: A better system, Plays, Problems, Collaboration"
@@ -258,12 +420,20 @@
     - "Make ideas visible: Expres, Organize, Map"
     - "Engage with forwards steps: Move, Shift, Align"
     - "Resolve clearly: Solve, Top down, Bottum up, Impact"
+  learning_objectives_de:
+    - Wicked Problems
+    - Werkzeuge und Umgebung
+    - "Better system: Ein besseres System, Plays, Probleme, Zusammenarbeit"
+    - "Lead with key questions: Schlüsselfragen, Frame, Navigate, Probe"
+    - "Make ideas visible: Express, Organize, Map"
+    - "Engage with forward steps: Move, Shift, Align"
+    - "Resolve clearly: Solve, Top-down, Bottom-up, Impact"
   organization: PMI
   type: Certificate
   issue_date: 2022-01-24
 
 - name: Team Leadership and Team Management Master Class
-  learning_objectives:
+  learning_objectives_en:
     - >-
       Planning and Organizing: Principles of Lean Management;
       Organizing your Team;
@@ -279,21 +449,46 @@
       Motivation and human performance;
       Standard work;
       Designing hybrid work systems
-    - >- 
+    - >-
       Improving Team Effectiveness: The personal responsibility of team members to self-manage;
       Team member's responsibility to be a great team member;
-      Facilitating remote or virtual teams; 
+      Facilitating remote or virtual teams;
       Team facilitation skills;
       Effective listening skills;
       Giving and receiving feedback;
       Conflict resolution;
       Improving the system
+  learning_objectives_de:
+    - >-
+      Planen und Organisieren: Prinzipien des Lean Management;
+      Das eigene Team organisieren;
+      Phasen der Team- und Organisationsentwicklung;
+      Entscheidungsstile klären;
+      Scorecard und visuelle Darstellung entwickeln
+    - >-
+      Die Team Improvement KATA: Kundenanforderungen und Verbesserungsziele definieren;
+      Probleme lösen;
+      Wertstrom abbilden;
+      Abweichungen analysieren;
+      Verschwendung finden und beseitigen;
+      Motivation und menschliche Leistung;
+      Standard Work;
+      Hybride Arbeitssysteme gestalten
+    - >-
+      Teameffektivität steigern: Die persönliche Verantwortung der Teammitglieder zur Selbstorganisation;
+      Die Verantwortung, ein gutes Teammitglied zu sein;
+      Remote- und virtuelle Teams moderieren;
+      Moderationsfähigkeiten im Team;
+      Aktives Zuhören;
+      Feedback geben und annehmen;
+      Konfliktlösung;
+      Das System verbessern
   organization: Udemy
   type: Certificate
   issue_date: 2022-01-28
 
 - name: "Business Strategy Execution: Agile Organization Design"
-  learning_objectives:
+  learning_objectives_en:
     - The Agile/Lean Way
     - Defining Strategy, Culture and Capabilities
     - The Plan for Agile Strategy Execution
@@ -304,12 +499,23 @@
     - Dream the Ideal Future
     - Design the Future System
     - Deploying and Developing the Future State
+  learning_objectives_de:
+    - Der agile bzw. Lean-Weg
+    - Strategie, Kultur und Fähigkeiten definieren
+    - Der Plan für agile Strategieumsetzung
+    - Was ist die Geschäftsstrategie
+    - "Assessment: Führung und Lebenszyklen; Die fünf Kapitalformen; Lean Culture"
+    - Die Strategy Design Charter schreiben
+    - Discovery im Design-Team
+    - Die ideale Zukunft entwerfen
+    - Das künftige System gestalten
+    - Den Zielzustand einführen und weiterentwickeln
   organization: Udemy
   type: Certificate
   issue_date: 2022-02-03
 
 - name: "OKR Goal Setting 101"
-  learning_objectives:
+  learning_objectives_en:
     - You, your current goals, and the 10 biggest mistakes have to avoid
     - Everything about OKRs and how you can use them to achieve more and be happy
     - "Time to take action: Define your own OKRs now"
@@ -318,12 +524,21 @@
     - Types of OKRs - aspiring and committed OKRs
     - ORKs in the real world environment
     - OKR tools and tips to implement ORKs
+  learning_objectives_de:
+    - Eigene Ziele und die 10 größten Fehler, die es zu vermeiden gilt
+    - Alles über OKRs und wie man mit ihnen mehr erreicht
+    - "Zeit zu handeln: Die eigenen OKRs definieren"
+    - Die TOP-10-Fragen zu OKRs aus 20.000 Teilnehmenden und Beratungsprojekten
+    - OKRs als Management- und Führungsprinzip
+    - OKR-Typen – aspirational und committed
+    - OKRs im realen Umfeld
+    - OKR-Werkzeuge und Tipps für die Einführung
   organization: Udemy
   type: Certificate
   issue_date: 2022-02-06
 
 - name: "Masterclass Self-organization"
-  learning_objectives:
+  learning_objectives_en:
     - Where and why self-organization is superior to specification
     - How and why self-organization works
     - What requirements self-organization needs
@@ -339,34 +554,66 @@
     - Coordination within and between teams
     - Challenge of home office and distributed teams
     - Tools and techniques
+  learning_objectives_de:
+    - Wo und warum Selbstorganisation der Vorgabe überlegen ist
+    - Wie und warum Selbstorganisation funktioniert
+    - Welche Voraussetzungen Selbstorganisation braucht
+    - Die Rolle des Managements im Verhältnis zur Selbstorganisation
+    - Selbstorganisation einführen
+    - Selbstorganisation und Wertschöpfung
+    - Selbstorganisation und Marktorientierung
+    - Selbstorganisation, Commitment & Beteiligung
+    - Management und Selbstorganisation
+    - Compliance und Selbstorganisation
+    - Ermächtigungsrahmen der Selbstorganisation
+    - Selbstorganisation und informelle Netzwerke
+    - Koordination innerhalb und zwischen Teams
+    - Herausforderung Homeoffice und verteilte Teams
+    - Werkzeuge und Techniken
   organization: Alinbu Consulting
   type: Training
   issue_date: 2022-09-22
 
 - name: "Agile Leadership"
-  learning_objectives:
+  learning_objectives_en:
     - Why Agile Leadership?
     - The agile mindset
     - Making organizations agile
     - Implement agility
+  learning_objectives_de:
+    - Warum Agile Leadership?
+    - Das agile Mindset
+    - Organisationen agil machen
+    - Agilität umsetzen
   organization: WU Executive Academy
   type: Certificate
   issue_date: 2022-10-31
 
 - name: "Certified Aware Leader"
-  learning_objectives:
+  learning_objectives_en:
     - Understanding business agility - designing your own business case for agility
     - Introduction to the Leadership Agility model
     - Increasing Leadership Capacity - Leading Situationally with Catalyst Leadership
     - Developing "Catalysts Leadership" competencies ("Micro Culture")
     - Understanding and developing your own corporate culture ("Macro Culture")
     - Leading a business transformation in an agile way
+  learning_objectives_de:
+    - Business Agility verstehen – den eigenen Business Case für Agilität entwickeln
+    - Einführung in das Modell der Leadership Agility
+    - Führungskapazität erweitern – situativ führen mit Catalyst Leadership
+    - „Catalyst Leadership“-Kompetenzen entwickeln („Micro Culture“)
+    - Die eigene Unternehmenskultur verstehen und entwickeln („Macro Culture“)
+    - Eine Unternehmenstransformation agil führen
   organization: Agile Leadership Journey
   type: Certificate
   issue_date: 2023-03-16
 
 - name: "Certified Agile Leadership"
-  learning_objectives:
+  learning_objectives_en:
+      - Certified Agile Leader (CAL-1)
+      - Certified Agile Leadership Essentials (CAL-E)
+      - Certified Agile Leadership for Organizations (CAL-O)
+  learning_objectives_de:
       - Certified Agile Leader (CAL-1)
       - Certified Agile Leadership Essentials (CAL-E)
       - Certified Agile Leadership for Organizations (CAL-O)
@@ -375,7 +622,7 @@
   issue_date: 2023-03-16
 
 - name: "Flight Level 3 Design"
-  learning_objectives:
+  learning_objectives_en:
       - Flight Level 3 Essentials
       - A Flight Level 3 Board
       - Flight Level 3 at Different Scales
@@ -383,12 +630,30 @@
       - Flight Level 3 Board Design
       - Create Focus and Set Constraints
       - Establish Agile Interactions
+  learning_objectives_de:
+      - Flight Level 3 Essentials
+      - Ein Flight-Level-3-Board
+      - Flight Level 3 in unterschiedlichen Größenordnungen
+      - Stories, Outcomes, Flight Items (SOFI)
+      - Design eines Flight-Level-3-Boards
+      - Fokus schaffen und Constraints setzen
+      - Agile Interaktionen etablieren
   organization: Flight Levels Academy
   type: Certificate
   issue_date: 2024-05-21
 
 - name: "Geschäftsführer (GmbH) Rechte und Pflichten"
-  learning_objectives:
+  learning_objectives_en:
+      - Characteristics
+      - Austrian Limited Liability Company Act (GmbHG)
+      - Incorporation
+      - Corporate bodies
+      - Supervisory board
+      - General meeting
+      - Shareholders, managing directors, representation
+      - Duties, liability
+      - Risk mitigation
+  learning_objectives_de:
       - Merkmale
       - GmbHG
       - Gründung
@@ -397,25 +662,37 @@
       - Generalversammlung
       - Gesellschafter, Geschäftsführer, Vertretung
       - Pflichten, Haftung
-      - Minderung Risiken 
+      - Minderung Risiken
   organization: WIFI
   type: Certificate
   issue_date: 2024-10-02
 
 - name: ISAQB® CPSA Advanced Level Module - Domain-Driven Design (DDD)
-  learning_objectives:
+  learning_objectives_en:
       - Domain, model, and Ubiquitous Language
       - "Knowledge Crunching: The path to the model"
       - From model to implementation
       - The model in application architecture
       - "Strategic Design 1: Cutting and distinguishing models from one another"
       - "Strategic Design 2: Context Mapping"
+  learning_objectives_de:
+      - Domäne, Modell und Ubiquitous Language
+      - "Knowledge Crunching: Der Weg zum Modell"
+      - Vom Modell zur Implementierung
+      - Das Modell in der Anwendungsarchitektur
+      - "Strategic Design 1: Modelle schneiden und voneinander abgrenzen"
+      - "Strategic Design 2: Context Mapping"
   organization: WPS
   type: Certificate
   issue_date: 2024-10-25
 
 - name: "KI-Basis: Chancen, Risiken, Verantwortung, Sicherheit"
-  learning_objectives:
+  learning_objectives_en:
+      - Analyzing opportunities and risks of artificial intelligence in daily work
+      - Personal and corporate liability exposure
+      - Relevant legal requirements and key terminology in the field of AI
+      - Applying preventive and risk-reducing safeguards in practice
+  learning_objectives_de:
       - Chancen und Risiken der künstlichen Intelligenz in der Arbeitspraxis analysieren
       - Eigenes Haftungspotenzial sowie das des Unternehmens
       - Relevante gesetzliche Anforderungen und zentrale Fachbegriffe im Bereich KI

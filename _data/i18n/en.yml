@@ -1,0 +1,126 @@
+# -----------------------------------------------------------------------------
+# English copy (secondary language, served under "/en/")
+#
+# Convention:
+#   - Structure MUST mirror de.yml. Add new keys to both files.
+#   - Values may contain inline HTML (Liquid does not escape data strings).
+#   - Proper nouns, product and certificate names are never translated.
+# -----------------------------------------------------------------------------
+
+meta:
+  title: "© Jürgen Pointinger"
+  description: >-
+    Jürgen Pointinger – Co-CEO of Untis GmbH. Leading with clarity, trust and purpose:
+    building EdTech where people, technology and culture thrive.
+
+nav:
+  home: "Home"
+  menu: "Menu"
+  about: "About"
+  skills: "Skills & strength"
+  projects: "Impact stories"
+  blog: "Blog"
+
+language:
+  label: "Change language"
+
+hero:
+  greeting: "Hi,"
+  intro: "I'm Jürgen."
+  role: "Co-CEO Untis GmbH | Leading with clarity, trust & purpose"
+  headline: "Building EdTech that matters"
+  subline: 'where <span class="accent">people</span>, technology &amp; culture thrive.'
+  tagline: "Creating environments where trust, autonomy and learning lead the way."
+  avatar_alt: "Portrait of Jürgen Pointinger"
+
+experiences:
+  years: "years leading technology & people"
+  organizations: "supported organizations"
+  teams: "teams inspired to thrive"
+
+about:
+  title: "About me – Building cultures that thrive"
+  paragraphs:
+    - >-
+      My journey through technology and leadership has taught me that the most meaningful
+      progress happens when people, purpose, and strategy align.
+      Throughout my career, I've worked across sectors such as education, finance,
+      transportation, and telecommunications&nbsp;&ndash; always with a clear focus on
+      scalable, secure, and user-centric solutions.
+    - >-
+      Today, as Co-CEO of <a href="https://www.untis.at" target="_blank">Untis</a>, I focus on
+      shaping the organization where trust is stronger than hierarchy, and where teams have the
+      clarity and autonomy to do their best work.
+    - >-
+      My leadership blends transformational and servant principles: inspiring change, enabling
+      ownership, and fostering collaboration across all levels. Agile ways of working, for me,
+      are less about processes and more about creating the right conditions for people to
+      adapt, innovate, and grow.
+    - >-
+      What drives me every day is seeing people grow, ideas take shape, and cultures emerge
+      that can thrive in the complex, ever-changing world of education technology.
+
+principles:
+  trust:
+    title: "Trust"
+    text: "Building relationships where transparency and reliability are the norm."
+  autonomy:
+    title: "Autonomy"
+    text: "Giving teams the freedom to decide, create, and take ownership."
+  learning:
+    title: "Learning"
+    text: "Encouraging curiosity and growth as a constant, not an exception."
+  clarity:
+    title: "Clarity"
+    text: "Providing direction and purpose so everyone knows where we're heading."
+
+skills:
+  title: "Skills and strength"
+  leadership:
+    title: "Leadership"
+    text: "Transformational & servant leadership focused on clarity, trust and purpose."
+  people:
+    title: "People & Organization"
+    text: "Lean ways of working that enable autonomy and shared ownership."
+  strategy:
+    title: "Strategy & Product"
+    text: "From vision to value: goals, outcomes and responsible delivery."
+  technology:
+    title: "Technology"
+    text: "Modern architecture and engineering for resilient, scalable systems."
+
+trainings:
+  title: "Trainings & certificates"
+  subtitle: "Focus on leadership, agile ways of working and responsible product delivery."
+  show_all: "View full certificate history"
+  learning_objectives: "Learning objectives:"
+
+publications:
+  title: "Publications & talks"
+  show_all: "View all publications"
+  # Publication type chips. Keys match the values used in _data/publications.yml.
+  types:
+    Video: "Video"
+    Podcast: "Podcast"
+    Talk: "Talk"
+    Print: "Print"
+    Whitepaper: "Whitepaper"
+    Article: "Article"
+    Interview: "Interview"
+    Roundtable: "Roundtable"
+
+projects:
+  title: "Impact stories"
+
+footer:
+  back_to_top: "Back to top"
+  linkedin: "Follow me on LinkedIn"
+  github: "Follow me on GitHub"
+  feed: "Follow my feed"
+
+cookie:
+  text: >-
+    This website uses cookies to improve and customize your browsing experience and for
+    analytics and metrics about the visitors. To find out more about the cookies, see our
+    <a href="/privacy">Privacy Policy</a>.
+  accept: "Accept"

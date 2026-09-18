@@ -1,54 +1,106 @@
-- industry: Education Technology
-  location: Austria
-  timespan: 2025-ongoing
-  summary: "As Co-CEO, I drive innovation in scalable and user-friendly solutions for the education sector, ensuring top-tier standards in data protection, agility, and digital transformation."
+# -----------------------------------------------------------------------------
+# Impact Stories
+#
+# Sprachneutrales Geruest (Reihenfolge, Zeitraeume) mit sprachsuffixierten
+# Textfeldern. _includes/projects.html waehlt anhand von page.lang aus und
+# fällt bei fehlender Uebersetzung auf *_en zurueck.
+# -----------------------------------------------------------------------------
 
-- industry: Education Technology
-  location: Austria
-  timespan: 2022-2024
-  summary: "As Chief Technology Officer, I led the integration of cutting-edge technologies to transform the educational experience and create sustainable solutions for future generations."
+- industry_en: Education Technology
+  industry_de: Bildungstechnologie
+  location_en: Austria
+  location_de: Österreich
+  timespan_en: 2025-ongoing
+  timespan_de: seit 2025
+  summary_en: "As Co-CEO, I drive innovation in scalable and user-friendly solutions for the education sector, ensuring top-tier standards in data protection, agility, and digital transformation."
+  summary_de: "Als Co-CEO treibe ich Innovation bei skalierbaren und benutzerfreundlichen Lösungen für den Bildungssektor voran und sichere höchste Standards in Datenschutz, Agilität und digitaler Transformation."
 
-- industry: Financial Services
-  location: Austria
-  timespan: 2021
-  summary: "Delivered API Management solutions and provided strategic guidance to enhance service-to-service communication, auditing processes, and system monitoring."
+- industry_en: Education Technology
+  industry_de: Bildungstechnologie
+  location_en: Austria
+  location_de: Österreich
+  timespan_en: 2022-2024
+  timespan_de: 2022-2024
+  summary_en: "As Chief Technology Officer, I led the integration of cutting-edge technologies to transform the educational experience and create sustainable solutions for future generations."
+  summary_de: "Als Chief Technology Officer habe ich die Integration moderner Technologien verantwortet, um das Bildungserlebnis zu verändern und nachhaltige Lösungen für kommende Generationen zu schaffen."
 
-- industry: Digital Marketing
-  location: Austria
-  timespan: 2020-2022
-  summary: "As CTO, I supported a high-performing team in implementing cloud architectures, Agile practices, and continuous delivery processes while driving organizational performance and innovation."
+- industry_en: Financial Services
+  industry_de: Finanzdienstleistungen
+  location_en: Austria
+  location_de: Österreich
+  timespan_en: 2021
+  timespan_de: 2021
+  summary_en: "Delivered API Management solutions and provided strategic guidance to enhance service-to-service communication, auditing processes, and system monitoring."
+  summary_de: "Umsetzung von API-Management-Lösungen und strategische Beratung zur Verbesserung der Service-zu-Service-Kommunikation, der Auditing-Prozesse und des System-Monitorings."
 
-- industry: Automotive Remarketing
-  location: USA
-  timespan: 2020
-  summary: "Provided leadership consulting and developed a cross-team quality vision, ensuring alignment with DevOps principles to accelerate development cycles."
+- industry_en: Digital Marketing
+  industry_de: Digitales Marketing
+  location_en: Austria
+  location_de: Österreich
+  timespan_en: 2020-2022
+  timespan_de: 2020-2022
+  summary_en: "As CTO, I supported a high-performing team in implementing cloud architectures, Agile practices, and continuous delivery processes while driving organizational performance and innovation."
+  summary_de: "Als CTO habe ich ein leistungsstarkes Team bei der Umsetzung von Cloud-Architekturen, agilen Praktiken und Continuous-Delivery-Prozessen unterstützt und dabei organisatorische Performance und Innovation vorangetrieben."
 
-- industry: Intelligent Transport Systems
-  location: Austria, Sweden, USA
-  timespan: 2019-2020
-  summary: "Designed and executed a global test strategy and DevOps transformation to enhance development quality and deliver rapid feedback to stakeholders."
+- industry_en: Automotive
+  industry_de: Automobil
+  location_en: USA
+  location_de: USA
+  timespan_en: 2020
+  timespan_de: 2020
+  summary_en: "Provided leadership consulting and developed a cross-team quality vision, ensuring alignment with DevOps principles to accelerate development cycles."
+  summary_de: "Leadership-Beratung und Entwicklung einer teamübergreifenden Qualitätsvision, abgestimmt auf DevOps-Prinzipien, um Entwicklungszyklen zu beschleunigen."
 
-- industry: Transportation
-  location: Austria
-  timespan: 2019
-  summary: "Led and mentored an automation team to improve quality assurance processes for external suppliers in a complex project environment."
+- industry_en: Intelligent Transport Systems
+  industry_de: Intelligente Verkehrssysteme
+  location_en: Austria, Sweden, USA
+  location_de: Österreich, Schweden, USA
+  timespan_en: 2019-2020
+  timespan_de: 2019-2020
+  summary_en: "Designed and executed a global test strategy and DevOps transformation to enhance development quality and deliver rapid feedback to stakeholders."
+  summary_de: "Konzeption und Umsetzung einer globalen Teststrategie und DevOps-Transformation zur Steigerung der Entwicklungsqualität und für schnelles Feedback an die Stakeholder."
 
-- industry: Telecommunications
-  location: Germany
-  timespan: 2019
-  summary: "Developed an automation strategy to support the restructuring of a technical department with over 20,000 employees, optimizing workflows and processes."
+- industry_en: Transportation
+  industry_de: Verkehr
+  location_en: Austria
+  location_de: Österreich
+  timespan_en: 2019
+  timespan_de: 2019
+  summary_en: "Led and mentored an automation team to improve quality assurance processes for external suppliers in a complex project environment."
+  summary_de: "Führung und Mentoring eines Automatisierungsteams zur Verbesserung der Qualitätssicherungsprozesse externer Lieferanten in einem komplexen Projektumfeld."
 
-- industry: Energy
-  location: Austria
-  timespan: 2018-2019
-  summary: "Provided consulting and implementation services to enable teams on their DevOps journey, focusing on Agile practices, software architecture, and test automation for critical web applications."
+- industry_en: Telecommunications
+  industry_de: Telekommunikation
+  location_en: Germany
+  location_de: Deutschland
+  timespan_en: 2019
+  timespan_de: 2019
+  summary_en: "Developed an automation strategy to support the restructuring of a technical department with over 20,000 employees, optimizing workflows and processes."
+  summary_de: "Entwicklung einer Automatisierungsstrategie zur Unterstützung der Umstrukturierung einer technischen Abteilung mit über 20.000 Mitarbeitenden, inklusive Optimierung von Workflows und Prozessen."
 
-- industry: Agriculture
-  location: Austria
-  timespan: 2018-2019
-  summary: "Advised and guided a young team in developing their automation framework, fostering their skills in DevOps practices and driving technical excellence."
+- industry_en: Energy
+  industry_de: Energie
+  location_en: Austria
+  location_de: Österreich
+  timespan_en: 2018-2019
+  timespan_de: 2018-2019
+  summary_en: "Provided consulting and implementation services to enable teams on their DevOps journey, focusing on Agile practices, software architecture, and test automation for critical web applications."
+  summary_de: "Beratung und Implementierung, um Teams auf ihrem DevOps-Weg zu befähigen – mit Fokus auf agile Praktiken, Softwarearchitektur und Testautomatisierung für kritische Webanwendungen."
 
-- industry: Telecommunications
-  location: Austria
-  timespan: 2010-2017
-  summary: "Held multiple leadership roles, including Chief Software Architect, focusing on product development, application core functionality, and team leadership for Internet Service Providers."
+- industry_en: Agriculture
+  industry_de: Landwirtschaft
+  location_en: Austria
+  location_de: Österreich
+  timespan_en: 2018-2019
+  timespan_de: 2018-2019
+  summary_en: "Advised and guided a young team in developing their automation framework, fostering their skills in DevOps practices and driving technical excellence."
+  summary_de: "Beratung und Begleitung eines jungen Teams beim Aufbau seines Automatisierungs-Frameworks, Förderung der Fähigkeiten in DevOps-Praktiken und technischer Exzellenz."
+
+- industry_en: Telecommunications
+  industry_de: Telekommunikation
+  location_en: Austria
+  location_de: Österreich
+  timespan_en: 2010-2017
+  timespan_de: 2010-2017
+  summary_en: "Held multiple leadership roles, including Chief Software Architect, focusing on product development, application core functionality, and team leadership for Internet Service Providers."
+  summary_de: "Mehrere Führungsrollen, darunter Chief Software Architect, mit Fokus auf Produktentwicklung, Kernfunktionalität der Anwendungen und Teamführung für Internet Service Provider."

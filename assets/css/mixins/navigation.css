@@ -53,8 +53,66 @@
   color: var(--color-scale-grey-5);
 }
 
-@media screen and (max-width: 780px){  
-  #navigation .burger { 
+/* LANGUAGE SWITCH */
+
+#menu #lang-switch {
+  display: flex;
+  align-items: center;
+  margin: 0px 5px;
+  padding: 0px 16px;
+  font-family: var(--font-family-monospace);
+}
+
+#menu #lang-switch a,
+#menu #lang-switch .lang-active,
+#menu #lang-switch .lang-sep {
+  margin: 0px;
+  padding: 0px 6px;
+  border: none;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--color-link-navigation);
+}
+
+#menu #lang-switch a {
+  opacity: 0.55;
+  transition-duration: 0.4s;
+}
+
+#menu #lang-switch a:hover {
+  opacity: 1;
+  background-color: transparent;
+  color: var(--color-link-navigation);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+#menu #lang-switch .lang-active {
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  cursor: default;
+}
+
+#menu #lang-switch .lang-sep {
+  padding: 0px;
+  opacity: 0.35;
+}
+
+@media screen and (max-width: 780px){
+  /* Umschalter bleibt im Burger-Menue eine Zeile, nicht drei Blockelemente */
+  #menu #lang-switch {
+    justify-content: center;
+    padding: 12px 0px;
+  }
+
+  #menu #lang-switch a,
+  #menu #lang-switch .lang-active {
+    display: inline-block;
+    width: auto;
+  }
+
+  #navigation .burger {
     display: inline-block; 
     color: var(--color-fg-navigation);
     font-style: normal;

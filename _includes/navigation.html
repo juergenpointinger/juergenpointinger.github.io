@@ -1,15 +1,41 @@
+{%- comment -%}
+  Aktive Sprache, Textbausteine und Startseiten-URL der aktiven Sprache.
+  Seiten ohne eigenes "lang" im Front Matter erben site.lang_default.
+{%- endcomment -%}
+{%- assign lang = page.lang | default: site.lang_default -%}
+{%- assign t = site.data.i18n[lang] -%}
+{%- assign home_url = '/' -%}
+{%- for l in site.languages -%}
+  {%- if l.code == lang -%}{%- assign home_url = l.url -%}{%- endif -%}
+{%- endfor -%}
 <div id="navigation">
-  <a href="/" aria-label="Home">
+  <a href="{{ home_url }}" aria-label="{{ t.nav.home }}">
     <div class="navigation-logo"></div>
   </a>
 
-  <label for="menu-button" class="burger">&#9776;</label>
+  <label for="menu-button" class="burger" aria-label="{{ t.nav.menu }}">&#9776;</label>
   <input type="checkbox" id="menu-button" />
 
   <div id="menu">
-    <a href="/#about">About</a>
-    <a href="/#skills">Skills & strength</a>
-    <a href="/#projects">Impact stories</a>
-    <a href="/blog">Blog</a>
+    <a href="{{ home_url }}#about">{{ t.nav.about }}</a>
+    <a href="{{ home_url }}#skills">{{ t.nav.skills }}</a>
+    <a href="{{ home_url }}#projects">{{ t.nav.projects }}</a>
+    <a href="/blog">{{ t.nav.blog }}</a>
+
+    {%- comment -%}
+      Sprachumschalter: aktive Sprache als Text, die uebrigen als Links auf die
+      jeweilige Startseite. Steht bewusst im #menu, damit er im mobilen
+      Burger-Menue ohne Zusatzlogik mitkommt.
+    {%- endcomment -%}
+    <div id="lang-switch" role="group" aria-label="{{ t.language.label }}">
+      {%- for l in site.languages -%}
+        {%- unless forloop.first %}<span class="lang-sep" aria-hidden="true">/</span>{% endunless -%}
+        {%- if l.code == lang -%}
+        <span class="lang-active" aria-current="true" title="{{ l.name }}">{{ l.code | upcase }}</span>
+        {%- else -%}
+        <a href="{{ l.url }}" hreflang="{{ l.code }}" lang="{{ l.code }}" title="{{ l.name }}">{{ l.code | upcase }}</a>
+        {%- endif -%}
+      {%- endfor -%}
+    </div>
   </div>
 </div>

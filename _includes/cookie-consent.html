@@ -1,12 +1,14 @@
+{%- assign lang = page.lang | default: site.lang_default -%}
+{%- assign t = site.data.i18n[lang] -%}
 {% if site.gtag %}
 <div id="cookie-consent" style="display: none;">
   <span>
-    This website uses cookies to improve and customize your browsing experience and for analytics and metrics about the visitors. To find out more about the cookies, see our <a href="/privacy">Privacy Policy</a>.
+    {{ t.cookie.text }}
   </span>
 
   <ul>
     <li>
-      <a id="cookie-consent-accept" class="btn-primary">Accept</a>
+      <a id="cookie-consent-accept" class="btn-primary">{{ t.cookie.accept }}</a>
     </li>
     <!-- <li>
       <a id="cookie-consent-reject" class="btn-secondary">Reject</a>

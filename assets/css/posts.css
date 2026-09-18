@@ -54,6 +54,34 @@ ol, ul, dl {
   margin-top: 0;
 }
 
+/* Einrueckung der Dokumentlisten auf Seiten mit layout: page (/privacy/, /blog/styles/).
+   Primer resettet ul/ol global auf padding-left: 0 und stellt die Einrueckung nur
+   innerhalb von .markdown-body wieder her - diesen Wrapper hat aber nur post.html.
+   Ohne die Regel haengen die Aufzaehlungspunkte links aus der Textspalte heraus.
+
+   Bewusst als Kindselektor: Seiteninhalte liegen direkt in #container, Post-Inhalte
+   dagegen in .markdown-body (dort greift Primer) und Navigation, Footer sowie #meta
+   liegen ausserhalb bzw. tiefer - die bleiben damit unberuehrt.
+   Die Verschachtelungsebenen sind mitgefasst (siehe /blog/styles/). */
+#container > ul,
+#container > ol,
+#container > ul ul,
+#container > ul ol,
+#container > ol ul,
+#container > ol ol {
+  padding-left: 1em;
+}
+
+/* Abstand nach unten, damit der Folgetext nicht an der Liste klebt.
+   Primer setzt ul/ol auf margin-bottom: 0, Absaetze haben 10px - dadurch
+   war oberhalb der Liste Luft (vom Absatz davor) und unterhalb keine.
+   Bewusst nur fuer die aeusseren Listen: verschachtelte Listen wuerden
+   sonst den Abstand zwischen den Punkten der Elternliste aufreissen. */
+#container > ul,
+#container > ol {
+  margin-bottom: 10px;
+}
+
 .tags {
   padding-top: 30px;
   margin: 10px 0px;
