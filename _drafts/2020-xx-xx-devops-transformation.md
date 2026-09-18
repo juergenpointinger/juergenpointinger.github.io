@@ -1,6 +1,6 @@
 ---
 layout: post
-categories: [DevOps, Leadership]
+category: Leadership
 comment_issue_id: 99
 title: "DevOps Transformation"
 date: 2020-12-18
